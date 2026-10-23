@@ -1,0 +1,615 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>每日財報快訊</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="財報快訊">
+<meta name="theme-color" content="#12233d">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Noto+Serif+TC:wght@700;900&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+/* Layout: a single newspaper-like column (max 720px). Navy masthead + ticker strip, lead story, company rows that open a detail view in place. */
+:root {
+  --bg: #eef1f5;
+  --paper: #ffffff;
+  --ink: #141c2b;
+  --muted: #5b6577;
+  --rule: #dfe4ec;
+  --mast: #12233d;
+  --mast-2: #1b3152;
+  --mast-ink: #ffffff;
+  --mast-muted: #b8c4d6;
+  --gold: #c8912c;
+  --up: #12804a;
+  --up-bg: #e2f4ea;
+  --down: #b42318;
+  --down-bg: #fce8e6;
+  --flat: #6b7280;
+  --flat-bg: #eceef2;
+  --strip-up: #4fd68c;
+  --strip-down: #ff8a80;
+  --tag: #c0392b;
+  --hover: #f5f7fa;
+  --serif: 'Noto Serif TC', 'Noto Serif CJK TC', 'Songti TC', serif;
+  --sans: 'Noto Sans TC', 'Noto Sans CJK TC', 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+  --mono: 'IBM Plex Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0b111b; --paper: #121a27; --ink: #e8ecf2; --muted: #9aa5b8; --rule: #243046;
+    --mast: #0a1626; --mast-2: #13233a; --mast-ink: #f2f5f9; --mast-muted: #93a3bb; --gold: #e3ad4e;
+    --up: #4fd68c; --up-bg: #12301f; --down: #ff8a80; --down-bg: #3a1a18; --flat: #a3abb8; --flat-bg: #222b3a;
+    --strip-up: #4fd68c; --strip-down: #ff8a80; --tag: #e0594a; --hover: #182234;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0b111b; --paper: #121a27; --ink: #e8ecf2; --muted: #9aa5b8; --rule: #243046;
+  --mast: #0a1626; --mast-2: #13233a; --mast-ink: #f2f5f9; --mast-muted: #93a3bb; --gold: #e3ad4e;
+  --up: #4fd68c; --up-bg: #12301f; --down: #ff8a80; --down-bg: #3a1a18; --flat: #a3abb8; --flat-bg: #222b3a;
+  --strip-up: #4fd68c; --strip-down: #ff8a80; --tag: #e0594a; --hover: #182234;
+  color-scheme: dark;
+}
+:root { padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); }
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+[hidden] { display: none !important; }
+html, body { background: var(--bg); color: var(--ink); }
+body { font-family: var(--sans); font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--mast); }
+.wrap { max-width: 720px; margin: 0 auto; background: var(--paper); min-height: 100vh; }
+.pad { padding-left: max(18px, env(safe-area-inset-left, 0px)); padding-right: max(18px, env(safe-area-inset-right, 0px)); }
+button { font: inherit; color: inherit; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+
+/* masthead */
+.mast { background: var(--mast); color: var(--mast-ink); }
+.mast-in { display: flex; align-items: flex-end; justify-content: space-between; gap: 12px; padding-block: 18px 14px; }
+.kicker { font-size: 12px; letter-spacing: .3em; color: var(--gold); font-weight: 700; }
+.mast h1 { margin: 2px 0 0; font-size: 26px; font-weight: 900; letter-spacing: .06em; line-height: 1.2; }
+.when { text-align: right; font-size: 13px; color: var(--mast-muted); line-height: 1.45; flex: none; }
+.when b { display: block; color: var(--mast-ink); font-size: 15px; font-weight: 700; }
+.switch { display: flex; gap: 6px; padding-block: 0 12px; overflow-x: auto; scrollbar-width: none; }
+.switch::-webkit-scrollbar { display: none; }
+.switch button { flex: none; background: transparent; border: 1px solid var(--mast-2); color: var(--mast-muted); border-radius: 999px; padding: 5px 13px; font-size: 13px; cursor: pointer; white-space: nowrap; }
+.switch button[aria-pressed="true"] { background: var(--gold); border-color: var(--gold); color: #10213a; font-weight: 700; }
+
+.strip { display: grid; grid-template-columns: repeat(var(--n, 4), minmax(0, 1fr)); background: var(--mast-2); color: var(--mast-ink); }
+.strip div { padding: 10px 4px; text-align: center; font-size: 12px; color: var(--mast-muted); border-right: 1px solid var(--mast); min-width: 0; }
+.strip div:last-child { border-right: none; }
+.strip b { display: block; font-family: var(--mono); font-size: 17px; font-weight: 600; font-variant-numeric: tabular-nums; color: var(--mast-ink); }
+.strip b.up { color: var(--strip-up); } .strip b.down { color: var(--strip-down); }
+
+.notice { margin: 0; padding-block: 10px; font-size: 13px; background: var(--flat-bg); color: var(--muted); }
+
+/* lead */
+.lead { padding-block: 26px 22px; border-bottom: 3px solid var(--ink); }
+.tag { display: inline-block; background: var(--tag); color: #fff; font-size: 12px; font-weight: 700; letter-spacing: .2em; padding: 3px 9px; }
+.lead h2 { font-family: var(--serif); font-size: clamp(26px, 6.4vw, 36px); line-height: 1.32; font-weight: 900; margin: 12px 0 6px; text-wrap: balance; }
+.en { color: var(--muted); font-style: italic; font-size: 15px; line-height: 1.45; }
+.lead p.body { margin: 14px 0 0; font-size: 16px; line-height: 1.75; }
+
+.points { list-style: none; margin: 0; padding-block: 14px 18px; border-bottom: 1px solid var(--rule); display: grid; gap: 12px; }
+.points li { position: relative; padding-left: 20px; font-size: 17px; line-height: 1.5; }
+.points li::before { content: ""; position: absolute; left: 0; top: .55em; width: 8px; height: 8px; background: var(--gold); }
+.points .en { display: block; font-size: 13.5px; margin-top: 1px; }
+
+/* sections */
+.sec { padding-block: 22px 6px; }
+.sec h3 { margin: 0; font-size: 15px; font-weight: 900; letter-spacing: .18em; padding-bottom: 8px; border-bottom: 2px solid var(--ink); display: flex; justify-content: space-between; align-items: baseline; }
+.sec h3 small { font-size: 12px; letter-spacing: 0; font-weight: 500; color: var(--muted); }
+.row { width: 100%; display: grid; grid-template-columns: 64px minmax(0, 1fr) auto; align-items: center; gap: 4px 12px; padding: 14px 6px; border: 0; border-bottom: 1px solid var(--rule); background: transparent; text-align: left; cursor: pointer; }
+.row:hover { background: var(--hover); }
+.tk { font-family: var(--mono); font-weight: 600; font-size: 15px; letter-spacing: .02em; }
+.nm { min-width: 0; font-size: 16.5px; font-weight: 500; line-height: 1.35; }
+.nm small { display: block; font-weight: 400; font-size: 14px; color: var(--muted); margin-top: 2px; }
+.right { display: flex; flex-direction: column; align-items: flex-end; gap: 5px; }
+.pill { font-size: 12px; font-weight: 700; padding: 2px 9px; border-radius: 999px; white-space: nowrap; }
+.pill.beat { background: var(--up-bg); color: var(--up); }
+.pill.miss { background: var(--down-bg); color: var(--down); }
+.pill.inline { background: var(--flat-bg); color: var(--flat); }
+.chg { font-family: var(--mono); font-size: 16px; font-weight: 600; font-variant-numeric: tabular-nums; }
+.chg.up { color: var(--up); } .chg.down { color: var(--down); } .chg.flat { color: var(--flat); }
+.more { grid-column: 2 / 4; font-size: 12.5px; color: var(--gold); font-weight: 700; }
+
+.macro { list-style: none; margin: 0; padding: 0; }
+.macro li { border-bottom: 1px solid var(--rule); }
+.macro li:last-child { border-bottom: none; }
+.macro details summary { list-style: none; padding: 12px 6px; cursor: pointer; font-size: 16px; display: flex; justify-content: space-between; gap: 12px; }
+.macro details summary::-webkit-details-marker { display: none; }
+.macro details summary::after { content: "＋"; color: var(--gold); flex: none; }
+.macro details[open] summary::after { content: "－"; }
+.macro details p { margin: 0; padding: 0 6px 14px; color: var(--muted); font-size: 15px; line-height: 1.7; }
+.macro .plain { padding: 12px 6px; font-size: 16px; }
+
+.next { margin-block: 18px 0; padding: 14px 16px; border-left: 5px solid var(--gold); background: var(--hover); font-size: 15.5px; }
+.next b { margin-right: 6px; }
+
+.foot { margin-top: 28px; padding-block: 18px 34px; border-top: 1px solid var(--rule); font-size: 12.5px; color: var(--muted); line-height: 1.7; }
+.foot a { color: var(--muted); }
+
+/* detail view */
+.back { display: inline-flex; align-items: center; gap: 6px; margin-block: 16px 0; background: transparent; border: 1px solid var(--rule); border-radius: 999px; padding: 6px 14px; font-size: 14px; cursor: pointer; }
+.back:hover { background: var(--hover); }
+.dhead { padding-block: 18px 18px; border-bottom: 3px solid var(--ink); }
+.dhead .tk { font-size: 14px; color: var(--muted); }
+.dhead h2 { font-family: var(--serif); font-size: clamp(26px, 6vw, 34px); font-weight: 900; margin: 4px 0 8px; line-height: 1.3; text-wrap: balance; }
+.dhead .meta { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; }
+.dhead .chg { font-size: 22px; }
+.dsec { padding-block: 20px 4px; }
+.dsec h4 { margin: 0 0 10px; font-size: 13px; letter-spacing: .2em; color: var(--muted); font-weight: 700; }
+.dsec p { margin: 0 0 10px; font-size: 16.5px; line-height: 1.8; }
+.figs { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
+.fig { border: 1px solid var(--rule); padding: 12px 14px; min-width: 0; }
+.fig .k { font-size: 12.5px; color: var(--muted); }
+.fig .v { font-family: var(--mono); font-size: 20px; font-weight: 600; font-variant-numeric: tabular-nums; margin-top: 2px; overflow-wrap: anywhere; }
+.fig .s { font-size: 12.5px; color: var(--muted); margin-top: 2px; }
+.fig .s.up { color: var(--up); } .fig .s.down { color: var(--down); }
+.kv { display: grid; gap: 0; }
+.kv div { display: grid; grid-template-columns: 88px minmax(0, 1fr); gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--rule); font-size: 15.5px; }
+.kv div:last-child { border-bottom: none; }
+.kv dt { color: var(--muted); font-size: 14px; }
+.kv dd { margin: 0; }
+.plainbox { background: var(--hover); border-left: 5px solid var(--gold); padding: 14px 16px; font-size: 16px; line-height: 1.8; }
+.src { list-style: none; margin: 0; padding: 0; }
+.src li { padding: 8px 0; border-bottom: 1px solid var(--rule); font-size: 14.5px; }
+.src li:last-child { border-bottom: none; }
+.src a { text-decoration: underline; text-decoration-color: var(--gold); text-underline-offset: 3px; overflow-wrap: anywhere; }
+
+/* settings */
+.gear { flex: none; display: inline-flex; align-items: center; gap: 6px; background: transparent; border: 1px solid var(--mast-2); color: var(--mast-ink); border-radius: 999px; padding: 6px 12px; font-size: 13px; cursor: pointer; margin-left: 10px; }
+.gear:hover { border-color: var(--gold); }
+.gear svg { width: 15px; height: 15px; }
+.mast-right { display: flex; align-items: flex-end; }
+.set-intro { padding-block: 20px 6px; }
+.set-intro h2 { font-family: var(--serif); font-size: 26px; margin: 0 0 6px; }
+.set-intro p { margin: 0; color: var(--muted); font-size: 15px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--rule); background: var(--paper); padding: 6px 6px 6px 12px; border-radius: 999px; font-size: 15px; }
+.chip .tk { font-size: 14px; }
+.chip small { color: var(--muted); font-size: 13px; }
+.chip button { border: 0; background: var(--flat-bg); color: var(--muted); width: 26px; height: 26px; border-radius: 50%; cursor: pointer; font-size: 15px; line-height: 1; }
+.chip button:hover { background: var(--down-bg); color: var(--down); }
+.chips .none { color: var(--muted); font-size: 15px; }
+.ask { display: flex; gap: 8px; }
+.ask input { flex: 1; min-width: 0; font: inherit; font-size: 16px; padding: 11px 14px; border: 1px solid var(--rule); background: var(--paper); color: var(--ink); border-radius: 10px; }
+.ask input:focus { outline: 2px solid var(--gold); outline-offset: 0; border-color: var(--gold); }
+.btn { font-size: 15px; font-weight: 700; padding: 10px 18px; border-radius: 10px; border: 1px solid var(--mast); background: var(--mast); color: var(--mast-ink); cursor: pointer; white-space: nowrap; }
+.btn:disabled { opacity: .5; cursor: default; }
+.btn.ghost { background: transparent; color: var(--ink); border-color: var(--rule); }
+.hint { font-size: 13.5px; color: var(--muted); margin: 8px 0 0; }
+.msg { font-size: 14.5px; margin: 10px 0 0; padding: 10px 12px; background: var(--hover); border-left: 4px solid var(--gold); }
+.msg.err { border-left-color: var(--down); }
+.preset { display: flex; flex-wrap: wrap; gap: 8px; }
+.preset button { border: 1px dashed var(--rule); background: transparent; border-radius: 999px; padding: 6px 13px; font-size: 14px; cursor: pointer; }
+.preset button:hover { border-color: var(--gold); background: var(--hover); }
+.savebar { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; padding-block: 22px 6px; }
+.savebar .status { font-size: 14px; color: var(--muted); }
+.mine .row.quiet { cursor: default; }
+.mine .row.quiet .nm small { font-style: italic; }
+.edit-link { background: none; border: 0; color: var(--gold); font-size: 12px; font-weight: 700; cursor: pointer; letter-spacing: 0; padding: 0; }
+
+.empty { padding-block: 60px; text-align: center; color: var(--muted); }
+.empty h2 { font-family: var(--serif); color: var(--ink); font-size: 24px; margin: 0 0 8px; }
+
+@media (max-width: 420px) {
+  .row { grid-template-columns: 54px minmax(0, 1fr) auto; gap: 4px 10px; }
+  .strip b { font-size: 15px; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  #view { animation: fade .18s ease-out; }
+  @keyframes fade { from { opacity: .4; } to { opacity: 1; } }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="mast">
+    <div class="mast-in pad">
+      <div>
+        <div class="kicker">MARKET BRIEF</div>
+        <h1 id="edition">每日財報快訊</h1>
+      </div>
+      <div class="mast-right">
+        <div class="when" id="when"><b>載入中</b></div>
+        <button type="button" class="gear" id="gear" aria-label="設定我的股票清單"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>我的清單</button>
+      </div>
+    </div>
+    <nav class="switch pad" id="switch" aria-label="選擇日期與時段"></nav>
+    <div class="strip" id="strip"></div>
+  </header>
+  <main id="view">
+    <div class="empty pad"><h2>正在載入今天的快訊</h2><p>每個交易日早上 8:23 和下午 4:53（多倫多時間）自動更新。</p></div>
+  </main>
+</div>
+
+<script src="config.js"></script>
+<script type="module">
+(function () {
+  const VERDICT = { beat: '優於預期', miss: '不如預期', inline: '符合預期' };
+  const WEEK = ['日', '一', '二', '三', '四', '五', '六'];
+  let index = [];
+  const cache = {};
+  let current = null;
+
+  /* ---------- watchlist (shared db doc settings/watchlist, local fallback) ---------- */
+  const LS_KEY = 'brief.watchlist';
+  const PRESETS = [
+    { label: '加拿大六大銀行', items: [['RY', '皇家銀行'], ['TD', '道明銀行'], ['BMO', '滿地可銀行'], ['BNS', '豐業銀行'], ['CM', '帝國商業銀行'], ['NA', '國家銀行']] },
+    { label: '加拿大能源', items: [['ENB', 'Enbridge'], ['CNQ', '加拿大自然資源'], ['SU', 'Suncor'], ['TRP', 'TC Energy']] },
+    { label: '加拿大電信', items: [['BCE', 'BCE'], ['T', 'Telus'], ['RCI.B', 'Rogers']] },
+    { label: '美股科技', items: [['AAPL', 'Apple'], ['MSFT', 'Microsoft'], ['NVDA', 'Nvidia'], ['GOOGL', 'Alphabet'], ['AMZN', 'Amazon']] }
+  ];
+  let watch = [];          // [{ticker, name}]
+  let draft = null;        // list being edited on the settings page
+  let cloud = null;        // {fs, ai} once Firebase is ready
+  let lastView = null;     // {id, ticker, settings}
+  const PIN_KEY = 'brief.pin';
+  const FB_VER = '11.10.0';
+
+  function normTk(t) { return String(t || '').trim().toUpperCase().replace(/\s+/g, ''); }
+  function readLocal() { try { const v = JSON.parse(localStorage.getItem(LS_KEY) || '[]'); return Array.isArray(v) ? v : []; } catch (e) { return []; } }
+  function writeLocal(list) { try { localStorage.setItem(LS_KEY, JSON.stringify(list)); } catch (e) {} }
+  function readPin() { try { return localStorage.getItem(PIN_KEY) || ''; } catch (e) { return ''; } }
+  function writePin(p) { try { if (p) localStorage.setItem(PIN_KEY, p); else localStorage.removeItem(PIN_KEY); } catch (e) {} }
+  function cleanList(list) {
+    const seen = new Set(), out = [];
+    (list || []).forEach(x => { const t = normTk(x && x.ticker); if (/^[A-Z0-9.\-]{1,12}$/.test(t) && !seen.has(t)) { seen.add(t); out.push({ ticker: t, name: String((x && x.name) || '').slice(0, 30) }); } });
+    return out.slice(0, 20);
+  }
+  // The list lives at watchlists/<sha256("market-brief:" + PIN)>, so the page never contains the document id.
+  async function listId(pin) {
+    const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode('market-brief:' + pin));
+    return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, '0')).join('');
+  }
+
+  async function initCloud() {
+    const cfg = window.FIREBASE_CONFIG;
+    if (!cfg || !cfg.apiKey) return null;
+    try {
+      const base = 'https://www.gstatic.com/firebasejs/' + FB_VER + '/';
+      const appMod = await import(base + 'firebase-app.js');
+      const fsMod = await import(base + 'firebase-firestore.js');
+      const app = appMod.initializeApp(cfg);
+      const fs = { mod: fsMod, db: fsMod.getFirestore(app) };
+      let ai = null;
+      try {
+        const aiMod = await import(base + 'firebase-ai.js');
+        const inst = aiMod.getAI(app, { backend: new aiMod.GoogleAIBackend() });
+        ai = aiMod.getGenerativeModel(inst, { model: window.GEMINI_MODEL || 'gemini-2.5-flash', generationConfig: { responseMimeType: 'application/json' } });
+      } catch (e) { ai = null; }
+      return { fs, ai };
+    } catch (e) { return null; }
+  }
+  async function loadCloudList() {
+    const pin = readPin();
+    if (!cloud || !pin) return false;
+    try {
+      const { mod, db } = cloud.fs;
+      const snap = await mod.getDoc(mod.doc(db, 'watchlists', await listId(pin)));
+      if (snap.exists()) { watch = cleanList(snap.data().tickers); writeLocal(watch); }
+      return true;
+    } catch (e) { return false; }
+  }
+  async function initCapabilities() {
+    watch = readLocal();
+    cloud = await initCloud();
+    if (await loadCloudList()) rerender();
+  }
+  function rerender() {
+    if (!current) return;
+    if (lastView && lastView.settings) return; // don't disturb an open settings page
+    if (!lastView || !lastView.ticker) renderHome(current);
+  }
+
+  const $ = (s) => document.querySelector(s);
+  function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c])); }
+  function cls(s) { s = String(s || '').trim(); if (s.startsWith('+')) return 'up'; if (s.startsWith('-') || s.startsWith('−')) return 'down'; return 'flat'; }
+  function safeUrl(u) { return /^https?:\/\//i.test(String(u || '')) ? u : ''; }
+  function slug(t) { return String(t || '').replace(/[^A-Za-z0-9._~-]/g, '_'); }
+  function label(b) {
+    const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(b.id || '');
+    let d = b.date || '';
+    if (m && !d) { const dt = new Date(+m[1], +m[2] - 1, +m[3]); d = (+m[2]) + '/' + (+m[3]) + '（' + WEEK[dt.getDay()] + '）'; }
+    return d;
+  }
+
+  async function getJSON(path) {
+    const r = await fetch(path + '?v=' + Date.now(), { cache: 'no-store' });
+    if (!r.ok) throw new Error(r.status);
+    return r.json();
+  }
+  async function loadBrief(id) {
+    if (!cache[id]) cache[id] = await getJSON('briefs/' + id + '.json');
+    return cache[id];
+  }
+
+  function renderSwitch() {
+    const nav = $('#switch');
+    nav.innerHTML = index.slice(0, 14).map(b =>
+      '<button type="button" data-id="' + esc(b.id) + '" aria-pressed="' + (current && current.id === b.id) + '">' +
+      esc(label(b)) + ' ' + esc(b.edition && b.edition.indexOf('後') >= 0 ? '盤後' : '盤前') + '</button>').join('');
+    nav.querySelectorAll('button').forEach(btn => btn.addEventListener('click', () => go(btn.dataset.id)));
+  }
+
+  function renderMast(b) {
+    $('#edition').textContent = b.edition || '每日財報快訊';
+    $('#when').innerHTML = '<b>' + esc(label(b)) + '</b>' + esc(b.time || '');
+    const idx = b.indices || [];
+    const strip = $('#strip');
+    strip.style.setProperty('--n', Math.max(idx.length, 1));
+    strip.innerHTML = idx.map(i => '<div>' + esc(i.name) + '<b class="' + cls(i.change) + '">' + esc(i.change || '—') + '</b></div>').join('');
+    strip.hidden = !idx.length;
+  }
+
+  function rowHTML(it, secIdx, itIdx) {
+    const v = it.verdict;
+    const pill = v ? '<span class="pill ' + esc(v) + '">' + esc(VERDICT[v] || v) + '</span>' : '';
+    const chg = it.change ? '<span class="chg ' + cls(it.change) + '">' + esc(it.change) + '</span>' : '';
+    const hasDetail = !!it.detail;
+    return '<button type="button" class="row" data-s="' + secIdx + '" data-i="' + itIdx + '"' + (hasDetail ? '' : ' disabled') + '>' +
+      '<span class="tk">' + esc(it.ticker) + '</span>' +
+      '<span class="nm">' + esc(it.name) + '<small>' + esc(it.note) + '</small></span>' +
+      '<span class="right">' + pill + chg + '</span>' +
+      (hasDetail ? '<span class="more">看詳細 →</span>' : '') +
+      '</button>';
+  }
+
+  function renderHome(b) {
+    let h = '';
+    if (b.sample) h += '<p class="notice pad">這是版面範例，內容不是真實資料。第一份真實快訊產生後會自動取代。</p>';
+    const lead = b.lead || {};
+    if (lead.headline) {
+      h += '<section class="lead pad"><span class="tag">' + esc(lead.tag || '頭條') + '</span>' +
+        '<h2>' + esc(lead.headline) + '</h2>' +
+        (lead.headline_en ? '<div class="en">' + esc(lead.headline_en) + '</div>' : '') +
+        (lead.body ? '<p class="body">' + esc(lead.body) + '</p>' : '') + '</section>';
+    }
+    const pts = b.points || [];
+    if (pts.length) h += '<ul class="points pad">' + pts.map(p => '<li>' + esc(p.zh) + (p.en ? '<span class="en">' + esc(p.en) + '</span>' : '') + '</li>').join('') + '</ul>';
+    h += mineHTML(b);
+    (b.sections || []).forEach((s, si) => {
+      if (!s.items || !s.items.length) return;
+      if (watch.length && /觀察清單/.test(s.title || '')) return; // shown in 我的清單
+      h += '<section class="sec pad"><h3>' + esc(s.title) + '<small>點公司看詳細</small></h3>' +
+        s.items.map((it, ii) => rowHTML(it, si, ii)).join('') + '</section>';
+    });
+    const macro = b.macro || [];
+    if (macro.length) {
+      h += '<section class="sec pad"><h3>利率・總經</h3><ul class="macro">' + macro.map(m => {
+        if (typeof m === 'string') return '<li><div class="plain">' + esc(m) + '</div></li>';
+        if (!m.detail) return '<li><div class="plain">' + esc(m.text) + '</div></li>';
+        return '<li><details><summary>' + esc(m.text) + '</summary><p>' + esc(m.detail) + '</p></details></li>';
+      }).join('') + '</ul></section>';
+    }
+    if (b.next) h += '<div class="pad"><div class="next"><b>' + esc(b.next_label || '接下來') + '</b>' + esc(b.next) + '</div></div>';
+    h += footHTML(b);
+    $('#view').innerHTML = h;
+    $('#view').querySelectorAll('.row:not([disabled])').forEach(btn => btn.addEventListener('click', () => {
+      const it = b.sections[+btn.dataset.s].items[+btn.dataset.i];
+      go(b.id, it.ticker);
+    }));
+    const ed = $('#editMine'); if (ed) ed.addEventListener('click', openSettings);
+    const add = $('#addMine'); if (add) add.addEventListener('click', openSettings);
+  }
+
+  function mineHTML(b) {
+    if (!watch.length) {
+      if (b.sample) return '';
+      return '<section class="sec pad"><h3>我的清單<small><button type="button" class="edit-link" id="addMine">＋ 加入想追蹤的股票</button></small></h3>' +
+        '<p class="hint">設定後，每天的快訊會特別幫你查這些股票的消息。</p></section>';
+    }
+    const rows = watch.map(w => {
+      let at = null;
+      (b.sections || []).forEach((s, si) => (s.items || []).forEach((it, ii) => { if (!at && normTk(it.ticker) === w.ticker) at = { it, si, ii }; }));
+      if (at) return rowHTML(at.it, at.si, at.ii);
+      return '<div class="row quiet"><span class="tk">' + esc(w.ticker) + '</span><span class="nm">' + esc(w.name || w.ticker) +
+        '<small>這一期沒有重大消息</small></span><span class="right"></span></div>';
+    }).join('');
+    return '<section class="sec pad mine"><h3>我的清單<small><button type="button" class="edit-link" id="editMine">編輯</button></small></h3>' + rows + '</section>';
+  }
+
+  /* ---------- settings view ---------- */
+  function openSettings() {
+    lastView = Object.assign({}, lastView || {}, { settings: true });
+    draft = watch.map(x => Object.assign({}, x));
+    renderSettings();
+    window.scrollTo(0, 0);
+  }
+  function closeSettings() {
+    lastView = Object.assign({}, lastView || {}, { settings: false });
+    if (current) { if (lastView.ticker) renderDetail(current, lastView.ticker); else renderHome(current); }
+    window.scrollTo(0, 0);
+  }
+  function syncNote() {
+    if (!cloud) return '目前只存在這支手機上。';
+    if (!readPin()) return '輸入密碼後儲存，每天早上和傍晚的快訊就會依照這份清單幫你查新聞。';
+    return '已連線。儲存後，每天早上和傍晚的快訊都會依照這份清單幫你查新聞。';
+  }
+  function renderSettings(msg, isErr) {
+    const chips = draft.length
+      ? draft.map((x, i) => '<span class="chip"><span class="tk">' + esc(x.ticker) + '</span>' + (x.name && x.name !== x.ticker ? '<small>' + esc(x.name) + '</small>' : '') +
+        '<button type="button" data-rm="' + i + '" aria-label="移除 ' + esc(x.ticker) + '">×</button></span>').join('')
+      : '<span class="none">還沒有股票，從下面輸入或點選常用組合。</span>';
+    let h = '<div class="pad"><button type="button" class="back" id="setBack">← 回到快訊</button></div>';
+    h += '<section class="set-intro pad"><h2>我的股票清單</h2><p>想特別追蹤哪些股票？加進來之後，首頁會有「我的清單」區塊。</p></section>';
+    h += '<section class="dsec pad"><h4>目前清單（' + draft.length + ' / 20）</h4><div class="chips" id="chips">' + chips + '</div></section>';
+    h += '<section class="dsec pad"><h4>新增</h4><form class="ask" id="askForm" autocomplete="off">' +
+      '<input id="askInput" type="text" enterkeyhint="done" placeholder="例如：RY、Apple，或「加拿大的保險股」" aria-label="輸入股票代號或描述">' +
+      '<button class="btn" type="submit" id="askBtn">加入</button></form>' +
+      '<p class="hint">' + (cloud && cloud.ai ? '可以打股票代號，也可以直接用一句話描述，系統會幫你找出對應的股票。' : '請輸入股票代號，多個用逗號或空格分開，例如：RY, TD, AAPL') + '</p>' +
+      (msg ? '<p class="msg' + (isErr ? ' err' : '') + '">' + esc(msg) + '</p>' : '') + '</section>';
+    h += '<section class="dsec pad"><h4>常用組合，點一下加入</h4><div class="preset">' + PRESETS.map((p, i) => '<button type="button" data-preset="' + i + '">＋ ' + esc(p.label) + '</button>').join('') + '</div></section>';
+    if (cloud) h += '<section class="dsec pad"><h4>密碼</h4><div class="ask"><input id="pinInput" type="password" inputmode="numeric" autocomplete="off" maxlength="12" placeholder="輸入清單密碼" aria-label="清單密碼" value="' + esc(readPin()) + '"></div>' +
+      '<p class="hint">密碼只要輸入一次，這支手機會記住。沒有密碼的人改不到你的清單。</p></section>';
+    h += '<div class="savebar pad"><button type="button" class="btn" id="saveBtn">儲存清單</button><button type="button" class="btn ghost" id="cancelBtn">取消</button></div>';
+    h += '<p class="hint pad">' + esc(syncNote()) + '</p>';
+    h += '<footer class="foot pad">清單只用來決定每天要多查哪些股票的新聞，不是投資建議。</footer>';
+    $('#view').innerHTML = h;
+    $('#setBack').addEventListener('click', closeSettings);
+    $('#cancelBtn').addEventListener('click', closeSettings);
+    $('#saveBtn').addEventListener('click', saveWatch);
+    $('#chips').querySelectorAll('[data-rm]').forEach(b => b.addEventListener('click', () => { draft.splice(+b.dataset.rm, 1); renderSettings(); }));
+    $('#view').querySelectorAll('[data-preset]').forEach(b => b.addEventListener('click', () => {
+      const p = PRESETS[+b.dataset.preset];
+      const before = draft.length;
+      draft = cleanList(draft.concat(p.items.map(x => ({ ticker: x[0], name: x[1] }))));
+      renderSettings('已加入 ' + (draft.length - before) + ' 檔：' + p.label);
+    }));
+    $('#askForm').addEventListener('submit', onAsk);
+  }
+
+  async function onAsk(ev) {
+    ev.preventDefault();
+    const input = $('#askInput');
+    const text = input.value.trim();
+    if (!text) return;
+    const parts = text.split(/[\s,，、;；]+/).filter(Boolean);
+    const looksLikeTickers = parts.every(p => /^[A-Za-z][A-Za-z0-9.\-]{0,9}$/.test(p)) && parts.every(p => p === p.toUpperCase() || p.length <= 5);
+    const ai = cloud && cloud.ai;
+    if (looksLikeTickers || !ai) {
+      if (!looksLikeTickers) { renderSettings('請輸入股票代號，例如 RY 或 AAPL。', true); return; }
+      const before = draft.length;
+      draft = cleanList(draft.concat(parts.map(p => ({ ticker: p, name: '' }))));
+      renderSettings('已加入 ' + (draft.length - before) + ' 檔。');
+      return;
+    }
+    const btn = $('#askBtn');
+    btn.disabled = true; btn.textContent = '查詢中…';
+    try {
+      const prompt = '你是股票代號查詢助手。使用者是加拿大的理財顧問，會用中文或英文描述想追蹤的股票或產業。' +
+        '請找出最符合描述的上市公司（優先加拿大 TSX，其次美國），最多 8 檔，只回傳 JSON 陣列，格式：' +
+        '[{"ticker":"RY","name":"皇家銀行"}]。ticker 用該交易所的常用代號（加拿大股不用加 .TO），name 用中文常用名稱。' +
+        '如果描述不是在找股票，回傳 []。\n\n使用者的描述：' + text;
+      const out = await ai.generateContent(prompt);
+      let res = JSON.parse(String(out.response.text() || '[]').replace(/^```(?:json)?|```$/g, '').trim());
+      if (res && !Array.isArray(res) && Array.isArray(res.items)) res = res.items;
+      const found = cleanList(Array.isArray(res) ? res : []);
+      if (!found.length) { renderSettings('找不到符合的股票，換個說法，或直接輸入代號試試。', true); return; }
+      const before = draft.length;
+      draft = cleanList(draft.concat(found));
+      renderSettings('找到並加入 ' + (draft.length - before) + ' 檔：' + found.map(f => f.ticker + (f.name ? ' ' + f.name : '')).join('、') + '。不需要的可以按 × 移除。');
+    } catch (e) {
+      const code = e && e.code;
+      renderSettings('查詢失敗，請直接輸入股票代號，例如 RY。', true);
+    }
+  }
+
+  async function saveWatch() {
+    const list = cleanList(draft);
+    const pinEl = $('#pinInput');
+    const pin = pinEl ? pinEl.value.trim() : readPin();
+    const btn = $('#saveBtn');
+    btn.disabled = true; btn.textContent = '儲存中…';
+    writeLocal(list);
+    let synced = false, why = '';
+    if (cloud && pin) {
+      if (!/^\d{4,12}$/.test(pin)) { draft = list; renderSettings('密碼要是 4 到 12 位數字。', true); return; }
+      try {
+        const { mod, db } = cloud.fs;
+        await mod.setDoc(mod.doc(db, 'watchlists', await listId(pin)), { tickers: list, updated: mod.serverTimestamp() });
+        writePin(pin); synced = true;
+      } catch (e) { why = '密碼錯誤或網路有問題，清單只存在這支手機上。'; }
+    } else if (cloud) { why = '沒有輸入密碼，清單只存在這支手機上。'; }
+    watch = list;
+    closeSettings();
+    const v = $('#view');
+    if (synced) v.insertAdjacentHTML('afterbegin', '<p class="notice pad">已儲存。下一期快訊會幫你查這些股票。</p>');
+    else if (why) v.insertAdjacentHTML('afterbegin', '<p class="notice pad">' + esc(why) + '</p>');
+  }
+
+
+  function footHTML(b) {
+    const src = (b.sources || '');
+    return '<footer class="foot pad">資料來源：' + esc(typeof src === 'string' ? src : '') +
+      (b.updated ? '<br>更新時間：' + esc(b.updated) : '') +
+      '<br>僅供內部參考，非投資建議 / For internal reference only, not investment advice</footer>';
+  }
+
+  function findItem(b, ticker) {
+    for (const s of b.sections || []) for (const it of s.items || []) if (slug(it.ticker) === slug(ticker)) return { it, sec: s };
+    return null;
+  }
+
+  function fig(k, f) {
+    if (!f || (!f.actual && !f.estimate)) return '';
+    let s = '';
+    if (f.estimate) s = '預期 ' + esc(f.estimate);
+    if (f.yoy) s += (s ? '｜' : '') + '年增 ' + esc(f.yoy);
+    return '<div class="fig"><div class="k">' + k + '</div><div class="v">' + esc(f.actual || '—') + '</div>' +
+      (s ? '<div class="s ' + (f.yoy ? cls(f.yoy) : '') + '">' + s + '</div>' : '') + '</div>';
+  }
+
+  function renderDetail(b, ticker) {
+    const found = findItem(b, ticker);
+    if (!found || !found.it.detail) { renderHome(b); return; }
+    const it = found.it, d = it.detail;
+    const v = it.verdict;
+    let h = '<div class="pad"><button type="button" class="back" id="back">← 回到' + esc(b.edition || '快訊') + '</button></div>';
+    h += '<section class="dhead pad"><div class="tk">' + esc(it.ticker) + (d.exchange ? '・' + esc(d.exchange) : '') + '・' + esc(found.sec.title) + '</div>' +
+      '<h2>' + esc(d.headline || it.name) + '</h2>' +
+      '<div class="meta">' + '<span>' + esc(it.name) + (d.name_en ? ' <span class="en">' + esc(d.name_en) + '</span>' : '') + '</span>' +
+      (v ? '<span class="pill ' + esc(v) + '">' + esc(VERDICT[v] || v) + '</span>' : '') +
+      (it.change ? '<span class="chg ' + cls(it.change) + '">' + esc(it.change) + '</span>' : '') +
+      (d.change_note ? '<span class="en">' + esc(d.change_note) + '</span>' : '') + '</div></section>';
+    const figs = fig('營收', d.revenue) + fig('每股盈餘 EPS', d.eps) + (d.extra_figures || []).map(x => fig(esc(x.label), x)).join('');
+    if (figs) h += '<section class="dsec pad"><h4>關鍵數字</h4><div class="figs">' + figs + '</div></section>';
+    if (d.summary) h += '<section class="dsec pad"><h4>重點摘要</h4>' + String(d.summary).split(/\n+/).map(p => '<p>' + esc(p) + '</p>').join('') + '</section>';
+    const kv = [['財測', d.guidance], ['股息', d.dividend], ['管理層', d.management], ['風險', d.risks]].filter(x => x[1]);
+    if (kv.length) h += '<section class="dsec pad"><h4>其他重點</h4><dl class="kv">' + kv.map(x => '<div><dt>' + x[0] + '</dt><dd>' + esc(x[1]) + '</dd></div>').join('') + '</dl></section>';
+    if (d.plain) h += '<section class="dsec pad"><h4>白話版</h4><div class="plainbox">' + esc(d.plain) + '</div></section>';
+    const src = (d.sources || []).filter(s => safeUrl(s.url));
+    if (src.length) h += '<section class="dsec pad"><h4>原始報導</h4><ul class="src">' + src.map(s => '<li><a href="' + esc(s.url) + '" target="_blank" rel="noopener">' + esc(s.title || s.url) + '</a></li>').join('') + '</ul></section>';
+    h += footHTML(b);
+    $('#view').innerHTML = h;
+    $('#back').addEventListener('click', () => go(b.id));
+    window.scrollTo(0, 0);
+  }
+
+  async function go(id, ticker) {
+    try {
+      const b = await loadBrief(id);
+      current = b; b.id = b.id || id;
+      lastView = { id: b.id, ticker: ticker || null, settings: false };
+      renderMast(b); renderSwitch();
+      if (ticker) renderDetail(b, ticker); else renderHome(b);
+      try { history.replaceState(null, '', '#' + id + (ticker ? '~' + slug(ticker) : '')); } catch (e) {}
+      if (!ticker) window.scrollTo(0, 0);
+    } catch (e) {
+      $('#view').innerHTML = '<div class="empty pad"><h2>這一期讀不到</h2><p>請稍後重新整理頁面，或從上方選另一天。</p></div>';
+    }
+  }
+
+  async function start() {
+    watch = readLocal();
+    $('#gear').addEventListener('click', () => { if (current) openSettings(); });
+    initCapabilities();
+    try {
+      const data = await getJSON('briefs/index.json');
+      index = (data.briefs || []).slice().sort((a, b) => a.id < b.id ? 1 : -1);
+    } catch (e) { index = []; }
+    if (!index.length) {
+      $('#when').innerHTML = '<b>尚無資料</b>';
+      $('#strip').hidden = true;
+      $('#view').innerHTML = '<div class="empty pad"><h2>第一份快訊還沒產生</h2><p>每個交易日早上 8:23 和下午 4:53（多倫多時間）自動更新。</p></div>';
+      return;
+    }
+    let id = index[0].id, ticker = null;
+    const hash = (location.hash || '').slice(1);
+    if (hash) {
+      const parts = hash.split('~');
+      if (index.some(b => b.id === parts[0])) { id = parts[0]; ticker = parts[1] || null; }
+    }
+    go(id, ticker);
+  }
+  start();
+})();
+</script>
+</body>
+</html>

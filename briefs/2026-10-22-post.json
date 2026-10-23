@@ -1,0 +1,357 @@
+{
+ "id": "2026-10-22-post",
+ "edition": "盤後快訊",
+ "date": "10/22（四）",
+ "time": "多倫多 16:53",
+ "updated": "10/22 18:47",
+ "indices": [
+  {
+   "name": "TSX",
+   "change": "-1.0%"
+  },
+  {
+   "name": "S&P 500",
+   "change": "-1.2%"
+  },
+  {
+   "name": "Nasdaq",
+   "change": "-2.6%"
+  },
+  {
+   "name": "WTI 原油",
+   "change": "+2.4%"
+  }
+ ],
+ "lead": {
+  "tag": "頭條",
+  "headline": "AI 支出疑慮重擊科技股 那指挫2.6%",
+  "headline_en": "AI spending worries hammer tech; Nasdaq sinks 2.6%",
+  "body": "Meta 財報後市場再度擔心 AI 投資燒錢過快，半導體與 AI 硬體股領跌，Nasdaq 收跌 2.6%、S&P 500 跌 1.2%，道指則持平。多倫多股市同步走弱，金價與銅價回落拖累原物料類股重挫約 4%，TSX 收跌近 1%；中東緊張推升油價至 5 月以來高點，也讓通膨與利率前景更難預料。"
+ },
+ "points": [
+  {
+   "zh": "油價走高：WTI 漲 2.4%，逼近每桶 100 美元",
+   "en": "WTI jumps 2.4% to near US$100 on Middle East supply fears"
+  },
+  {
+   "zh": "盤後：西部數據財測亮眼，Deckers 營收不如預期",
+   "en": "After hours: Western Digital guides strong; Deckers misses on sales"
+  }
+ ],
+ "sections": [
+  {
+   "title": "加拿大",
+   "items": [
+    {
+     "ticker": "MTL",
+     "name": "Mullen 集團",
+     "note": "獲利大增、股價大漲",
+     "verdict": "beat",
+     "change": "+11.5%",
+     "detail": {
+      "headline": "Mullen 第三季獲利年增五成，股價飆近 12%",
+      "name_en": "Mullen Group Ltd.",
+      "exchange": "TSX",
+      "change_note": "收盤",
+      "revenue": {
+       "actual": "C$653.2M",
+       "estimate": "C$614.9M",
+       "yoy": "+16%"
+      },
+      "eps": {
+       "actual": "C$0.52",
+       "estimate": "C$0.41",
+       "yoy": "+37%"
+      },
+      "summary": "這家亞伯達省貨運與物流公司第三季淨利 5,150 萬加元，前一年同期為 3,320 萬；營收 6.53 億加元，年增 16%。成長主要來自內部業務擴張（約 4,430 萬加元），另有燃油附加費增加（約 3,770 萬）與併購貢獻（約 940 萬）。\n服務與基礎建設部門利潤率創疫情後新高，物流與倉儲業務則受惠於跨境競爭減少。調整後每股盈餘 0.52 加元，明顯高於市場預期的 0.41 加元。\n市場關注 2027 年基本計畫（12 月 2 日提交董事會）以及第四季將進行的大筆資本支出。",
+      "guidance": "未給數字財測；管理層表示 2026 年表現優於原先基本預估，2027 年計畫待董事會 12 月核准後公布。",
+      "management": "董事長 Murray Mullen 表示第三季營運表現非常好，資本只會投向能達到約 25% EBITDA 利潤率的項目。",
+      "risks": "第四季起資本支出加大，且稅務優惠帶來的現金效益只是暫時性。",
+      "plain": "Mullen 是加拿大的卡車運輸和物流公司。這一季生意比市場預期好很多，賺的錢比去年多了一半，所以股價當天大漲。主要原因是自家業務成長，加上油價上漲讓燃油附加費收入增加。",
+      "sources": [
+       {
+        "title": "Trucking firm Mullen Group reports $51.5M Q3 profit, revenue up 16% (CP24)",
+        "url": "https://www.cp24.com/news/money/2026/10/22/trucking-firm-mullen-group-reports-515m-q3-profit-revenue-up-16/"
+       },
+       {
+        "title": "Earnings call transcript: Mullen Group tops Q3 2026 estimates, shares jump (Investing.com)",
+        "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-mullen-group-tops-q3-2026-estimates-shares-jump-93CH-4966834"
+       }
+      ]
+     }
+    },
+    {
+     "ticker": "WCN",
+     "name": "Waste Connections 廢棄物處理",
+     "note": "上調全年營收預估、股息加 10%",
+     "verdict": "beat",
+     "change": "+9.5%",
+     "detail": {
+      "headline": "Waste Connections 財報全面優於預期，股息調升一成",
+      "name_en": "Waste Connections, Inc.",
+      "exchange": "TSX",
+      "change_note": "收盤（TSX）",
+      "revenue": {
+       "actual": "US$2.64B",
+       "estimate": "US$2.61B",
+       "yoy": "+7%"
+      },
+      "eps": {
+       "actual": "US$1.58",
+       "estimate": "US$1.52",
+       "yoy": "+10%"
+      },
+      "summary": "這家總部在多倫多的垃圾清運與處理公司週三收盤後公布第三季成績，營收 26.4 億美元、調整後每股盈餘 1.58 美元，兩者都高於市場預期。\n核心價格上漲 5.5%，固體廢棄物量年減 1.2%，但降幅比第二季縮小；調整後 EBITDA 利潤率 34%，即使季末柴油價格急升仍維持住。\n公司今年第二度上調全年營收預估，並把季度股息提高 10%，股價今天在 TSX 大漲約 9.5%。",
+      "guidance": "2026 年營收預估上調至約 101 億美元（原為 100.2–100.5 億美元）。",
+      "dividend": "季度股息調升 10% 至每股 0.385 美元，連續第 16 年雙位數調升。",
+      "management": "執行長 Ronald Mittelstaedt 形容這季是「從上到下全面優於預期」，並克服了季末柴油價格飆升。",
+      "risks": "廢棄物量仍在下滑，長期負債增至 94.3 億美元。",
+      "plain": "Waste Connections 是做垃圾清運和掩埋場的公司，生意穩定、可以年年漲價。這一季賺得比預期多，又宣布提高配息與全年預估，所以股價大漲。需要注意的是收運量仍在減少。",
+      "sources": [
+       {
+        "title": "Waste Connections Soars 10% on Raised 2026 Outlook (TIKR)",
+        "url": "https://www.tikr.com/blog/waste-connections-soars-10-on-raised-2026-outlook-after-another-top-to-bottom-beat"
+       },
+       {
+        "title": "Canada stocks lower at close of trade; S&P/TSX Composite down 0.97% (Investing.com)",
+        "url": "https://www.investing.com/news/stock-market-news/canada-stocks-lower-at-close-of-trade-sptsx-composite-down-097-4967443"
+       }
+      ]
+     }
+    },
+    {
+     "ticker": "FSV",
+     "name": "FirstService 物業服務",
+     "note": "營收年增 6%，股價漲逾 7%",
+     "verdict": "",
+     "change": "+7.4%",
+     "detail": {
+      "headline": "FirstService 第三季營收與獲利溫和成長",
+      "name_en": "FirstService Corporation",
+      "exchange": "TSX",
+      "change_note": "收盤",
+      "revenue": {
+       "actual": "US$1.53B",
+       "yoy": "+6%"
+      },
+      "eps": {
+       "actual": "US$1.89",
+       "yoy": "+7%"
+      },
+      "summary": "這家多倫多物業管理與住宅服務公司今天公布第三季營收 15.3 億美元、年增 6%，調整後每股盈餘 1.89 美元、年增 7%。\n物業管理部門（FirstService Residential）營收增 5%，全部來自自然成長，獲利率改善；品牌服務部門（FirstService Brands）營收增 7%，但屋頂業務利潤下滑，營業利益減少。\n報導未提供市場預期數字，因此無法判斷是否優於預期；股價今天在 TSX 上漲約 7.4%。",
+      "guidance": "執行長表示本季成績強化了達成全年目標的信心，未調整目標。",
+      "management": "執行長 D. Scott Patterson 認為整體表現符合規劃，對全年目標有信心。",
+      "risks": "屋頂業務獲利轉弱，GAAP 每股盈餘由 1.24 美元降至 0.99 美元。",
+      "plain": "FirstService 幫公寓大樓做物業管理，也經營修繕、油漆、屋頂等居家服務品牌。這季生意穩定成長，市場反應正面；不過屋頂業務賺得比去年少。",
+      "sources": [
+       {
+        "title": "FirstService Q3 2026 results press release (SEC Form 6-K)",
+        "url": "https://www.sec.gov/Archives/edgar/data/0001637810/000117184326006754/exh_991.htm"
+       }
+      ]
+     }
+    },
+    {
+     "ticker": "CLS",
+     "name": "天弘（Celestica）",
+     "note": "AI 股賣壓，重挫 12%",
+     "verdict": "",
+     "change": "-12.0%",
+     "detail": {
+      "headline": "AI 硬體股遭拋售，天弘財報前大跌 12%",
+      "name_en": "Celestica Inc.",
+      "exchange": "TSX",
+      "change_note": "收盤",
+      "summary": "天弘今天在 TSX 收跌約 12%，是指數中跌幅最大的權值股之一，也拖累加股科技類股下跌約 1.5%。\n主因是 Meta 財報後市場對 AI 投資規模的疑慮升溫，Nvidia、AMD、Broadcom 等 AI 硬體股全面走弱；此外投資人在下週財報與投資人日前先行減碼。\n公司預計 10 月 26–27 日公布第三季財報，10 月 27 日舉行投資人日。",
+      "management": "本日無公司正式聲明。",
+      "risks": "股價波動大，短期隨 AI 資本支出消息起伏；內部人近 90 天依預設計畫出售持股。",
+      "plain": "天弘替大型科技公司組裝 AI 資料中心用的網路與伺服器設備。今天市場擔心科技巨頭在 AI 上花太多錢、未來可能縮手，所以這類供應商股價大跌，並不是公司本身公布了壞消息。",
+      "sources": [
+       {
+        "title": "Why is Celestica stock tumbling today? (Investing.com)",
+        "url": "https://www.investing.com/news/stock-market-news/why-is-celestica-stock-tumbling-today-93CH-4967215"
+       },
+       {
+        "title": "TSX falls from four-week peak as miners, tech stocks weigh (Reuters via MarketScreener)",
+        "url": "https://www.marketscreener.com/news/tsx-falls-from-four-week-peak-as-miners-tech-stocks-weigh-ce785cdeda8df52d"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "美國",
+   "items": [
+    {
+     "ticker": "META",
+     "name": "Meta",
+     "note": "AI 支出擴大，股價挫約 7%",
+     "verdict": "beat",
+     "change": "-7%",
+     "detail": {
+      "headline": "Meta 財報優於預期，但 AI 支出與發新股引發賣壓",
+      "name_en": "Meta Platforms, Inc.",
+      "exchange": "Nasdaq",
+      "change_note": "收盤（約）",
+      "revenue": {
+       "actual": "$64.6B",
+       "estimate": "$63.34B",
+       "yoy": "+26%"
+      },
+      "eps": {
+       "actual": "$3.83",
+       "estimate": "$3.57"
+      },
+      "summary": "Meta 週三收盤後公布第三季營收 646 億美元、年增 26%，每股盈餘 3.83 美元，都高於市場預期。不過帳上認列約 99 億美元的青少年安全訴訟和解費用，營業利益因此年減 37%。\n公司把 2026 年資本支出下限從 1,300 億美元上調，區間變為 1,350–1,450 億美元，本季自由現金流轉為負值；同時宣布每股配發一股無投票權的 C 類股，效果類似一拆二。\n市場擔心 AI 投資規模持續擴大、C 類股也可能用來籌資，股價今天收跌約 7%，並帶動整個 AI 類股下跌。",
+      "guidance": "第四季營收預估 730–760 億美元；2026 年總費用預估 1,750–1,790 億美元。",
+      "management": "Zuckerberg 表示投資正在回收、核心業務強勁；財務長 Susan Li 說會持續積極投資 AI。",
+      "risks": "資本支出與費用持續攀升，以及訴訟和解總額可能達約 186 億美元。",
+      "plain": "Meta 這季廣告生意很好，賺得比預期多。但它在 AI 上花錢的速度更快，連帶讓投資人擔心整個 AI 產業投資過熱，所以股價和其他科技股一起下跌。",
+      "sources": [
+       {
+        "title": "Meta Class C Stock: New Share With No Vote Announced With Q3 2026 Earnings (Stock Titan)",
+        "url": "https://www.stocktitan.net/articles/meta-q3-2026-earnings-results"
+       },
+       {
+        "title": "Earnings call transcript: Meta beats Q3 2026 estimates (Investing.com)",
+        "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-meta-beats-q3-2026-estimates-as-ai-push-lifts-shares-93CH-4964260"
+       },
+       {
+        "title": "Stock market today: S&P 500, Nasdaq tank as tech stocks sink (Yahoo Finance)",
+        "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-october-22-dow-sp-500-nasdaq-tesla-meta-112217857.html"
+       }
+      ]
+     }
+    },
+    {
+     "ticker": "NEM",
+     "name": "紐蒙特礦業",
+     "note": "獲利創同期新高、調降成本",
+     "verdict": "beat",
+     "change": "",
+     "detail": {
+      "headline": "紐蒙特第三季獲利優於預期，全年成本預估下修",
+      "name_en": "Newmont Corporation",
+      "exchange": "NYSE",
+      "revenue": {
+       "actual": "$6.36B",
+       "yoy": "+15%"
+      },
+      "eps": {
+       "actual": "$2.20",
+       "estimate": "$1.94",
+       "yoy": "+29%"
+      },
+      "summary": "全球最大金礦商紐蒙特收盤後公布第三季調整後每股盈餘 2.20 美元，高於預期的 1.94 美元，營收 63.6 億美元、年增約 15%。黃金產量季增 7% 至 130 萬盎司，平均實現金價每盎司 4,317 美元。\n全維持成本（AISC）降至每盎司 1,545 美元，公司並把全年 AISC 預估由 1,590 美元下修至 1,520 美元。帳上淨現金 32 億美元，自上次財報以來回購約 16 億美元股票。\n紐蒙特同時在 TSX 掛牌；今天金價下跌拖累礦業股，盤後股價反應未見報導。",
+      "guidance": "維持全年產量目標，AISC 預估下修至每盎司 1,520 美元；2027 年產量預計低至中個位數成長、單位成本上升。",
+      "dividend": "宣布季度股息每股 0.26 美元，維持不變。",
+      "management": "執行長 Natascha Viljoen 表示公司可望達成全年產量目標並改善成本表現。",
+      "risks": "油價與通膨上升、副產品產量減少，可能推高年底前的單位成本。",
+      "plain": "紐蒙特是全世界最大的金礦公司。金價維持高檔，加上產量增加、成本下降，這季賺得比市場預期多，還持續買回自家股票。但近期金價回落，礦業股股價波動也會比較大。",
+      "sources": [
+       {
+        "title": "Newmont beats third-quarter earnings expectations (Kitco)",
+        "url": "https://www.kitco.com/news/article/2026-10-22/newmont-beats-third-quarter-earnings-expectations-higher-gold-sales-boost"
+       },
+       {
+        "title": "Newmont Q3 2026 earnings: record adjusted net income (Stock Titan)",
+        "url": "https://www.stocktitan.net/news/NEM/newmont-reports-third-quarter-2026-results-with-record-third-quarter-ldp1hb4lilt7.html"
+       }
+      ]
+     }
+    },
+    {
+     "ticker": "WDC",
+     "name": "西部數據",
+     "note": "營收年增 55%，財測遠高於預期",
+     "verdict": "beat",
+     "change": "",
+     "detail": {
+      "headline": "西部數據營收年增逾五成，下季財測大幅優於預期",
+      "name_en": "Western Digital Corporation",
+      "exchange": "Nasdaq",
+      "change_note": "盤後報導不一",
+      "revenue": {
+       "actual": "$4.38B",
+       "estimate": "$4.15B",
+       "yoy": "+55%"
+      },
+      "eps": {
+       "actual": "$4.64",
+       "estimate": "$4.10"
+      },
+      "summary": "儲存硬碟大廠西部數據公布 2027 財年第一季營收 43.8 億美元、年增 55%，調整後每股盈餘 4.64 美元，都明顯高於市場預期。\n公司預估下一季營收 50–52 億美元，遠高於市場預期的約 45.7 億美元，每股盈餘 5.60–6.00 美元，顯示 AI 資料中心對大容量儲存的需求仍強。\n盤後股價反應各家報導不一（有報導上漲約 4%，也有報導下跌約 3%），在今天科技股大跌的背景下走勢仍待觀察。",
+      "guidance": "下季營收 50–52 億美元、每股盈餘 5.60–6.00 美元，高於市場預期。",
+      "risks": "股價近期大幅回檔，與 AI 類股情緒高度連動。",
+      "plain": "西部數據做的是資料中心用的大容量硬碟。AI 需要存放大量資料，所以它的生意大幅成長，下一季預估也比市場想的好很多。不過今天整個 AI 類股氣氛不佳，股價反應還不明確。",
+      "sources": [
+       {
+        "title": "Western Digital (WDC) Q1 Earnings Beat Expectations (GuruFocus)",
+        "url": "https://www.gurufocus.com/news/9137980/western-digital-wdc-q1-earnings-beat-expectations-shares-rise-42-after-hours"
+       },
+       {
+        "title": "After-Hours Movers: WDC, BE, DECK, FIX, RNG (Investing.com)",
+        "url": "https://www.investing.com/news/stock-market-news/afterhours-movers-wdc-be-deck-fix-rng-432SI-4967532"
+       }
+      ]
+     }
+    },
+    {
+     "ticker": "DECK",
+     "name": "Deckers（HOKA、UGG 母公司）",
+     "note": "營收不如預期、下修營收財測",
+     "verdict": "miss",
+     "change": "-7.3%",
+     "detail": {
+      "headline": "Deckers 營收未達預期並下修財測，盤後挫逾 7%",
+      "name_en": "Deckers Brands",
+      "exchange": "NYSE",
+      "change_note": "盤後",
+      "revenue": {
+       "actual": "$1.48B",
+       "estimate": "$1.51B",
+       "yoy": "+3.5%"
+      },
+      "eps": {
+       "actual": "$2.03",
+       "estimate": "$1.79"
+      },
+      "summary": "HOKA 跑鞋與 UGG 雪靴母公司 Deckers 公布第二財季營收 14.8 億美元、年增 3.5%，低於市場預期；調整後每股盈餘 2.03 美元則優於預期，另含關稅退款帶來的一次性收益。\nHOKA 營收 6.77 億美元、增 7%，UGG 營收 7.86 億美元、增 4%，但 UGG 直營通路下滑 8%，美國運動鞋市場促銷競爭激烈。\n公司把全年營收預估定在 57–57.25 億美元，低於市場預期的約 58.8 億美元，盤後股價下跌約 7%。",
+      "guidance": "全年營收 57–57.25 億美元（低於預期），每股盈餘 7.80–7.95 美元；第三季營收低個位數成長。",
+      "management": "執行長 Stefano Caroti 表示公司不會加入「殺價競爭」，寧可追求健康、有利潤的成長。",
+      "risks": "美國促銷壓力、歐洲物流轉換延誤出貨約 2,200 萬美元、運費上升。",
+      "plain": "Deckers 旗下有 HOKA 和 UGG 兩大鞋款品牌。這季賺的錢比預期多，但賣出的金額不如預期，公司也調低了全年營收預估，顯示成長在放慢，因此股價在盤後下跌。",
+      "sources": [
+       {
+        "title": "Earnings call transcript: Deckers Q2 2027 beats EPS but shares drop 7.3% (Investing.com)",
+        "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-deckers-q2-2027-beats-eps-but-shares-drop-73-93CH-4967677"
+       },
+       {
+        "title": "After-Hours Movers: WDC, BE, DECK, FIX, RNG (Investing.com)",
+        "url": "https://www.investing.com/news/stock-market-news/afterhours-movers-wdc-be-deck-fix-rng-432SI-4967532"
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "macro": [
+  {
+   "text": "油價升至 5 月以來高點，WTI 近 100 美元",
+   "detail": "WTI 原油收在每桶約 99.5 美元，布蘭特原油逾 112 美元。報導指出沙烏地機場與 Aramco 油田遭攻擊，加上美以可能再度攻擊伊朗的消息，引發供應中斷疑慮。油價走高對加股能源類有支撐，但也增加通膨壓力。"
+  },
+  {
+   "text": "加拿大 9 月工業產品價格上升 2.0%",
+   "detail": "加拿大統計局公布 9 月生產者物價上升 2.0%，高於 8 月的 1.3%，反映能源成本上揚。明天早上 8:30 將公布 8 月零售銷售。"
+  },
+  {
+   "text": "美國初領失業金降至 19.4 萬，10 年期美債殖利率回落",
+   "detail": "上週初領失業救濟金人數降至 19.4 萬人，為三個月低點，顯示就業市場仍穩。10 年期美債殖利率盤中一度約 5.02%，之後回落至約 4.95%；市場對利率長期維持高檔的預期也壓抑了金價。"
+  }
+ ],
+ "next_label": "明早財報",
+ "next": "RCI.B 羅渣士通訊、AXP 美國運通、SLB 斯倫貝謝",
+ "sources": "BNN Bloomberg、Reuters、Yahoo Finance、Investing.com、Kitco、CP24"
+}
