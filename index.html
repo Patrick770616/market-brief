@@ -592,7 +592,8 @@ a { color: inherit; }
     initCapabilities();
     try {
       const data = await getJSON('briefs/index.json');
-      index = (data.briefs || []).slice().sort((a, b) => a.id < b.id ? 1 : -1);
+      const k = id => String(id || '').replace(/-pre$/, '-1').replace(/-post$/, '-2');
+      index = (data.briefs || []).slice().sort((a, b) => k(a.id) < k(b.id) ? 1 : -1);
     } catch (e) { index = []; }
     if (!index.length) {
       $('#when').innerHTML = '<b>尚無資料</b>';
