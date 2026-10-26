@@ -28,7 +28,10 @@ entries = [e for e in idx.get("briefs", []) if e.get("id") != bid and not e.get(
 entries.append({"id": bid, "date": brief.get("date", ""), "edition": brief.get("edition", ""),
                 "headline": (brief.get("lead") or {}).get("headline", "")})
 entries.sort(key=lambda e: e["id"], reverse=True)
-keep, drop = entries[:60], entries[60:]
+# 只保留和這一期同一天的快訊（盤前、盤後），其他日期的刪掉
+day = bid[:10]
+keep = [e for e in entries if e["id"].startswith(day)]
+drop = [e for e in entries if not e["id"].startswith(day)]
 for e in drop:
     try: os.remove(os.path.join(ROOT, "briefs", e["id"] + ".json"))
     except FileNotFoundError: pass

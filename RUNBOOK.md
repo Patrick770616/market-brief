@@ -19,7 +19,7 @@
    - 觀察清單每一檔都要查（最多 20 檔）。有消息的放完整公司物件（含 detail）；沒消息的只填 ticker、name（盤後可填今日漲跌 change），note 寫「近一日無重大消息」（盤後寫「今日無重大消息」），verdict 留空，不放 detail。已出現在加拿大或美國區塊的也要再列一次。
    - 所有數字必須來自搜尋到的來源，查不到就留空或省略，絕不估計。用自己的話寫，不照抄原句。
 5. 把資料寫成 JSON（放在 repo 以外，例如 scratchpad 的 `out/<id>.json`），格式見下。
-6. 在 repo 根目錄：`python3 scripts/add_brief.py <資料檔絕對路徑>`。不要改 index.html、config.js 或其他檔案。
+6. 在 repo 根目錄：`python3 scripts/add_brief.py <資料檔絕對路徑>`。它只會保留同一天的盤前和盤後，舊日期的資料會自動刪除。不要改 index.html、config.js 或其他檔案。
 7. 發布：`git add briefs`，`git -c user.name="Claude" -c user.email="noreply@anthropic.com" commit -m "盤前快訊 <id>"`（或「盤後快訊」，附上對話規定的 attribution 行），`git push origin main`；被拒就 `git pull --rebase origin main` 再推一次。
 8. 用 SendUserMessage（繁體中文、純文字）傳三行：`📊 盤前快訊 {日期}`（或盤後）、頭條標題、網站網址。推送失敗就改傳精簡純文字快訊並說明原因。
 9. **接力排下一次**：用 send_later 排「下一個交易日、同一個時段」（盤前 08:23、盤後 16:53，多倫多時間；週五排到下週一；美加都休市的日子跳過）。`at` 用 UTC，依那一天多倫多是否為夏令時間換算（EDT = UTC−4，EST = UTC−5；2026 年 11 月 1 日起為 EST）。`name` 用「盤前快訊（接力）」或「盤後快訊（接力）」，`initiation` 用 `human_schedule`，`message` 原封不動複製這次收到的提醒文字。這一步不論前面成功或失敗都要做，並在第 8 步的訊息後面附一行說明下次執行時間。
