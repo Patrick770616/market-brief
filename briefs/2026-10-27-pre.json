@@ -1,0 +1,196 @@
+{
+ "id": "2026-10-27-pre",
+ "edition": "盤前快訊",
+ "date": "10/27（二）",
+ "time": "多倫多 08:23",
+ "updated": "10/27 08:45",
+ "indices": [
+  {
+   "name": "道瓊期指",
+   "change": "+0.14%"
+  },
+  {
+   "name": "S&P 期指",
+   "change": "+0.05%"
+  },
+  {
+   "name": "Nasdaq 期指",
+   "change": "+0.01%"
+  }
+ ],
+ "lead": {
+  "tag": "頭條",
+  "headline": "可口可樂財報優於預期 上調全年財測",
+  "headline_en": "Coca-Cola beats estimates and raises full-year outlook",
+  "body": "可口可樂第三季營收和獲利都超出預期，並上調 2026 年獲利成長目標，股價盤前小漲。美股期指大致持平，市場等待週三聯準會與加拿大央行利率決策，原油仍在 4 月以來高位附近。"
+ },
+ "points": [
+  {
+   "zh": "Celestica 財報大幅優於預期，盤後大漲近 17%",
+   "en": "Celestica jumps about 17% after hours on a big beat"
+  },
+  {
+   "zh": "波音營收優於預期，但每股虧損大於預期",
+   "en": "Boeing tops on revenue but posts a wider-than-expected loss"
+  }
+ ],
+ "sections": [
+  {
+   "title": "加拿大",
+   "items": [
+    {
+     "ticker": "CLS",
+     "name": "Celestica",
+     "note": "AI 需求強，盤後大漲",
+     "verdict": "beat",
+     "change": "+16.9%",
+     "detail": {
+      "headline": "Celestica 昨晚財報後股價大漲，2027 營收目標 400 億",
+      "name_en": "Celestica Inc.",
+      "exchange": "TSX / NYSE",
+      "change_note": "昨日盤後（紐約掛牌股）",
+      "revenue": {
+       "actual": "$5.83B",
+       "estimate": "$5.48B",
+       "yoy": "+83%"
+      },
+      "eps": {
+       "actual": "$3.30",
+       "estimate": "$2.99",
+       "yoy": "+109%"
+      },
+      "summary": "昨天收盤後公布的第三季成績遠超預期：營收 58.3 億美元，年增 83%；調整後每股盈餘 3.30 美元，年增一倍以上。\n公司上調 2026 全年營收至 210 億美元，並公布 2027 年營收目標 400 億美元。股價在盤後大漲近 17%，今天開盤是焦點。",
+      "guidance": "第四季營收預估 62.75–65.75 億美元；2026 全年調整後 EPS 上調至 11.55 美元",
+      "risks": "成長集中在少數大型雲端與 AI 客戶",
+      "plain": "這家加拿大公司幫大型科技公司生產 AI 資料中心設備，生意比去年多了八成，所以股價大漲。",
+      "sources": [
+       {
+        "title": "Coca-Cola, Boeing And 3 Stocks To Watch Heading Into Tuesday（Benzinga）",
+        "url": "https://www.benzinga.com/markets/equities/26/10/62609300/coca-cola-boeing-and-3-stocks-to-watch-heading-into-tuesday"
+       },
+       {
+        "title": "Celestica Q3 2026 財報新聞稿（GlobeNewswire）",
+        "url": "https://www.globenewswire.com/news-release/2026/10/26/3388573/0/en/celestica-announces-third-quarter-2026-financial-results-and-will-hold-2026-investor-and-analyst-day.html"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "美國",
+   "items": [
+    {
+     "ticker": "KO",
+     "name": "可口可樂",
+     "note": "營收年增 7%，上調財測",
+     "verdict": "beat",
+     "change": "+0.4%",
+     "detail": {
+      "headline": "可口可樂第三季營收 134 億美元，全年獲利目標上調",
+      "name_en": "The Coca-Cola Company",
+      "exchange": "NYSE",
+      "change_note": "盤前",
+      "revenue": {
+       "actual": "$13.4B",
+       "estimate": "$12.93B",
+       "yoy": "+7%"
+      },
+      "eps": {
+       "actual": "$0.91",
+       "estimate": "$0.88"
+      },
+      "summary": "第三季營收 134 億美元，年增 7%；調整後每股盈餘 0.91 美元，都高於預期。全球銷量成長 5%，主要來自印度、中國、墨西哥和巴西，零卡可樂成長 16%。\n營業利益率從 32.0% 升到 33.4%。",
+      "guidance": "2026 年有機營收成長至少 5%、可比 EPS 成長至少 11%（原 9–10%），自由現金流至少 130 億美元",
+      "management": "執行長 Henrique Braun 表示，本季成績展現整體體系的持續動能",
+      "plain": "可口可樂這一季賣得比預期好，尤其新興市場，所以公司把全年賺錢的目標往上調。",
+      "sources": [
+       {
+        "title": "Coca-Cola beats third quarter estimates on strong revenue（Investing.com）",
+        "url": "https://www.investing.com/news/earnings/cocacola-beats-third-quarter-estimates-on-strong-revenue-4975022"
+       }
+      ]
+     }
+    },
+    {
+     "ticker": "BA",
+     "name": "波音",
+     "note": "營收優於預期、虧損較預期大",
+     "verdict": "inline",
+     "change": "",
+     "detail": {
+      "headline": "波音第三季營收 242 億美元，虧損大幅收窄",
+      "name_en": "The Boeing Company",
+      "exchange": "NYSE",
+      "revenue": {
+       "actual": "$24.2B",
+       "estimate": "$23.84B",
+       "yoy": "+4%"
+      },
+      "eps": {
+       "actual": "-$0.34",
+       "estimate": "-$0.21"
+      },
+      "summary": "第三季營收 242 億美元，年增 4%，高於預期；核心每股虧損 0.34 美元，比去年同期的 7.47 美元大幅改善，但比市場預期的虧損大。\n本季交付 161 架商用飛機，自由現金流轉正至 5 億美元，未交訂單創新高，達 7,450 億美元。",
+      "management": "執行長 Kelly Ortberg 表示公司持續專注在安全與品質，737 朝每月 47 架的穩定產能邁進",
+      "risks": "737 MAX 產能能否穩定提升仍是市場焦點",
+      "plain": "波音的營收比預期好，也比去年少虧很多，但虧損還是比分析師估的多一點，所以算好壞參半。",
+      "sources": [
+       {
+        "title": "Boeing Reports Third Quarter Results（PR Newswire）",
+        "url": "https://www.prnewswire.com/news-releases/boeing-reports-third-quarter-results-302920638.html"
+       },
+       {
+        "title": "Coca-Cola, Boeing And 3 Stocks To Watch Heading Into Tuesday（Benzinga）",
+        "url": "https://www.benzinga.com/markets/equities/26/10/62609300/coca-cola-boeing-and-3-stocks-to-watch-heading-into-tuesday"
+       }
+      ]
+     }
+    },
+    {
+     "ticker": "WHR",
+     "name": "惠而浦",
+     "note": "財報不如預期，下修財測",
+     "verdict": "miss",
+     "change": "-8.8%"
+    }
+   ]
+  },
+  {
+   "title": "觀察清單",
+   "items": [
+    {
+     "ticker": "RY",
+     "name": "皇家銀行",
+     "note": "近一日無重大消息",
+     "verdict": "",
+     "change": ""
+    },
+    {
+     "ticker": "SPCX",
+     "name": "SpaceX",
+     "note": "近一日無重大消息",
+     "verdict": "",
+     "change": ""
+    }
+   ]
+  }
+ ],
+ "macro": [
+  {
+   "text": "週三聯準會決策，市場預期按兵不動",
+   "detail": "聯準會上個月才升息，交易員預期到 2027 年中至少還會再升息兩次，主因美伊衝突下通膨偏高。"
+  },
+  {
+   "text": "原油維持在 4 月以來高位附近",
+   "detail": "前一天下跌後今天小幅回升，布蘭特油價接近 4 月下旬以來最高。"
+  },
+  {
+   "text": "美國期中選舉 11 月 3 日登場",
+   "detail": "選舉結果可能影響後續財政與產業政策，市場開始關注。"
+  }
+ ],
+ "next_label": "本週財報",
+ "next": "PYPL PayPal（今天盤前）；本週稍後 GOOGL Alphabet、MSFT Microsoft、AMZN Amazon",
+ "sources": "Reuters（Investing.com）、Benzinga、Investing.com、PR Newswire、GlobeNewswire"
+}
