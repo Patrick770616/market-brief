@@ -1,0 +1,137 @@
+{
+ "id": "2026-10-28-pre",
+ "edition": "盤前快訊",
+ "date": "10/28（三）",
+ "time": "多倫多 08:23",
+ "updated": "10/28 08:45",
+ "indices": [
+  {
+   "name": "道瓊期指",
+   "change": "-0.17%"
+  },
+  {
+   "name": "S&P 期指",
+   "change": "+0.10%"
+  },
+  {
+   "name": "Nasdaq 期指",
+   "change": "+0.41%"
+  }
+ ],
+ "lead": {
+  "tag": "頭條",
+  "headline": "加央行與聯準會今日同步決策",
+  "headline_en": "Bank of Canada and Fed both decide on rates today",
+  "body": "加拿大央行上午 9:45 公布利率決策，目前利率 2.25%，市場對是否升息一碼看法分歧。聯準會下午 2 點公布，預期按兵不動。收盤後還有 Alphabet 和 Microsoft 財報，科技股期指偏多。"
+ },
+ "points": [
+  {
+   "zh": "GE Vernova 訂單年增 96%，全年財測全面上調",
+   "en": "GE Vernova orders nearly double; full-year outlook raised"
+  },
+  {
+   "zh": "SK Hynix 獲利暴增，帶動 Micron 等記憶體股盤前大漲",
+   "en": "SK Hynix profit surge lifts memory chip stocks premarket"
+  }
+ ],
+ "sections": [
+  {
+   "title": "美國",
+   "items": [
+    {
+     "ticker": "GEV",
+     "name": "GE Vernova",
+     "note": "訂單翻倍，上調全年財測",
+     "verdict": "",
+     "change": "",
+     "detail": {
+      "headline": "GE Vernova 第三季訂單 293 億美元，年增 96%",
+      "name_en": "GE Vernova Inc.",
+      "exchange": "NYSE",
+      "revenue": {
+       "actual": "$12.6B",
+       "yoy": "+27%"
+      },
+      "eps": {
+       "actual": "$4.81"
+      },
+      "summary": "電力設備大廠 GE Vernova 第三季訂單約 293 億美元，年增 96%，主要來自發電設備；營收 126 億美元，年增 27%。\n每股盈餘 4.81 美元，去年同期為 1.64 美元；自由現金流 54 億美元。未完成訂單達 1,970 億美元。",
+      "guidance": "2026 營收上調至 465–475 億美元，自由現金流上調至 160–170 億美元，調整後 EBITDA 利潤率上調至 13.5–14.5%",
+      "management": "執行長 Scott Strazik 預期第四季未完成訂單將超過 2,000 億美元",
+      "plain": "AI 資料中心很耗電，各地都在蓋發電設施，GE Vernova 賣發電設備，訂單比去年多了將近一倍。",
+      "sources": [
+       {
+        "title": "GE Vernova Q3 2026 新聞稿（SEC 8-K）",
+        "url": "https://www.sec.gov/Archives/edgar/data/0001996810/000199681026000162/gevpressrelease3q26.htm"
+       }
+      ]
+     }
+    },
+    {
+     "ticker": "HOOD",
+     "name": "Robinhood",
+     "note": "獲利不如預期",
+     "verdict": "miss",
+     "change": "-8%"
+    },
+    {
+     "ticker": "STX",
+     "name": "Seagate",
+     "note": "財報後股價走弱",
+     "verdict": "",
+     "change": "-3.7%"
+    },
+    {
+     "ticker": "V",
+     "name": "Visa",
+     "note": "財報後小跌",
+     "verdict": "",
+     "change": "-1.7%"
+    },
+    {
+     "ticker": "MU",
+     "name": "Micron",
+     "note": "SK Hynix 獲利暴增帶動",
+     "verdict": "",
+     "change": "+4%"
+    }
+   ]
+  },
+  {
+   "title": "觀察清單",
+   "items": [
+    {
+     "ticker": "RY",
+     "name": "皇家銀行",
+     "note": "近一日無個股消息；留意今天加央行決策",
+     "verdict": "",
+     "change": ""
+    },
+    {
+     "ticker": "SPCX",
+     "name": "SpaceX",
+     "note": "近一日無重大消息",
+     "verdict": "",
+     "change": ""
+    }
+   ]
+  }
+ ],
+ "macro": [
+  {
+   "text": "加拿大央行 9:45 公布利率決策（目前 2.25%）",
+   "detail": "部分市場預測升息一碼到 2.5%，也有預測認為會維持不變。同時發布貨幣政策報告，對房貸利率、加幣和銀行股影響最直接。"
+  },
+  {
+   "text": "聯準會 14:00 公布決策，預期暫停升息",
+   "detail": "聯準會上個月剛升息。因中東衝突推高能源價格、通膨偏高，市場仍預期到 2027 年底至少再升息三次。"
+  },
+  {
+   "text": "週四美國 9 月 PCE 物價與第三季 GDP",
+   "detail": "第三季 GDP 預期成長 3.2%，PCE 是聯準會最重視的通膨指標。"
+  }
+ ],
+ "next_label": "今晚財報",
+ "next": "GOOGL Alphabet、MSFT Microsoft",
+ "sources": "Reuters（SRN News）、Yahoo Finance、GE Vernova（SEC 8-K）"
+}
