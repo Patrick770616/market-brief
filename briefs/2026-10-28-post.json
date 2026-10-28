@@ -1,0 +1,188 @@
+{
+ "id": "2026-10-28-post",
+ "edition": "盤後快訊",
+ "date": "10/28（三）",
+ "time": "多倫多 16:53",
+ "updated": "10/28 17:15",
+ "indices": [
+  {
+   "name": "TSX",
+   "change": "+0.26%"
+  },
+  {
+   "name": "加央行利率",
+   "change": "+0.25"
+  },
+  {
+   "name": "原油",
+   "change": "-1.01%"
+  }
+ ],
+ "lead": {
+  "tag": "頭條",
+  "headline": "加央行升息一碼至 2.5% 聯準會按兵不動",
+  "headline_en": "Bank of Canada hikes to 2.5%; Fed holds steady",
+  "body": "加拿大央行今天升息一碼到 2.5%，理由是能源價格推高通膨，而且比預期更持久，並表示未來可能需要再升息。聯準會維持利率在 3.75%–4% 不變，但有兩位理事主張升息。收盤後 Microsoft 財報優於預期，Alphabet 雲端營收翻倍。"
+ },
+ "points": [
+  {
+   "zh": "Microsoft 營收年增 19%、Azure 成長 48%，盤後漲約 4%",
+   "en": "Microsoft beats; Azure grows 48%, shares up about 4% after hours"
+  },
+  {
+   "zh": "Alphabet 雲端營收翻倍，但資本支出高，盤後跌約 8%",
+   "en": "Alphabet cloud doubles, but heavy capex sends shares down about 8%"
+  }
+ ],
+ "sections": [
+  {
+   "title": "加拿大",
+   "items": [
+    {
+     "ticker": "CLS",
+     "name": "Celestica",
+     "note": "財報後連三天上漲",
+     "verdict": "",
+     "change": "+8.3%"
+    },
+    {
+     "ticker": "BHC",
+     "name": "博士康",
+     "note": "TSX 漲幅第一",
+     "verdict": "",
+     "change": "+9.0%"
+    },
+    {
+     "ticker": "GFL",
+     "name": "GFL 環境",
+     "note": "跌幅居前",
+     "verdict": "",
+     "change": "-3.7%"
+    }
+   ]
+  },
+  {
+   "title": "美國",
+   "items": [
+    {
+     "ticker": "MSFT",
+     "name": "Microsoft 微軟",
+     "note": "Azure 成長 48%，優於預期",
+     "verdict": "beat",
+     "change": "+4%",
+     "detail": {
+      "headline": "微軟營收 923 億美元年增 19%，Azure 成長 48%",
+      "name_en": "Microsoft Corporation",
+      "exchange": "Nasdaq",
+      "change_note": "盤後",
+      "revenue": {
+       "actual": "$92.3B",
+       "yoy": "+19%"
+      },
+      "eps": {
+       "actual": "$4.89",
+       "yoy": "+18%"
+      },
+      "summary": "微軟 2027 財年第一季營收 923 億美元，年增 19%；排除 OpenAI 投資影響的每股盈餘 4.89 美元，年增 18%。\n雲端事業（Microsoft Cloud）營收 639 億美元，年增 30%，其中 Azure 成長 48%。市場報導指出營收和獲利都優於預期，股價盤後上漲約 4%。",
+      "management": "執行長 Satya Nadella 表示，微軟在整個技術架構上為客戶提供更多能力、選擇和成本效益",
+      "plain": "微軟的雲端服務 Azure 因為 AI 需求成長很快，這一季賺得比預期多，股價盤後上漲。",
+      "sources": [
+       {
+        "title": "Microsoft FY27 Q1 Press Release",
+        "url": "https://www.microsoft.com/en-us/investor/earnings/fy-2027-q1/press-release-webcast"
+       },
+       {
+        "title": "Microsoft stock jumps 4% as cloud growth drives earnings and revenue beat（CNBC）",
+        "url": "https://www.cnbc.com/2026/10/28/microsoft-msft-q1-earnings-report-2027.html"
+       }
+      ]
+     }
+    },
+    {
+     "ticker": "GOOGL",
+     "name": "Alphabet（Google）",
+     "note": "雲端翻倍，但支出大增",
+     "verdict": "",
+     "change": "-8%",
+     "detail": {
+      "headline": "Alphabet 營收 1,276 億美元年增 25%，Google Cloud 成長 103%",
+      "name_en": "Alphabet Inc.",
+      "exchange": "Nasdaq",
+      "change_note": "盤後",
+      "revenue": {
+       "actual": "$127.6B",
+       "yoy": "+25%"
+      },
+      "eps": {
+       "actual": "$2.12",
+       "yoy": "-26%"
+      },
+      "summary": "Alphabet 第三季營收 1,276 億美元，年增 25%；Google Cloud 營收 307 億美元，比去年翻倍（+103%），主要來自雲端平台和 TPU 晶片系統銷售。\n每股盈餘 2.12 美元，低於去年的 2.87 美元，主要因為 87 億美元的股權投資損失。本季資本支出高達 514 億美元，市場擔心 AI 投資太燒錢，股價盤後下跌約 8%。",
+      "risks": "AI 資本支出持續大增，市場質疑投資回報",
+      "plain": "Google 的雲端生意比去年多了一倍，但它花在 AI 設備上的錢非常多，加上投資虧損讓帳面獲利變少，所以股價盤後下跌。",
+      "sources": [
+       {
+        "title": "Alphabet Posts 25% Revenue Growth as Google Cloud Jumps 103%（Unite.AI）",
+        "url": "https://www.unite.ai/alphabet-posts-25-revenue-growth-as-google-cloud-jumps-103/"
+       },
+       {
+        "title": "Alphabet Stock Falls 8% Even as Cloud Sales Double（BeInCrypto）",
+        "url": "https://beincrypto.com/alphabet-stock-falls-cloud-ai-spending/"
+       }
+      ]
+     }
+    },
+    {
+     "ticker": "VRT",
+     "name": "Vertiv",
+     "note": "財報亮眼並上調財測",
+     "verdict": "beat",
+     "change": "+17.3%"
+    },
+    {
+     "ticker": "ENPH",
+     "name": "Enphase",
+     "note": "第四季營收預估偏弱",
+     "verdict": "miss",
+     "change": "-17.1%"
+    }
+   ]
+  },
+  {
+   "title": "觀察清單",
+   "items": [
+    {
+     "ticker": "RY",
+     "name": "皇家銀行",
+     "note": "今日無個股消息；加央行升息影響銀行股",
+     "verdict": "",
+     "change": ""
+    },
+    {
+     "ticker": "SPCX",
+     "name": "SpaceX",
+     "note": "今日無重大消息",
+     "verdict": "",
+     "change": ""
+    }
+   ]
+  }
+ ],
+ "macro": [
+  {
+   "text": "加拿大央行升息一碼至 2.5%",
+   "detail": "央行指出通膨比 7 月預估更高、更持久，預期年底 CPI 約 3.5%，2027 年平均 3%，要到 2028 年中才回到 2%。聲明表示未來可能需要再升息，下次決策在 12 月 9 日。"
+  },
+  {
+   "text": "聯準會維持利率 3.75%–4%，兩位理事主張升息",
+   "detail": "投票結果 10 比 2，Cook 和 Hammack 主張升息一碼。聲明說通膨仍然偏高，需要更多資料再決定下一步。"
+  },
+  {
+   "text": "明天美國 9 月 PCE 與第三季 GDP",
+   "detail": "PCE 是聯準會最重視的通膨指標，第三季 GDP 預期成長約 3.2%。"
+  }
+ ],
+ "next_label": "明早財報",
+ "next": "本週稍後還有 AMZN Amazon；IMO 帝國石油週五公布",
+ "sources": "Bank of Canada、Federal Reserve、Investing.com、StockTitan、Microsoft、Unite.AI、CNBC、BeInCrypto"
+}
