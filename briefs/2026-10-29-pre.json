@@ -1,0 +1,151 @@
+{
+ "id": "2026-10-29-pre",
+ "edition": "盤前快訊",
+ "date": "10/29（四）",
+ "time": "多倫多 08:23",
+ "updated": "10/29 08:50",
+ "indices": [
+  {
+   "name": "道瓊期指",
+   "change": "+0.51%"
+  },
+  {
+   "name": "S&P 期指",
+   "change": "-0.26%"
+  },
+  {
+   "name": "Nasdaq 期指",
+   "change": "-1.01%"
+  }
+ ],
+ "lead": {
+  "tag": "頭條",
+  "headline": "Alphabet 盤前重挫一成 拖累科技期指",
+  "headline_en": "Alphabet sinks 10% premarket, dragging tech futures",
+  "body": "Alphabet 搜尋廣告表現偏弱、AI 支出大增，盤前大跌約 10%，Nasdaq 期指跌約 1%。微軟則因現金流和雲端展望優於預期，盤前漲 3.6%。今天稍後公布美國 9 月 PCE 物價和第三季 GDP。"
+ },
+ "points": [
+  {
+   "zh": "Teck 第三季調整後獲利翻倍以上，銅價創新高",
+   "en": "Teck's adjusted profit more than doubles on record copper prices"
+  },
+  {
+   "zh": "市場預估聯準會 12 月升息機率逾八成",
+   "en": "Markets see over 80% odds of a December Fed hike"
+  }
+ ],
+ "sections": [
+  {
+   "title": "加拿大",
+   "items": [
+    {
+     "ticker": "TECK.B",
+     "name": "泰克資源",
+     "note": "調整後獲利年增 148%",
+     "verdict": "",
+     "change": "",
+     "detail": {
+      "headline": "泰克第三季調整後 EBITDA 23 億加元，年增 97%",
+      "name_en": "Teck Resources",
+      "exchange": "TSX / NYSE",
+      "revenue": {
+       "actual": "C$4.52B",
+       "yoy": "+33%"
+      },
+      "eps": {
+       "actual": "C$1.88",
+       "yoy": "+147%"
+      },
+      "summary": "銅礦商泰克第三季營收 45.2 億加元；調整後 EBITDA 23 億加元，年增 97%；調整後每股盈餘 1.88 加元，去年同期為 0.76 加元。\n銅產量 11.57 萬噸，年增 11%，單位現金成本降到每磅 1.77 美元。智利 QB 礦場受 8 月惡劣天氣影響，產量比上一季少。",
+      "guidance": "2026 銅產量預估 45.5–53 萬噸，因 Carmen de Andacollo 礦場停工，整體可能落在低端；單位成本預估下修至每磅 1.80–2.00 美元",
+      "management": "執行長 Jonathan Price 表示，第三季成績展現業務的基本實力，受惠於產量提升和創紀錄的銅價",
+      "risks": "與 Anglo American 的合併仍待監管核准，預計在宣布後 12–18 個月內完成",
+      "plain": "銅價創新高，泰克又挖得比去年多、成本更低，所以這一季賺的錢是去年的兩倍多。",
+      "sources": [
+       {
+        "title": "Teck Reports Unaudited Third Quarter Results for 2026（GlobeNewswire）",
+        "url": "https://www.globenewswire.com/news-release/2026/10/29/3390899/0/en/teck-reports-unaudited-third-quarter-results-for-2026.html"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "美國",
+   "items": [
+    {
+     "ticker": "GOOGL",
+     "name": "Alphabet（Google）",
+     "note": "搜尋廣告偏弱、AI 支出大增",
+     "verdict": "miss",
+     "change": "-10.2%"
+    },
+    {
+     "ticker": "MSFT",
+     "name": "Microsoft 微軟",
+     "note": "現金流與雲端展望優於預期",
+     "verdict": "beat",
+     "change": "+3.6%"
+    },
+    {
+     "ticker": "FTNT",
+     "name": "Fortinet",
+     "note": "財報後重挫",
+     "verdict": "",
+     "change": "-25%"
+    },
+    {
+     "ticker": "NOW",
+     "name": "ServiceNow",
+     "note": "財報後大跌",
+     "verdict": "",
+     "change": "-18.2%"
+    },
+    {
+     "ticker": "MRVL",
+     "name": "Marvell",
+     "note": "傳洽購 Lumentum",
+     "verdict": "",
+     "change": "-9.7%"
+    }
+   ]
+  },
+  {
+   "title": "觀察清單",
+   "items": [
+    {
+     "ticker": "RY",
+     "name": "皇家銀行",
+     "note": "近一日無個股消息",
+     "verdict": "",
+     "change": ""
+    },
+    {
+     "ticker": "SPCX",
+     "name": "SpaceX",
+     "note": "近一日無重大消息",
+     "verdict": "",
+     "change": ""
+    }
+   ]
+  }
+ ],
+ "macro": [
+  {
+   "text": "今天公布美國 9 月 PCE 物價與第三季 GDP",
+   "detail": "PCE 是聯準會最重視的通膨指標。聯準會昨天按兵不動，但 CME FedWatch 顯示市場認為 12 月升息機率超過 81%。"
+  },
+  {
+   "text": "加央行昨天升息至 2.5%",
+   "detail": "央行表示未來可能還需要再升息，下次決策在 12 月 9 日。"
+  },
+  {
+   "text": "原油盤前小跌",
+   "detail": "中東衝突帶來的能源價格仍是通膨偏高的主因。"
+  }
+ ],
+ "next_label": "今晚財報",
+ "next": "AMZN Amazon、INTC Intel；週五 IMO 帝國石油",
+ "sources": "Reuters（Yahoo Finance）、GlobeNewswire、Bank of Canada"
+}
