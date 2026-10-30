@@ -1,0 +1,135 @@
+{
+ "id": "2026-10-30-pre",
+ "edition": "盤前快訊",
+ "date": "10/30（五）",
+ "time": "多倫多 08:23",
+ "updated": "10/30 08:55",
+ "indices": [
+  {
+   "name": "道瓊期指",
+   "change": "0.0%"
+  },
+  {
+   "name": "S&P 期指",
+   "change": "-1.0%"
+  },
+  {
+   "name": "Nasdaq 期指",
+   "change": "-2.3%"
+  },
+  {
+   "name": "WTI 原油",
+   "change": "+2.1%"
+  }
+ ],
+ "lead": {
+  "tag": "頭條",
+  "headline": "英特爾暴跌兩成五 科技股期指重挫",
+  "headline_en": "Intel plunges 25%, tech futures tumble",
+  "body": "英特爾第四季財測疲弱，盤前大跌超過 25%；Amazon 財報不如預期、假期季財測保守，盤前跌近 7%，Nasdaq 期指跌約 2.3%。荷莫茲海峽油輪遇襲，油價漲逾 2%。"
+ },
+ "points": [
+  {
+   "zh": "帝國石油獲利優於預期，煉油利潤改善",
+   "en": "Imperial Oil beats on stronger refining margins"
+  },
+  {
+   "zh": "幣安遭駭 63.6 億美元，比特幣跌約 3%",
+   "en": "Binance hit by a $6.36B hack; bitcoin falls about 3%"
+  }
+ ],
+ "sections": [
+  {
+   "title": "加拿大",
+   "items": [
+    {
+     "ticker": "IMO",
+     "name": "帝國石油",
+     "note": "煉油利潤改善，獲利優於預期",
+     "verdict": "beat",
+     "change": "",
+     "detail": {
+      "headline": "帝國石油第三季每股盈餘 5.11 加元，優於預期",
+      "name_en": "Imperial Oil Limited",
+      "exchange": "TSX / NYSE American",
+      "eps": {
+       "actual": "C$5.11",
+       "estimate": "C$4.70"
+      },
+      "summary": "帝國石油第三季每股盈餘 5.11 加元，高於分析師平均預期的 4.70 加元。\n下游煉油事業獲利 15.6 億加元，去年同期只有 4.44 億，受惠於煉油利潤改善和產品組合較好；原油產量下降抵銷了一部分收益。",
+      "risks": "原油產量較低；油價受中東情勢影響波動大",
+      "plain": "帝國石油這一季把原油煉成汽柴油賺的錢變多很多，整體獲利比分析師預估的好。",
+      "sources": [
+       {
+        "title": "Imperial Oil beats profit estimates on stronger refining margins（Reuters / CP24）",
+        "url": "https://www.cp24.com/news/money/2026/10/30/imperial-oil-beats-profit-estimates-on-stronger-refining-margins/"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "美國",
+   "items": [
+    {
+     "ticker": "INTC",
+     "name": "英特爾",
+     "note": "第四季財測疲弱，PC 市場仍差",
+     "verdict": "miss",
+     "change": "-25%"
+    },
+    {
+     "ticker": "AMZN",
+     "name": "Amazon 亞馬遜",
+     "note": "財報不如預期、假期季財測保守",
+     "verdict": "miss",
+     "change": "-7%"
+    },
+    {
+     "ticker": "GOOGL",
+     "name": "Alphabet（Google）",
+     "note": "昨天跌 12%，上市以來最慘一天",
+     "verdict": "",
+     "change": ""
+    }
+   ]
+  },
+  {
+   "title": "觀察清單",
+   "items": [
+    {
+     "ticker": "RY",
+     "name": "皇家銀行",
+     "note": "近一日無個股消息",
+     "verdict": "",
+     "change": ""
+    },
+    {
+     "ticker": "SPCX",
+     "name": "SpaceX",
+     "note": "近一日無重大消息",
+     "verdict": "",
+     "change": ""
+    }
+   ]
+  }
+ ],
+ "macro": [
+  {
+   "text": "荷莫茲海峽油輪遇襲，油價漲逾 2%",
+   "detail": "美國原油漲 2.1% 至每桶 104.13 美元，布蘭特油價漲 2.5% 至 113.51 美元，接近伊朗戰事開始以來的高檔。"
+  },
+  {
+   "text": "今天公布加拿大 8 月 GDP",
+   "detail": "加央行本週剛升息，GDP 數據會影響市場對 12 月是否再升息的判斷。"
+  },
+  {
+   "text": "加拿大本週日起改回標準時間",
+   "detail": "11 月 1 日起多倫多為 EST（UTC−5），快訊仍維持當地 08:23 和 16:53 更新。"
+  }
+ ],
+ "next_label": "下週一",
+ "next": "週一盤前快訊 08:23（多倫多時間）",
+ "sources": "AP（WPTF）、Reuters（CP24）"
+}
