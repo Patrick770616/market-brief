@@ -444,7 +444,7 @@ a { color: inherit; }
     h += '<section class="dsec pad"><h4>新增</h4><form class="ask" id="askForm" autocomplete="off">' +
       '<input id="askInput" type="text" enterkeyhint="done" placeholder="例如：RY、Apple，或「加拿大的保險股」" aria-label="輸入股票代號或描述">' +
       '<button class="btn" type="submit" id="askBtn">加入</button></form>' +
-      '<p class="hint">' + (cloud && cloud.ai ? '可以打股票代號，也可以直接用一句話描述，系統會幫你找出對應的股票。' : '請輸入股票代號，多個用逗號或空格分開，例如：RY, TD, AAPL') + '</p>' +
+      '<p class="hint">' + '可以打股票代號，也可以打公司名稱或一句話，例如：輝達、皇家銀行、加拿大能源股。' + '</p>' +
       (msg ? '<p class="msg' + (isErr ? ' err' : '') + '">' + esc(msg) + '</p>' : '') + '</section>';
     h += '<section class="dsec pad"><h4>常用組合，點一下加入</h4><div class="preset">' + PRESETS.map((p, i) => '<button type="button" data-preset="' + i + '">＋ ' + esc(p.label) + '</button>').join('') + '</div></section>';
     if (cloud) h += '<section class="dsec pad"><h4>密碼</h4><div class="ask"><input id="pinInput" type="password" inputmode="numeric" autocomplete="off" maxlength="12" placeholder="輸入清單密碼" aria-label="清單密碼" value="' + esc(readPin()) + '"></div>' +
@@ -466,6 +466,77 @@ a { color: inherit; }
     $('#askForm').addEventListener('submit', onAsk);
   }
 
+  /* 常用股票名稱對照：[代號, 中文名, 其他叫法...]；先查這裡，查不到才問 Gemini */
+  const NAMES = [
+    ['RY','皇家銀行','加拿大皇家銀行','RBC','royal bank'],['TD','道明銀行','道明','多倫多道明','toronto-dominion'],
+    ['BMO','滿地可銀行','蒙特利爾銀行','滿地可','bank of montreal'],['BNS','豐業銀行','豐業','scotiabank','scotia'],
+    ['CM','帝國商業銀行','加拿大帝國商業銀行','CIBC'],['NA','國家銀行','加拿大國家銀行','national bank'],
+    ['MFC','宏利','宏利金融','manulife'],['SLF','永明','永明金融','sun life'],['GWO','Great-West Lifeco','great-west'],
+    ['POW','加拿大鮑爾集團','power corp'],['IFC','Intact 保險','intact'],['FFH','費爾法克斯','fairfax'],
+    ['BN','布魯克菲爾德','brookfield'],['BAM','布魯克菲爾德資產管理','brookfield asset'],
+    ['ENB','安橋','安橋能源','enbridge'],['TRP','TC 能源','tc energy','transcanada'],['CNQ','加拿大自然資源','canadian natural'],
+    ['SU','森科能源','suncor'],['CVE','Cenovus 能源','cenovus'],['IMO','帝國石油','imperial oil'],['PPL','Pembina 管道','pembina'],
+    ['TOU','Tourmaline 石油','tourmaline'],['ARX','ARC 資源','arc resources'],
+    ['BCE','貝爾','加拿大貝爾','bell'],['T','Telus','泰勒斯'],['RCI.B','羅傑斯','rogers'],
+    ['CNR','加拿大國家鐵路','加國鐵','cn rail'],['CP','加拿大太平洋鐵路','cpkc','cp rail'],
+    ['SHOP','Shopify','shopify'],['CSU','星座軟體','constellation software'],['OTEX','OpenText','open text'],
+    ['CLS','Celestica','天弘','celestica'],['ATD','Couche-Tard','alimentation couche-tard','ok便利店'],
+    ['L','羅布勞','loblaw'],['DOL','Dollarama','dollarama'],['WCN','Waste Connections','waste connections'],
+    ['GFL','GFL 環境','gfl'],['TRI','湯森路透','thomson reuters'],['QSR','Restaurant Brands','漢堡王','tim hortons','提姆霍頓'],
+    ['CCO','Cameco','卡梅科','cameco'],['NTR','Nutrien','nutrien'],['TECK.B','泰克資源','泰克','teck'],
+    ['ABX','巴里克黃金','barrick'],['AEM','Agnico Eagle','agnico'],['WPM','惠頓貴金屬','wheaton'],['FNV','Franco-Nevada','franco'],
+    ['FTS','Fortis','fortis'],['EMA','Emera','emera'],['H','Hydro One','hydro one'],
+    ['MG','麥格納','magna'],['BHC','博士康','bausch'],['WSP','WSP','wsp'],['STN','Stantec','stantec'],
+    ['NVDA','輝達','英偉達','nvidia'],['AAPL','蘋果','apple'],['MSFT','微軟','microsoft'],
+    ['GOOGL','Alphabet','谷歌','google','alphabet'],['AMZN','亞馬遜','amazon'],['META','Meta','臉書','facebook','meta'],
+    ['TSLA','特斯拉','tesla'],['AVGO','博通','broadcom'],['TSM','台積電','tsmc'],['AMD','超微','amd'],
+    ['INTC','英特爾','intel'],['MU','美光','micron'],['QCOM','高通','qualcomm'],['ARM','安謀','arm'],
+    ['ORCL','甲骨文','oracle'],['CRM','Salesforce','salesforce'],['ADBE','Adobe','adobe'],['NFLX','網飛','netflix'],
+    ['PLTR','Palantir','palantir'],['CRWV','CoreWeave','coreweave'],['SMCI','美超微','supermicro'],
+    ['BRK.B','波克夏','巴菲特','berkshire'],['JPM','摩根大通','小摩','jpmorgan'],['BAC','美國銀行','bank of america'],
+    ['WFC','富國銀行','wells fargo'],['GS','高盛','goldman'],['MS','摩根士丹利','大摩','morgan stanley'],
+    ['V','Visa','visa'],['MA','萬事達','mastercard'],['PYPL','PayPal','paypal'],['HOOD','Robinhood','robinhood'],
+    ['JNJ','嬌生','johnson & johnson'],['LLY','禮來','eli lilly','lilly'],['NVO','諾和諾德','novo nordisk'],
+    ['PFE','輝瑞','pfizer'],['MRK','默克','merck'],['UNH','聯合健康','unitedhealth'],
+    ['KO','可口可樂','coca-cola','coke'],['PEP','百事','pepsi'],['MCD','麥當勞','mcdonald'],['SBUX','星巴克','starbucks'],
+    ['WMT','沃爾瑪','walmart'],['COST','好市多','costco'],['NKE','耐吉','nike'],['DIS','迪士尼','disney'],
+    ['XOM','埃克森美孚','exxon'],['CVX','雪佛龍','chevron'],['BA','波音','boeing'],['CAT','開拓重工','caterpillar'],
+    ['GE','奇異','ge aerospace'],['GEV','GE Vernova','ge vernova'],['VZ','威訊','verizon'],['T.US','AT&T','at&t'],
+    ['UBER','優步','uber'],['ABNB','Airbnb','airbnb'],['SPOT','Spotify','spotify'],['BABA','阿里巴巴','alibaba'],
+    ['SPCX','SpaceX','spacex','太空探索']
+  ];
+  const GROUPS = [
+    [/六大銀行|加拿大.*銀行|銀行股/, ['RY','TD','BMO','BNS','CM','NA']],
+    [/保險/, ['MFC','SLF','GWO','IFC']],
+    [/能源|石油|油氣|管道/, ['ENB','TRP','CNQ','SU','CVE','IMO']],
+    [/電信/, ['BCE','T','RCI.B']],
+    [/鐵路/, ['CNR','CP']],
+    [/黃金|金礦/, ['ABX','AEM','WPM','FNV']],
+    [/公用事業|電力/, ['FTS','EMA','H']],
+    [/美股科技|科技巨頭|七巨頭|大型科技/, ['AAPL','MSFT','NVDA','GOOGL','AMZN','META','TSLA']],
+    [/半導體|晶片/, ['NVDA','AVGO','TSM','AMD','INTC','MU','QCOM']],
+    [/美國.*銀行|華爾街銀行/, ['JPM','BAC','WFC','GS','MS']]
+  ];
+  function normName(s) { return String(s || '').toLowerCase().replace(/[\s.\-＿_]/g, ''); }
+  function localLookup(text) {
+    const found = [], rest = [];
+    GROUPS.forEach(g => { if (g[0].test(text)) g[1].forEach(t => { const n = NAMES.find(x => x[0] === t); found.push({ ticker: t, name: n ? n[1] : '' }); }); });
+    const parts = text.split(/[\s,，、;；和與跟及]+/).filter(Boolean);
+    parts.forEach(p => {
+      const q = normName(p);
+      if (!q) return;
+      const hit = NAMES.find(x => x.slice(1).concat(x[0]).some(a => { const k = normName(a); return k === q || (q.length >= 2 && k.length >= 2 && (k.includes(q) || q.includes(k))); }));
+      if (hit) found.push({ ticker: hit[0] === 'T.US' ? 'T' : hit[0], name: hit[1] });
+      else if (!GROUPS.some(g => g[0].test(p))) rest.push(p);
+    });
+    return { found, rest };
+  }
+  function pickArray(v) {
+    if (Array.isArray(v)) return v;
+    if (v && typeof v === 'object') { for (const k of Object.keys(v)) { const a = pickArray(v[k]); if (a.length) return a; } }
+    return [];
+  }
+
   async function onAsk(ev) {
     ev.preventDefault();
     const input = $('#askInput');
@@ -473,33 +544,44 @@ a { color: inherit; }
     if (!text) return;
     const parts = text.split(/[\s,，、;；]+/).filter(Boolean);
     const looksLikeTickers = parts.every(p => /^[A-Za-z][A-Za-z0-9.\-]{0,9}$/.test(p)) && parts.every(p => p === p.toUpperCase() || p.length <= 5);
-    const ai = cloud && cloud.ai;
-    if (looksLikeTickers || !ai) {
-      if (!looksLikeTickers) { renderSettings('請輸入股票代號，例如 RY 或 AAPL。', true); return; }
+    if (looksLikeTickers) {
       const before = draft.length;
-      draft = cleanList(draft.concat(parts.map(p => ({ ticker: p, name: '' }))));
+      draft = cleanList(draft.concat(parts.map(p => { const n = NAMES.find(x => x[0] === p.toUpperCase()); return { ticker: p, name: n ? n[1] : '' }; })));
       renderSettings('已加入 ' + (draft.length - before) + ' 檔。');
       return;
     }
-    const btn = $('#askBtn');
-    btn.disabled = true; btn.textContent = '查詢中…';
-    try {
-      const prompt = '你是股票代號查詢助手。使用者是加拿大的理財顧問，會用中文或英文描述想追蹤的股票或產業。' +
-        '請找出最符合描述的上市公司（優先加拿大 TSX，其次美國），最多 8 檔，只回傳 JSON 陣列，格式：' +
-        '[{"ticker":"RY","name":"皇家銀行"}]。ticker 用該交易所的常用代號（加拿大股不用加 .TO），name 用中文常用名稱。' +
-        '如果描述不是在找股票，回傳 []。\n\n使用者的描述：' + text;
-      const out = await ai.generateContent(prompt);
-      let res = JSON.parse(String(out.response.text() || '[]').replace(/^```(?:json)?|```$/g, '').trim());
-      if (res && !Array.isArray(res) && Array.isArray(res.items)) res = res.items;
-      const found = cleanList(Array.isArray(res) ? res : []);
-      if (!found.length) { renderSettings('找不到符合的股票，換個說法，或直接輸入代號試試。', true); return; }
-      const before = draft.length;
-      draft = cleanList(draft.concat(found));
-      renderSettings('找到並加入 ' + (draft.length - before) + ' 檔：' + found.map(f => f.ticker + (f.name ? ' ' + f.name : '')).join('、') + '。不需要的可以按 × 移除。');
-    } catch (e) {
-      const code = e && e.code;
-      renderSettings('查詢失敗，請直接輸入股票代號，例如 RY。', true);
+    // 1) 先查內建對照表
+    const local = localLookup(text);
+    let found = local.found.slice();
+    let note = '';
+    // 2) 對照表查不到的部分，再問 Gemini
+    const ai = cloud && cloud.ai;
+    if (local.rest.length && ai) {
+      const btn = $('#askBtn');
+      btn.disabled = true; btn.textContent = '查詢中…';
+      try {
+        const prompt = '你是股票代號查詢助手。使用者是加拿大的理財顧問，會用中文或英文描述想追蹤的股票或產業。' +
+          '請找出最符合描述的上市公司（優先加拿大 TSX，其次美國），最多 8 檔，只回傳 JSON 陣列，不要任何其他文字，格式：' +
+          '[{"ticker":"RY","name":"皇家銀行"}]。ticker 用該交易所的常用代號（加拿大股不用加 .TO），name 用繁體中文常用名稱。' +
+          '如果描述不是在找股票，回傳 []。\n\n使用者的描述：' + local.rest.join(' ');
+        const out = await ai.generateContent(prompt);
+        const raw = String(out.response.text() || '');
+        let res = [];
+        try { res = JSON.parse(raw.replace(/^\s*```(?:json)?/i, '').replace(/```\s*$/, '').trim()); }
+        catch (e) { const m = raw.match(/\[[\s\S]*\]/); if (m) { try { res = JSON.parse(m[0]); } catch (e2) {} } }
+        found = found.concat(pickArray(res));
+      } catch (e) {
+        console.error('Gemini lookup failed', e);
+        note = '（「' + local.rest.join('、') + '」線上查詢失敗，可以改打代號）';
+      }
+    } else if (local.rest.length) {
+      note = '（「' + local.rest.join('、') + '」找不到，可以改打代號）';
     }
+    found = cleanList(found);
+    if (!found.length) { renderSettings('找不到「' + text + '」，換個說法，或直接輸入代號（例如 NVDA）。' + note, true); return; }
+    const before = draft.length;
+    draft = cleanList(draft.concat(found));
+    renderSettings('找到並加入 ' + (draft.length - before) + ' 檔：' + found.map(f => f.ticker + (f.name ? ' ' + f.name : '')).join('、') + '。不需要的可以按 × 移除。' + note);
   }
 
   async function saveWatch() {
