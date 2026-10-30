@@ -1,0 +1,280 @@
+{
+ "id": "2026-10-30-post",
+ "edition": "盤後快訊",
+ "date": "10/30（五）",
+ "time": "多倫多 16:53",
+ "updated": "10/30 17:20",
+ "indices": [
+  {
+   "name": "S&P 500",
+   "change": "-2.1%"
+  },
+  {
+   "name": "Nasdaq",
+   "change": "-2.9%"
+  },
+  {
+   "name": "道瓊",
+   "change": "-1.3%"
+  },
+  {
+   "name": "WTI 原油",
+   "change": "+2.3%"
+  }
+ ],
+ "lead": {
+  "tag": "頭條",
+  "headline": "AI 疑慮壓垮科技股 Nasdaq 單日跌近 3%",
+  "headline_en": "AI worries hammer tech; Nasdaq sinks nearly 3% as October ends",
+  "body": "英特爾財測疲弱單日暴跌 29%，Amazon 與 Alphabet 財報後對 AI 燒錢的擔憂加劇，Nasdaq 收跌 2.9%，S&P 500 跌 2.1%，VIX 大漲 24% 至 21.41。Nasdaq 10 月表現是一年多來最差的一個月；TSX 午前也一度跌近 700 點。"
+ },
+ "points": [
+  {
+   "zh": "Alphabet、Amazon 財報引發 AI 投資疑慮",
+   "en": "Alphabet and Amazon results fuel AI-spending worries"
+  },
+  {
+   "zh": "埃克森、雪佛龍煉油獲利強，油價續漲",
+   "en": "Exxon and Chevron beat on refining; oil keeps rising"
+  }
+ ],
+ "sections": [
+  {
+   "title": "加拿大",
+   "items": [
+    {
+     "ticker": "IMO",
+     "name": "帝國石油",
+     "note": "煉油獲利大增，優於預期",
+     "verdict": "beat",
+     "change": "",
+     "detail": {
+      "headline": "帝國石油第三季每股盈餘 5.11 加元，優於預期",
+      "name_en": "Imperial Oil Limited",
+      "exchange": "TSX / NYSE American",
+      "eps": {
+       "actual": "C$5.11",
+       "estimate": "C$4.70"
+      },
+      "summary": "帝國石油第三季每股盈餘（路透資料） 5.11 加元，高於分析師平均預期的 4.70 加元。\n下游煉油事業獲利 15.6 億加元，去年同期只有 4.44 億，受惠於煉油利潤改善和產品組合較好；原油產量下降抵銷了一部分收益。\n第三季淨利約 24.5 億加元（據 BOE Report 與另一報導）。",
+      "risks": "原油產量較低；油價受中東情勢影響波動大",
+      "plain": "帝國石油這一季把原油煉成汽柴油賺的錢變多很多，整體獲利比分析師預估的好。",
+      "sources": [
+       {
+        "title": "Imperial Oil beats profit estimates on stronger refining margins（BOE Report / Reuters）",
+        "url": "https://boereport.com/2026/10/30/imperial-oil-beats-profit-estimates-on-stronger-refining-margins/"
+       }
+      ],
+      "change_note": "收盤"
+     }
+    }
+   ]
+  },
+  {
+   "title": "美國",
+   "items": [
+    {
+     "ticker": "INTC",
+     "name": "英特爾",
+     "note": "Q3 優於預期，但第四季財測疲弱",
+     "verdict": "beat",
+     "change": "-29.3%",
+     "detail": {
+      "headline": "英特爾第四季財測遠低於預期，股價單日暴跌近三成",
+      "name_en": "Intel Corporation",
+      "exchange": "Nasdaq",
+      "change_note": "收盤",
+      "revenue": {
+       "actual": "$16.5B",
+       "estimate": "$16.48B",
+       "yoy": "+21%"
+      },
+      "eps": {
+       "actual": "$0.52",
+       "estimate": "$0.40",
+       "yoy": "+126%"
+      },
+      "summary": "第三季營收 165 億美元，年增 21%；調整後每股盈餘 0.52 美元，比預期的 0.40 美元高出約三成。資料中心與 AI 事業營收 73 億美元，年增 78%，是 15 年來最強。\n但第四季營收預估只有 150–160 億美元，據分析師在法說會上的說法，比市場預期低約 18 億美元。以色列 Fab 28 廠停工預計拖累第四季營收約 3 億美元；個人電腦業務因記憶體短缺、價格偏高而持續疲弱。\n今天收盤價 65.13 美元，單日下跌 29.26%，據報導是 1974 年以來最慘的一天。",
+      "guidance": "第四季營收 150–160 億美元，調整後 EPS 約 0.25 美元，毛利率約 38%；預期 2027 年自由現金流仍為負",
+      "management": "執行長陳立武表示 CPU 需求依然強勁，當務之急是增加 Xeon 處理器的供貨",
+      "risks": "PC 市場疲弱至少延續到明年上半年；以色列廠停工；資本支出沉重",
+      "plain": "英特爾這一季其實賺得比預期多，但它說下一季的生意會明顯變差，市場更在意未來，所以股價大跌。",
+      "sources": [
+       {
+        "title": "Intel Reports Third-Quarter 2026 Financial Results（Intel 官方）",
+        "url": "https://www.intc.com/news-events/press-releases/detail/1786/intel-reports-third-quarter-2026-financial-results"
+       },
+       {
+        "title": "Earnings call transcript: Intel beats Q3 2026 estimates, but stock sinks（Investing.com）",
+        "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-intel-beats-q3-2026-estimates-but-stock-sinks-93CH-4985498"
+       }
+      ]
+     }
+    },
+    {
+     "ticker": "AMZN",
+     "name": "Amazon 亞馬遜",
+     "note": "EPS 略低於預期，AWS 成長 39%",
+     "verdict": "miss",
+     "change": "",
+     "detail": {
+      "headline": "Amazon 獲利略低於預期、資本支出沉重，盤後曾跌約 10%",
+      "name_en": "Amazon.com, Inc.",
+      "exchange": "Nasdaq",
+      "change_note": "昨日盤後",
+      "revenue": {
+       "actual": "$201.9B",
+       "estimate": "$202.1B",
+       "yoy": "+12%"
+      },
+      "eps": {
+       "actual": "$1.89",
+       "estimate": "$1.96",
+       "yoy": "-3%"
+      },
+      "summary": "第三季營收 2,019 億美元，年增 12%，比預期的 2,021 億美元略低；每股盈餘 1.89 美元，低於預期的 1.96 美元。AWS 營收 460 億美元，年增 39%，營業利益率 38.7%。\n本季資本支出約 759 億美元，全年預計約 2,200 億美元；過去 12 個月自由現金流為淨流出逾 420 億美元，市場擔心 AI 投資太燒錢。\n財報公布後（週四）股價收盤前一天價 254.60 美元，盤後一度比前收盤價低約 10%。",
+      "guidance": "第四季營收 2,400–2,470 億美元，營業利益 285–335 億美元",
+      "management": "執行長 Andy Jassy 表示 AWS 的投資「正在見效」",
+      "plain": "Amazon 的雲端生意很好，但這一季賺的錢比預期少，對聖誕購物季的預估也不夠樂觀，所以股價下跌。",
+      "sources": [
+       {
+        "title": "Earnings call transcript: Amazon Q3 2026 misses EPS as shares fall after hours（Investing.com）",
+        "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-amazon-q3-2026-misses-eps-as-shares-fall-after-hours-93CH-4985489"
+       },
+       {
+        "title": "Amazon.com Announces Third Quarter Results（新聞稿 PDF）",
+        "url": "https://s2.q4cdn.com/299287126/files/doc_earnings/2026/q3/earnings-result/AMZN-Q3-2026-Earnings-Release.pdf"
+       }
+      ]
+     }
+    },
+    {
+     "ticker": "GOOGL",
+     "name": "Alphabet（Google）",
+     "note": "週四重挫 12.6%，今天續受壓",
+     "verdict": "",
+     "change": "",
+     "detail": {
+      "headline": "Alphabet 週四重挫 12.6%，創上市以來最大單日跌幅",
+      "name_en": "Alphabet Inc.",
+      "exchange": "Nasdaq",
+      "change_note": "週四收盤",
+      "revenue": {
+       "actual": "$127.6B",
+       "yoy": "+25%"
+      },
+      "eps": {
+       "actual": "$2.12",
+       "yoy": "-26%"
+      },
+      "summary": "第三季營收 1,276 億美元，年增 25%；Google Cloud 營收 307 億美元，年增 103%。\n但每股盈餘從去年的 2.87 美元降到 2.12 美元，本季資本支出 514 億美元，自由現金流轉為負 90 億美元，搜尋廣告表現也偏弱。市場擔心 AI 投資太燒錢，股價昨天重挫約 12%，是上市 20 多年來最慘的一天。\n據報導，週四股價下跌 12.6%，市值蒸發約 5,000 億美元，是史上單日跌幅最大；今年資本支出預計超過 2,000 億美元。",
+      "risks": "AI 資本支出持續大增、搜尋廣告成長放緩",
+      "plain": "Google 雲端生意很好，但花在 AI 的錢太多，賺的現金反而變成負的，投資人很擔心，所以股價大跌。",
+      "sources": [
+       {
+        "title": "Alphabet shares record their worst day ever, shedding $500 billion in value（Yahoo Finance）",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/google-parent-alphabet-stock-price-150651158.html"
+       },
+       {
+        "title": "Alphabet Posts 25% Revenue Growth as Google Cloud Jumps 103%（Unite.AI）",
+        "url": "https://www.unite.ai/alphabet-posts-25-revenue-growth-as-google-cloud-jumps-103/"
+       }
+      ]
+     }
+    },
+    {
+     "ticker": "XOM",
+     "name": "埃克森美孚",
+     "note": "煉油獲利首度超過上游",
+     "verdict": "beat",
+     "change": "",
+     "detail": {
+      "headline": "埃克森美孚第三季優於預期，煉油獲利超越上游",
+      "name_en": "Exxon Mobil",
+      "exchange": "NYSE",
+      "change_note": "盤中曾創歷史新高",
+      "eps": {
+       "actual": "$4.23"
+      },
+      "summary": "調整後每股盈餘 4.23 美元，路透報導指優於分析師預期（來源未列出預期數字）。\n煉油利潤大幅擴大，煉油獲利首度超過上游，是至少六年來第一次；煉油廠接近滿載運轉。第三季債務減少 80 億美元。",
+      "guidance": "無正式財測；財務長表示會用盡一切辦法增加供給",
+      "dividend": "未調升股息",
+      "management": "財務長 Neil Hansen 承認高油價對家庭和企業造成實質壓力",
+      "risks": "油價與煉油利潤受伊朗戰事影響，波動大",
+      "plain": "埃克森美孚這一季把原油煉成汽柴油賺的錢特別多，獲利比分析師預期好；多出來的現金拿去還債，沒有加發股息。",
+      "sources": [
+       {
+        "title": "Exxon, Chevron earnings propelled by war-driven refining surge（Reuters / KFGO）",
+        "url": "https://kfgo.com/2026/10/30/exxon-chevron-earnings-propelled-by-war-driven-refining-surge/"
+       }
+      ]
+     }
+    },
+    {
+     "ticker": "CVX",
+     "name": "雪佛龍",
+     "note": "煉油強勁，淨債務減少近 140 億",
+     "verdict": "beat",
+     "change": "",
+     "detail": {
+      "headline": "雪佛龍第三季優於預期，下游獲利創六年新高",
+      "name_en": "Chevron",
+      "exchange": "NYSE",
+      "change_note": "盤中曾創歷史新高",
+      "eps": {
+       "actual": "$5.28"
+      },
+      "summary": "調整後每股盈餘 5.28 美元，路透報導指優於分析師預期（來源未列出預期數字）。\n下游（煉油）獲利為至少六年來最高，煉油廠接近滿載；與去年底相比，淨債務減少近 140 億美元。",
+      "guidance": "無正式財測",
+      "dividend": "未調升股息，也未增加買回庫藏股",
+      "management": "財務長 Eimear Bonner 說：「我們以數十年而不是季度來思考」；並指第三季布蘭特油價在 68 至 132 美元之間波動",
+      "risks": "油價大幅波動；煉油利潤能否持續",
+      "plain": "雪佛龍這一季煉油賺得多，獲利比預期好，把多出來的錢拿去還債。",
+      "sources": [
+       {
+        "title": "Exxon, Chevron earnings propelled by war-driven refining surge（Reuters / KFGO）",
+        "url": "https://kfgo.com/2026/10/30/exxon-chevron-earnings-propelled-by-war-driven-refining-surge/"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "觀察清單",
+   "items": [
+    {
+     "ticker": "RY",
+     "name": "皇家銀行",
+     "note": "今日未查到重大消息",
+     "verdict": "",
+     "change": ""
+    },
+    {
+     "ticker": "SPCX",
+     "name": "SpaceX",
+     "note": "今日未查到重大消息",
+     "verdict": "",
+     "change": ""
+    }
+   ]
+  }
+ ],
+ "macro": [
+  {
+   "text": "10 年期美債殖利率 4.92%，下降約 7 個基點",
+   "detail": "Fed 本週在意見分歧下維持利率不變，兩位官員表示可能需要進一步升息以對抗通膨，市場對 12 月升息的預期上升。"
+  },
+  {
+   "text": "油價續漲：WTI 收 104.34 美元（+2.3%）",
+   "detail": "美國可能恢復對伊朗攻擊的跡象推升油價，布蘭特盤中升至約 113 美元；煉油利潤大幅擴大，使埃克森、雪佛龍獲利強勁。"
+  },
+  {
+   "text": "TSX 午前下跌約 686 點至 35,563",
+   "detail": "科技與基礎金屬類股拖累；加幣約 71.66 美分。以上為午前數字，非收盤。"
+  }
+ ],
+ "next_label": "下週一",
+ "next": "PLTR Palantir、VRTX Vertex、FNV Franco-Nevada、FANG Diamondback（公布時間未確認）",
+ "sources": "Yahoo Finance、TheStreet、BNN Bloomberg、Reuters（BOE Report、KFGO）、Investing.com"
+}
