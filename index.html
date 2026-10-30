@@ -402,6 +402,7 @@ a { color: inherit; }
   function mineHTML(b) {
     if (!watch.length) {
       if (b.sample) return '';
+      if ((b.sections || []).some(x => /觀察清單/.test(x.title || '') && (x.items || []).length)) return '';
       return '<section class="sec pad"><h3>我的清單<small><button type="button" class="edit-link" id="addMine">＋ 加入想追蹤的股票</button></small></h3>' +
         '<p class="hint">設定後，每天的快訊會特別幫你查這些股票的消息。</p></section>';
     }

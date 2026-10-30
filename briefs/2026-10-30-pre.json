@@ -3,7 +3,7 @@
  "edition": "盤前快訊",
  "date": "10/30（五）",
  "time": "多倫多 08:23",
- "updated": "10/30 08:55",
+ "updated": "10/30 11:00（補上詳細頁）",
  "indices": [
   {
    "name": "道瓊期指",
@@ -24,9 +24,9 @@
  ],
  "lead": {
   "tag": "頭條",
-  "headline": "英特爾暴跌兩成五 科技股期指重挫",
-  "headline_en": "Intel plunges 25%, tech futures tumble",
-  "body": "英特爾第四季財測疲弱，盤前大跌超過 25%；Amazon 財報不如預期、假期季財測保守，盤前跌近 7%，Nasdaq 期指跌約 2.3%。荷莫茲海峽油輪遇襲，油價漲逾 2%。"
+  "headline": "英特爾財測疲弱暴跌 科技股期指重挫",
+  "headline_en": "Intel plunges on weak outlook; tech futures tumble",
+  "body": "英特爾第三季其實優於預期，但第四季財測遠低於市場，盤前大跌超過 25%；Amazon 獲利不如預期、假期季財測保守，盤前跌近 7%，Nasdaq 期指跌約 2.3%。荷莫茲海峽油輪遇襲，油價漲逾 2%。"
  },
  "points": [
   {
@@ -75,23 +75,109 @@
     {
      "ticker": "INTC",
      "name": "英特爾",
-     "note": "第四季財測疲弱，PC 市場仍差",
-     "verdict": "miss",
-     "change": "-25%"
+     "note": "財報優於預期，但第四季財測疲弱",
+     "verdict": "beat",
+     "change": "-25%",
+     "detail": {
+      "headline": "英特爾第三季優於預期，但第四季財測遠低於市場",
+      "name_en": "Intel Corporation",
+      "exchange": "Nasdaq",
+      "change_note": "盤前",
+      "revenue": {
+       "actual": "$16.5B",
+       "estimate": "$16.48B",
+       "yoy": "+21%"
+      },
+      "eps": {
+       "actual": "$0.52",
+       "estimate": "$0.40",
+       "yoy": "+126%"
+      },
+      "summary": "第三季營收 165 億美元，年增 21%；調整後每股盈餘 0.52 美元，比預期的 0.40 美元高出約三成。資料中心與 AI 事業營收 73 億美元，年增 78%，是 15 年來最強。\n但第四季營收預估只有 150–160 億美元，據分析師在法說會上的說法，比市場預期低約 18 億美元。以色列 Fab 28 廠停工預計拖累第四季營收約 3 億美元；個人電腦業務因記憶體短缺、價格偏高而持續疲弱。",
+      "guidance": "第四季營收 150–160 億美元，調整後 EPS 約 0.25 美元，毛利率約 38%；預期 2027 年自由現金流仍為負",
+      "management": "執行長陳立武表示 CPU 需求依然強勁，當務之急是增加 Xeon 處理器的供貨",
+      "risks": "PC 市場疲弱至少延續到明年上半年；以色列廠停工；資本支出沉重",
+      "plain": "英特爾這一季其實賺得比預期多，但它說下一季的生意會明顯變差，市場更在意未來，所以股價大跌。",
+      "sources": [
+       {
+        "title": "Intel Reports Third-Quarter 2026 Financial Results（Intel 官方）",
+        "url": "https://www.intc.com/news-events/press-releases/detail/1786/intel-reports-third-quarter-2026-financial-results"
+       },
+       {
+        "title": "Earnings call transcript: Intel beats Q3 2026 estimates, but stock sinks（Investing.com）",
+        "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-intel-beats-q3-2026-estimates-but-stock-sinks-93CH-4985498"
+       }
+      ]
+     }
     },
     {
      "ticker": "AMZN",
      "name": "Amazon 亞馬遜",
      "note": "財報不如預期、假期季財測保守",
      "verdict": "miss",
-     "change": "-7%"
+     "change": "-7%",
+     "detail": {
+      "headline": "Amazon 獲利不如預期、假期季財測保守，股價盤前跌近 7%",
+      "name_en": "Amazon.com, Inc.",
+      "exchange": "Nasdaq",
+      "change_note": "盤前",
+      "revenue": {
+       "actual": "$201.9B",
+       "yoy": "+12%"
+      },
+      "eps": {
+       "actual": "$1.89",
+       "yoy": "-3%"
+      },
+      "summary": "第三季營收 2,019 億美元，年增 12%；每股盈餘 1.89 美元，市場報導指出不如預期。雲端 AWS 營收 460 億美元，年增 39%，是近五年最快。\n第四季營收預估 2,400–2,470 億美元，市場認為對假期購物季的預估偏保守，股價盤前跌近 7%。",
+      "guidance": "第四季營收 2,400–2,470 億美元，營業利益 285–335 億美元",
+      "management": "執行長 Andy Jassy 表示 AWS 的投資「正在見效」",
+      "plain": "Amazon 的雲端生意很好，但這一季賺的錢比預期少，對聖誕購物季的預估也不夠樂觀，所以股價下跌。",
+      "sources": [
+       {
+        "title": "Amazon.com Announces Third Quarter Results（新聞稿 PDF）",
+        "url": "https://s2.q4cdn.com/299287126/files/doc_earnings/2026/q3/earnings-result/AMZN-Q3-2026-Earnings-Release.pdf"
+       },
+       {
+        "title": "US futures fall as Amazon, Intel and Alphabet weigh on Wall Street（AP / WPTF）",
+        "url": "https://www.wptf.com/2026/10/30/us-futures-fall-as-amazon-intel-and-alphabet-weigh-on-wall-street/"
+       }
+      ]
+     }
     },
     {
      "ticker": "GOOGL",
      "name": "Alphabet（Google）",
      "note": "昨天跌 12%，上市以來最慘一天",
      "verdict": "",
-     "change": ""
+     "change": "",
+     "detail": {
+      "headline": "Alphabet 單日重挫 12%，創上市以來最大跌幅",
+      "name_en": "Alphabet Inc.",
+      "exchange": "Nasdaq",
+      "change_note": "昨日收盤",
+      "revenue": {
+       "actual": "$127.6B",
+       "yoy": "+25%"
+      },
+      "eps": {
+       "actual": "$2.12",
+       "yoy": "-26%"
+      },
+      "summary": "第三季營收 1,276 億美元，年增 25%；Google Cloud 營收 307 億美元，年增 103%。\n但每股盈餘從去年的 2.87 美元降到 2.12 美元，本季資本支出 514 億美元，自由現金流轉為負 90 億美元，搜尋廣告表現也偏弱。市場擔心 AI 投資太燒錢，股價昨天重挫約 12%，是上市 20 多年來最慘的一天。",
+      "risks": "AI 資本支出持續大增、搜尋廣告成長放緩",
+      "plain": "Google 雲端生意很好，但花在 AI 的錢太多，賺的現金反而變成負的，投資人很擔心，所以股價大跌。",
+      "sources": [
+       {
+        "title": "Alphabet Posts 25% Revenue Growth as Google Cloud Jumps 103%（Unite.AI）",
+        "url": "https://www.unite.ai/alphabet-posts-25-revenue-growth-as-google-cloud-jumps-103/"
+       },
+       {
+        "title": "Nasdaq tumbles as PCE data increases rate hike bets（Upstox）",
+        "url": "https://upstox.com/news/market-news/us-stocks/nasdaq-tumbles-1-8-s-and-p-500-dow-jones-down-in-red-as-pce-inflation-data-increases-rate-hike-potential-alphabet-tech-stocks-in-focus/article-202664/"
+       }
+      ]
+     }
     }
    ]
   },
