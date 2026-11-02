@@ -1,0 +1,206 @@
+{
+ "id": "2026-11-02-pre",
+ "edition": "盤前快訊",
+ "date": "11/2（一）",
+ "time": "多倫多 08:23",
+ "updated": "11/2 09:15",
+ "indices": [
+  {
+   "name": "道瓊期指",
+   "change": "+0.4%"
+  },
+  {
+   "name": "S&P 期指",
+   "change": "+0.3%"
+  },
+  {
+   "name": "Nasdaq 期指",
+   "change": "+0.6%"
+  },
+  {
+   "name": "WTI 原油",
+   "change": "-4.6%"
+  }
+ ],
+ "lead": {
+  "tag": "頭條",
+  "headline": "期指反彈 油價因伊朗談判消息重挫",
+  "headline_en": "Futures rebound after brutal week; oil slides on Iran talks report",
+  "body": "經歷上週的重挫後，美股期指今早回升，Nasdaq 期指漲約 0.6%。有報導指伊朗與卡達正談論結束衝突，WTI 原油盤前跌約 4.6%，約 99 美元。今晚 Apple 公布財報，週二是美國期中選舉。"
+ },
+ "points": [
+  {
+   "zh": "Marvell 擬 1,150 億美元收購 Lumentum",
+   "en": "Marvell to buy Lumentum in a $115B deal"
+  },
+  {
+   "zh": "報導稱 SpaceX 洽談 Boost Mobile，T-Mobile 跌",
+   "en": "SpaceX reportedly eyes Boost Mobile; T-Mobile falls"
+  }
+ ],
+ "sections": [
+  {
+   "title": "美國",
+   "items": [
+    {
+     "ticker": "EL",
+     "name": "雅詩蘭黛",
+     "note": "營收優於預期，上調全年財測",
+     "verdict": "beat",
+     "change": "+2.4%",
+     "detail": {
+      "headline": "雅詩蘭黛營收優於預期，上調全年營收與獲利預測",
+      "name_en": "The Estée Lauder Companies",
+      "exchange": "NYSE",
+      "change_note": "盤前",
+      "revenue": {
+       "actual": "$3.72B",
+       "estimate": "$3.65B",
+       "yoy": "+7%"
+      },
+      "summary": "季度營收年增 7% 至 37.2 億美元，高於分析師預期的約 5% 成長、36.5 億美元（LSEG）。\n公司表示高端護膚與香水需求在假期前仍有韌性，因此上調全年營收與獲利預測。",
+      "guidance": "上調全年營收與獲利預測",
+      "plain": "雅詩蘭黛這一季賣得比預期好，還把全年目標調高，所以股價盤前上漲。",
+      "sources": [
+       {
+        "title": "Premarket movers: Estee Lauder, Rivian rise premarket; Check Point falls（Investing.com）",
+        "url": "https://www.investing.com/news/stock-market-news/premarket-movers-estee-lauder-rivian-rise-premarket-check-point-falls-4991151"
+       }
+      ]
+     }
+    },
+    {
+     "ticker": "IDXX",
+     "name": "IDEXX 愛德士",
+     "note": "第三季優於預期",
+     "verdict": "beat",
+     "change": "+5.9%",
+     "detail": {
+      "headline": "IDEXX 第三季財報優於預期，盤前上漲約 6%",
+      "name_en": "IDEXX Laboratories",
+      "exchange": "Nasdaq",
+      "change_note": "盤前",
+      "summary": "寵物動物診斷公司 IDEXX 第三季獲利優於市場預期，盤前股價上漲約 5.95%。本期來源未列出營收與每股盈餘的實際數字與預期值。",
+      "plain": "IDEXX 這一季的成績比分析師預期好，股價開盤前上漲。",
+      "sources": [
+       {
+        "title": "Stock Market Today (Nov. 2, 2026)（TheStreet）",
+        "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-02-2026"
+       }
+      ]
+     }
+    },
+    {
+     "ticker": "RIVN",
+     "name": "Rivian",
+     "note": "損失較預期小，獲 UBS 升評",
+     "verdict": "beat",
+     "change": "+3.2%",
+     "detail": {
+      "headline": "Rivian 第三季虧損收窄，UBS 升評至買進",
+      "name_en": "Rivian Automotive",
+      "exchange": "Nasdaq",
+      "change_note": "盤前",
+      "revenue": {
+       "actual": "$2.155B",
+       "yoy": "+38%"
+      },
+      "summary": "第三季營收年增 38% 至 21.55 億美元，交車量年增 46%，每股虧損比華爾街預期小。\nUBS 同日將評等由中立升至買進、目標價 17 美元，理由是股價一個月來下跌約 19%，進場價位具吸引力。盤前股價約 12.55 美元。",
+      "plain": "Rivian 賣的車變多、虧損也比預期少，加上投行升評，股價盤前上漲。",
+      "sources": [
+       {
+        "title": "Premarket movers: Estee Lauder, Rivian rise premarket; Check Point falls（Investing.com）",
+        "url": "https://www.investing.com/news/stock-market-news/premarket-movers-estee-lauder-rivian-rise-premarket-check-point-falls-4991151"
+       }
+      ]
+     }
+    },
+    {
+     "ticker": "CHKP",
+     "name": "Check Point 邁特",
+     "note": "第四季財測弱於預期",
+     "verdict": "inline",
+     "change": "-9.9%",
+     "detail": {
+      "headline": "Check Point 第四季營收預測弱於預期，盤前重挫近一成",
+      "name_en": "Check Point Software Technologies",
+      "exchange": "Nasdaq",
+      "change_note": "盤前",
+      "revenue": {
+       "actual": "$669.8M",
+       "yoy": "-1%"
+      },
+      "eps": {
+       "actual": "$2.49",
+       "estimate": "$2.48"
+      },
+      "summary": "第三季營收 6.698 億美元，年減 1%；非 GAAP 每股盈餘 2.49 美元，與預期的 2.48 美元大致相符，但 GAAP 每股盈餘年減明顯。\n公司給出的第四季營收預測低於市場預期，令希望下半年成長加速的投資人失望。",
+      "guidance": "第四季營收預測低於市場預期",
+      "plain": "Check Point 這一季數字還可以，但對下一季的預測不夠好，所以股價盤前大跌。",
+      "sources": [
+       {
+        "title": "Premarket movers: Estee Lauder, Rivian rise premarket; Check Point falls（Investing.com）",
+        "url": "https://www.investing.com/news/stock-market-news/premarket-movers-estee-lauder-rivian-rise-premarket-check-point-falls-4991151"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "觀察清單",
+   "items": [
+    {
+     "ticker": "RY",
+     "name": "皇家銀行",
+     "note": "近一日未查到重大消息",
+     "verdict": "",
+     "change": ""
+    },
+    {
+     "ticker": "SPCX",
+     "name": "SpaceX",
+     "note": "傳洽談收購 EchoStar 的 Boost Mobile",
+     "verdict": "",
+     "change": "+2.8%",
+     "detail": {
+      "headline": "報導稱 SpaceX 洽談收購 Boost Mobile 或取得其網路使用權",
+      "name_en": "Space Exploration Technologies",
+      "exchange": "Nasdaq",
+      "change_note": "盤前",
+      "summary": "華盛頓郵報報導，SpaceX 正與 EchoStar 洽談，可能收購其 Boost Mobile 業務，或取得網路使用權，以推出自有品牌的無線服務。報導後 SpaceX 盤前上漲約 2.8%，EchoStar 上漲約 4%（另一來源為 6.3%），T-Mobile 因競爭疑慮下跌約 3.2%。",
+      "risks": "目前只是洽談中的報導，尚無正式公告",
+      "plain": "有報導說 SpaceX 想進入手機通訊服務，還在談判階段，所以相關股票盤前有漲有跌。",
+      "sources": [
+       {
+        "title": "Premarket movers: Estee Lauder, Rivian rise premarket; Check Point falls（Investing.com）",
+        "url": "https://www.investing.com/news/stock-market-news/premarket-movers-estee-lauder-rivian-rise-premarket-check-point-falls-4991151"
+       },
+       {
+        "title": "Stock Market Today (Nov. 2, 2026)（TheStreet）",
+        "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-02-2026"
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "macro": [
+  {
+   "text": "油價大跌：WTI 約 99.35 美元（-4.6%）",
+   "detail": "有報導稱伊朗與卡達正洽談結束衝突，布蘭特油價也跌約 4.5% 至 108.30 美元。能源股如 Cheniere 盤前下跌約 2.8%。"
+  },
+  {
+   "text": "今天公布 10 月 ISM 製造業指數",
+   "detail": "市場預期 54.7，前值 54.5；物價分項預期 77.5。10 年期美債殖利率約 4.93%。"
+  },
+  {
+   "text": "週二美國期中選舉",
+   "detail": "本週最大的政治事件，報導指投資人關注結果如何影響美債殖利率。"
+  }
+ ],
+ "next_label": "今晚財報",
+ "next": "AAPL Apple（盤後；預期 EPS $2.00、營收 $1,134.6 億）；另有 PLTR、VRTX、FANG 等（時間未確認）",
+ "sources": "Yahoo Finance、Investing.com、TheStreet"
+}
