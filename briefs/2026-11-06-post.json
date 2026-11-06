@@ -1,0 +1,174 @@
+{
+ "id": "2026-11-06-post",
+ "edition": "盤後快訊",
+ "date": "11/6（五）",
+ "time": "多倫多 16:53",
+ "updated": "11/6 17:25",
+ "indices": [
+  {
+   "name": "TSX",
+   "change": "-0.2%"
+  },
+  {
+   "name": "S&P 500",
+   "change": "+0.3%"
+  },
+  {
+   "name": "Nasdaq",
+   "change": "+1.1%"
+  },
+  {
+   "name": "道瓊",
+   "change": "-0.5%"
+  }
+ ],
+ "lead": {
+  "tag": "頭條",
+  "headline": "美國就業大幅優於預期 加拿大 10 月減少 4,700 個職位",
+  "headline_en": "US payrolls beat by a wide margin; Canada loses 4,700 jobs in October",
+  "body": "美國 10 月新增 16.5 萬個非農職位，遠高於約 6.5 萬的預期，失業率 4.1%；加拿大 10 月則減少 4,700 個職位，失業率升至半年來高點。美股收盤互有漲跌：Nasdaq 漲 1.09%、S&P 500 漲 0.31%，道瓊跌 0.46%；TSX 跌 0.21%，收 35,530 點。"
+ },
+ "points": [
+  {
+   "zh": "AI 晶片股反彈，但本週仍為 6 月以來最差",
+   "en": "Chip stocks bounce, but S&P 500 and Nasdaq post worst week since June"
+  },
+  {
+   "zh": "美債 10 年期殖利率 4.86%，VIX 降至 25.6",
+   "en": "10-year yield at 4.86%; VIX eases to 25.6"
+  }
+ ],
+ "sections": [
+  {
+   "title": "加拿大",
+   "items": [
+    {
+     "ticker": "BAM",
+     "name": "布魯克菲爾德資產管理",
+     "note": "費用相關盈餘年增 15%，募資 250 億美元",
+     "verdict": "",
+     "change": "",
+     "detail": {
+      "headline": "布魯克菲爾德資產管理第三季可分配盈餘年增 15%，管理資產逾 1 兆美元",
+      "name_en": "Brookfield Asset Management Ltd.",
+      "exchange": "TSX / NYSE",
+      "change_note": "股價反應與市場預期值未查到",
+      "eps": {
+       "actual": "US$0.47",
+       "yoy": "+15%"
+      },
+      "summary": "第三季可分配盈餘 7.63 億美元、每股 0.47 美元，年增 15%；費用相關盈餘 8.64 億美元、每股 0.54 美元，年增 15%。\n第三季募資 250 億美元，今年迄今 1,230 億美元；管理資產逾 1 兆美元，付費資本 6,820 億美元，年增 13%。",
+      "dividend": "季股息每股 US$0.5025，11 月 30 日登記、12 月 31 日支付",
+      "management": "執行長 Connor Teskey 表示募資沒有放緩的跡象，基礎建設承諾額近一年約 500 億美元",
+      "plain": "布魯克菲爾德這一季管理的資產和收費收入都成長，募到的新資金也很多，股息照發。",
+      "sources": [
+       {
+        "title": "Brookfield Asset Management Announces Strong Third Quarter Results（GlobeNewswire）",
+        "url": "https://www.globenewswire.com/news-release/2026/11/06/3397448/0/en/brookfield-asset-management-announces-strong-third-quarter-results.html"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "美國",
+   "items": [
+    {
+     "ticker": "AMD",
+     "name": "超微 AMD",
+     "note": "前日崩跌後反彈約 10%",
+     "verdict": "",
+     "change": "+10%",
+     "detail": {
+      "headline": "AI 晶片股前日崩跌後反彈，AMD 約漲 10%、Nvidia 約漲 3%",
+      "name_en": "Advanced Micro Devices",
+      "exchange": "Nasdaq",
+      "change_note": "收盤附近（精確收盤價未確認）",
+      "summary": "AMD 約上漲 10.25%、Nvidia 約上漲 3.25%、英特爾盤中漲近 6%，但本週整體仍為下跌；科技類股本週約跌 7%、能源類股約跌 11%。美光、SanDisk、SK 海力士今天仍下跌（無百分比數字）。Nasdaq 收漲 1.09%，S&P 500 本週為 6 月 5 日以來最差的一週。",
+      "risks": "本週賣壓是否結束仍不確定",
+      "plain": "昨天大跌的 AI 晶片股今天回升一部分，但整週仍然是虧的。",
+      "sources": [
+       {
+        "title": "Stock market today: Nasdaq and S&P 500 rebound, Dow slips to cap bruising week for AI stocks（Yahoo Finance）",
+        "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-6-dow-sp-500-nasdaq-jobs-report-earnings-135953863.html"
+       }
+      ]
+     }
+    },
+    {
+     "ticker": "ABNB",
+     "name": "Airbnb",
+     "note": "財報優於預期，今日收盤反應未查到",
+     "verdict": "beat",
+     "change": "",
+     "detail": {
+      "headline": "Airbnb 第三季營收成長三年來最快，宣布 120 億美元回購",
+      "name_en": "Airbnb, Inc.",
+      "exchange": "Nasdaq",
+      "change_note": "今日收盤跌幅未查到（盤前約 +12%）",
+      "revenue": {
+       "actual": "$4.87B",
+       "estimate": "$4.75B",
+       "yoy": "+19%"
+      },
+      "eps": {
+       "actual": "$3.16",
+       "estimate": "$2.85",
+       "yoy": "+43%"
+      },
+      "summary": "第三季營收 48.7 億美元，年增 19%；每股盈餘 3.16 美元，預期 2.85 美元；預訂總額 277 億美元，年增 21%。新增 120 億美元回購授權，第四季營收預測 32.2–32.8 億美元。",
+      "guidance": "第四季營收 32.2–32.8 億美元",
+      "plain": "Airbnb 這一季賺得比預期多，並要買回自家股票。",
+      "sources": [
+       {
+        "title": "Airbnb (ABNB) Stock Jumps 12% After Q3 Beat as Margin Climbs to 52%（MoneyCheck）",
+        "url": "https://moneycheck.com/airbnb-abnb-stock-jumps-12-after-q3-beat-as-margin-climbs-to-52/"
+       },
+       {
+        "title": "Stock market today: Nasdaq and S&P 500 rebound, Dow slips to cap bruising week for AI stocks（Yahoo Finance）",
+        "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-6-dow-sp-500-nasdaq-jobs-report-earnings-135953863.html"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "觀察清單",
+   "items": [
+    {
+     "ticker": "RY",
+     "name": "皇家銀行",
+     "note": "今日未查到重大消息",
+     "verdict": "",
+     "change": ""
+    },
+    {
+     "ticker": "SPCX",
+     "name": "SpaceX",
+     "note": "今日未查到新消息",
+     "verdict": "",
+     "change": ""
+    }
+   ]
+  }
+ ],
+ "macro": [
+  {
+   "text": "美國 10 月新增 16.5 萬個職位，失業率 4.1%",
+   "detail": "預期約 6.5–7 萬個職位、失業率 4.2%；9 月數字上修為 6 萬。平均時薪月增 0.4%（預期 0.3%）。"
+  },
+  {
+   "text": "加拿大 10 月減少 4,700 個職位",
+   "detail": "失業率升至半年來高點（本期來源未列具體數字）；市場預期是增加約 1.36 萬個職位。"
+  },
+  {
+   "text": "10 年期美債殖利率約 4.86%",
+   "detail": "VIX 收 25.64，下跌約 9%；金價收約 4,073 美元。WTI 約 90.5 美元，布蘭特低於 100 美元（來源報價可能有延遲）。"
+  }
+ ],
+ "next_label": "下週重點",
+ "next": "下週一 11/9 盤前快訊 08:23；CGI 於 11 月 11 日公布財報",
+ "sources": "Yahoo Finance、Ad-Hoc-News、GlobeNewswire、MoneyCheck"
+}
