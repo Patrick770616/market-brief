@@ -1,0 +1,160 @@
+{
+ "id": "2026-11-11-pre",
+ "edition": "盤前快訊",
+ "date": "11/11（三）",
+ "time": "多倫多 08:23",
+ "updated": "11/11 08:50",
+ "indices": [
+  {
+   "name": "S&P 期指",
+   "change": "+0.8%"
+  },
+  {
+   "name": "Nasdaq 期指",
+   "change": "+1.9%"
+  },
+  {
+   "name": "道瓊期指",
+   "change": "+0.1%"
+  },
+  {
+   "name": "WTI 原油",
+   "change": "+1.4%"
+  }
+ ],
+ "lead": {
+  "tag": "頭條",
+  "headline": "CoreWeave 財測點燃科技股 Nasdaq 期貨大漲近 2%",
+  "headline_en": "CoreWeave guidance sparks tech rebound; Nasdaq futures up nearly 2%",
+  "body": "CoreWeave 財報與財測優於預期，盤前漲約 15%–17%，帶動 Nasdaq-100 期貨上漲約 1.9%、S&P 500 期貨約 0.8%、道瓊期貨約 0.1%。10 年期美債殖利率約 5.00%，市場幾乎完全預期 12 月升息 25 個基點。美國債券市場今天因退伍軍人節休市。"
+ },
+ "points": [
+  {
+   "zh": "CoreWeave 上調財測，盤前漲 15–17%",
+   "en": "CoreWeave jumps 15–17% premarket on raised guidance"
+  },
+  {
+   "zh": "12 月升息 25 點幾乎已反映在價格中",
+   "en": "A 25bp December hike is all but priced in"
+  }
+ ],
+ "sections": [
+  {
+   "title": "美國",
+   "items": [
+    {
+     "ticker": "CRWV",
+     "name": "CoreWeave",
+     "note": "財報優於預期，盤前漲約 15–17%",
+     "verdict": "beat",
+     "change": "+17%（盤前）",
+     "detail": {
+      "headline": "CoreWeave 營收與虧損優於預期、上調財測，盤前大漲約 15–17%",
+      "name_en": "CoreWeave, Inc.",
+      "exchange": "Nasdaq",
+      "change_note": "盤前",
+      "revenue": {
+       "actual": "US$3.66B",
+       "vs_est": "高於預期"
+      },
+      "eps": {
+       "actual": "每股虧損 US$1.27",
+       "vs_est": "虧損小於預期"
+      },
+      "summary": "CoreWeave 第三季營收 36.6 億美元，高於預期；每股虧損 1.27 美元，小於預期。公司把 2026 全年營收預估上調至 130 億至 133 億美元，高於華爾街預測。\n股價近幾週因約 500 億美元債務疑慮大跌，今早盤前反彈約 15%–17%，並帶動 Nasdaq 期貨上漲。",
+      "guidance": "2026 年營收 US$13.0B–13.3B（上調）",
+      "risks": "債務沉重、資本支出龐大；仍在虧損",
+      "plain": "CoreWeave 這季營收和虧損都比市場預期好，財測也調高，之前擔心的債務問題暫時緩和，股價盤前大漲。",
+      "sources": [
+       {
+        "title": "Nasdaq futures jump on CoreWeave earnings; hot CPI reinforces Fed hike bets（Investing.com）",
+        "url": "https://investing.com/news/stock-market-news/us-stock-futures-tick-higher-after-wall-st-slips-on-hot-cpi-nvidia-losses-5017417"
+       },
+       {
+        "title": "S&P 500, Nasdaq Futures Rise Premarket — CRWV, GPRO, SPCX, NVDA, NLST（Stocktwits）",
+        "url": "https://stocktwits.com/news-articles/markets/equity/s-and-p-500-nasdaq-futures-rise-premarket-crwv-gpro-spcx-nvda-nlst-stocks-in-focus/cNGDlb9R9B7"
+       }
+      ]
+     }
+    },
+    {
+     "ticker": "NVDA",
+     "name": "Nvidia 輝達",
+     "note": "連跌兩日後盤前反彈約 3.5%",
+     "verdict": "",
+     "change": "+3.5%（盤前）",
+     "detail": {
+      "headline": "Nvidia 連跌兩日後盤前反彈約 3.5%",
+      "name_en": "NVIDIA Corporation",
+      "exchange": "Nasdaq",
+      "change_note": "盤前",
+      "summary": "Nvidia 週二收跌 5.47% 至約 168.89 美元，兩天因執行長相關報導累計重挫；今早盤前反彈約 3.5%，其他晶片股也小幅走高。\nMichael Burry 認為股價有反彈空間，但對其長期競爭優勢持保留態度。",
+      "risks": "執行長調查與利率風險仍在",
+      "plain": "Nvidia 前兩天跌很多，今早先出現反彈，不過還只是盤前走勢。",
+      "sources": [
+       {
+        "title": "Stock market today: Dow, S&P 500, Nasdaq futures rise as Nvidia stock recovers, 10-year yield nears 5%（Yahoo Finance）",
+        "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-11-dow-sp-500-nasdaq-nvidia-treasurys-123445799.html"
+       },
+       {
+        "title": "S&P 500, Nasdaq Futures Rise Premarket — CRWV, GPRO, SPCX, NVDA, NLST（Stocktwits）",
+        "url": "https://stocktwits.com/news-articles/markets/equity/s-and-p-500-nasdaq-futures-rise-premarket-crwv-gpro-spcx-nvda-nlst-stocks-in-focus/cNGDlb9R9B7"
+       }
+      ]
+     }
+    },
+    {
+     "ticker": "SPCX",
+     "name": "SpaceX",
+     "note": "盤前漲約 2.5%",
+     "verdict": "",
+     "change": "+2.5%（盤前）",
+     "detail": {
+      "headline": "SpaceX 盤前漲約 2.5%，傳可搭配 Nvidia 晶片的客製 AI 機櫃",
+      "name_en": "Space Exploration Technologies",
+      "exchange": "Nasdaq",
+      "change_note": "盤前",
+      "summary": "SemiAnalysis 報導 SpaceX 有一款客製 AI 機櫃，可同時使用 Nvidia 晶片與其他硬體，股價盤前上漲約 2.5%。Wedbush 的 Dan Ives 認為股價存在 20% 至 25% 的政治折價。",
+      "risks": "報導屬產業分析消息，尚待公司證實",
+      "plain": "有報導說 SpaceX 在做自己的 AI 運算機櫃，股價盤前小漲。",
+      "sources": [
+       {
+        "title": "S&P 500, Nasdaq Futures Rise Premarket — CRWV, GPRO, SPCX, NVDA, NLST（Stocktwits）",
+        "url": "https://stocktwits.com/news-articles/markets/equity/s-and-p-500-nasdaq-futures-rise-premarket-crwv-gpro-spcx-nvda-nlst-stocks-in-focus/cNGDlb9R9B7"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "觀察清單",
+   "items": [
+    {
+     "ticker": "RY",
+     "name": "皇家銀行",
+     "note": "近一日無重大消息",
+     "verdict": "",
+     "change": ""
+    }
+   ]
+  }
+ ],
+ "macro": [
+  {
+   "text": "12 月升息 25 點幾乎確定，50 點機率約 13%",
+   "detail": "Fed 理事 Waller 表示即使通膨降溫也支持 12 月升息；達拉斯聯儲總裁 Logan 認為至少還需要兩次升息；Fed 理事 Bowman 稱「仍需努力讓通膨更接近 2%」。"
+  },
+  {
+   "text": "油價反彈：WTI 約 86.5–87.2 美元，Brent 約 92–93 美元",
+   "detail": "荷莫茲海峽的航運遭攻擊持續，油價自兩個月低點反彈。10 年期殖利率約 5.00%，30 年期約 5.36%。"
+  },
+  {
+   "text": "Anthropic 傳出最高約 1.4 兆美元估值的 IPO",
+   "detail": "彭博報導 Anthropic 計畫募資約 644 億美元，最快下週開始交易。"
+  }
+ ],
+ "next_label": "今日留意",
+ "next": "美國債市休市（退伍軍人節）；加拿大 Remembrance Day；本期未查到今天加拿大期指與個股財報",
+ "sources": "Yahoo Finance、Investing.com、Stocktwits"
+}
