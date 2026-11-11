@@ -1,0 +1,165 @@
+{
+ "id": "2026-11-11-post",
+ "edition": "盤後快訊",
+ "date": "11/11（三）",
+ "time": "多倫多 16:53",
+ "updated": "11/11 17:20",
+ "indices": [
+  {
+   "name": "TSX",
+   "change": "+0.7%"
+  },
+  {
+   "name": "S&P 500",
+   "change": "+1.3%"
+  },
+  {
+   "name": "Nasdaq",
+   "change": "+1.6%"
+  },
+  {
+   "name": "道瓊",
+   "change": "+0.5%"
+  }
+ ],
+ "lead": {
+  "tag": "頭條",
+  "headline": "CoreWeave 暴漲 24% AI 股帶動 Nasdaq 收漲 1.6%",
+  "headline_en": "CoreWeave soars 24%, reigniting the AI trade",
+  "body": "S&P 500 收 7,619（+1.31%）、Nasdaq 25,466（+1.60%）、道瓊 52,486（+0.49%），VIX 降至 17.54。TSX 收 36,411.72（+0.67%），漲勢廣泛。美債市場今天因退伍軍人節休市，10 年期殖利率仍約 5%。"
+ },
+ "points": [
+  {
+   "zh": "CoreWeave 營收年增 168%，收漲約 24%",
+   "en": "CoreWeave revenue up 168%; stock closes about 24% higher"
+  },
+  {
+   "zh": "Nvidia 反彈 2.9%，下週二公布財報",
+   "en": "Nvidia rebounds 2.9%; earnings due next Tuesday"
+  }
+ ],
+ "sections": [
+  {
+   "title": "美國",
+   "items": [
+    {
+     "ticker": "CRWV",
+     "name": "CoreWeave",
+     "note": "財報優於預期，收漲約 24%",
+     "verdict": "beat",
+     "change": "+24%",
+     "detail": {
+      "headline": "CoreWeave 營收年增 168%、上調財測，收盤大漲約 24%",
+      "name_en": "CoreWeave, Inc.",
+      "exchange": "Nasdaq",
+      "change_note": "收盤",
+      "revenue": {
+       "actual": "US$3.7B",
+       "yoy": "+168%",
+       "vs_est": "高於預期"
+      },
+      "summary": "CoreWeave 第三季營收年增 168% 至約 37 億美元，高於預期，全年營收預估上調至 130 億至 133 億美元；調整後營業利益預估 12.75 億至 13.75 億美元。\n公司另有約 90 億美元客戶預付款與保證金，增加擴張資金的可見度。股價今天收漲約 24%，帶動晶片與 AI 相關股反彈。",
+      "guidance": "2026 年營收 US$13.0B–13.3B（上調）",
+      "risks": "債務與資本支出龐大",
+      "plain": "CoreWeave 這季營收和財測都比預期好，之前對它債務的擔憂緩和，股價大漲並帶動整個 AI 類股。",
+      "sources": [
+       {
+        "title": "Stock Market Today (Nov. 11, 2026): Nasdaq, S&P 500 gain after CoreWeave earnings beat; Apple hits new record（TheStreet）",
+        "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-11-2026"
+       },
+       {
+        "title": "Market Wrap: Stocks Close Higher as AI Trade Is Reignited（TipRanks）",
+        "url": "https://www.tipranks.com/news/market-wrap-stocks-close-higher-as-ai-trade-is-reignited"
+       },
+       {
+        "title": "Stock Market Today, November 11, 2026: Nasdaq Leads Veterans Day Rally as AI Shares Rebound（Vista PGlobal）",
+        "url": "https://vistapglobal.com/stock-market-today-november-11-2026-nasdaq-leads-veterans-day-rally-as-ai-shares-rebound-ant-be-cost-crwv-eprx-googl-modd-nvda-ser-spcx/"
+       }
+      ]
+     }
+    },
+    {
+     "ticker": "NVDA",
+     "name": "Nvidia 輝達",
+     "note": "連跌兩日後反彈，收漲 2.9%",
+     "verdict": "",
+     "change": "+2.9%",
+     "detail": {
+      "headline": "Nvidia 收漲 2.9% 至 173.73 美元，下週二公布財報",
+      "name_en": "NVIDIA Corporation",
+      "exchange": "Nasdaq",
+      "change_note": "收盤",
+      "summary": "Nvidia 在兩天跌掉逾 4,300 億美元市值後反彈，今天收 173.73 美元、上漲 2.92%，原因是 CoreWeave 的業績強化了市場對 AI 運算支出的預期。Baird 把評等降到中立、目標價降至 200 美元；摩根士丹利維持加碼、目標價 300 美元。公司已聘請外部律師調查執行長相關報導。\nIntel、AMD、Micron 今天各漲逾 5%。",
+      "risks": "執行長調查未了；財報在 11/17",
+      "plain": "Nvidia 前兩天大跌，今天因 CoreWeave 的好消息反彈，但它下週二才公布自己的財報。",
+      "sources": [
+       {
+        "title": "Stock Market Today (Nov. 11, 2026): Nasdaq, S&P 500 gain after CoreWeave earnings beat; Apple hits new record（TheStreet）",
+        "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-11-2026"
+       },
+       {
+        "title": "Market Wrap: Stocks Close Higher as AI Trade Is Reignited（TipRanks）",
+        "url": "https://www.tipranks.com/news/market-wrap-stocks-close-higher-as-ai-trade-is-reignited"
+       },
+       {
+        "title": "Stock Market Today, November 11, 2026: Nasdaq Leads Veterans Day Rally as AI Shares Rebound（Vista PGlobal）",
+        "url": "https://vistapglobal.com/stock-market-today-november-11-2026-nasdaq-leads-veterans-day-rally-as-ai-shares-rebound-ant-be-cost-crwv-eprx-googl-modd-nvda-ser-spcx/"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "觀察清單",
+   "items": [
+    {
+     "ticker": "RY",
+     "name": "皇家銀行",
+     "note": "近一日無重大消息",
+     "verdict": "",
+     "change": ""
+    },
+    {
+     "ticker": "SPCX",
+     "name": "SpaceX",
+     "note": "收 139.75 美元，跌 2.3%",
+     "verdict": "",
+     "change": "-2.3%",
+     "detail": {
+      "headline": "SpaceX 收跌 2.33% 至 139.75 美元",
+      "name_en": "Space Exploration Technologies",
+      "exchange": "Nasdaq",
+      "change_note": "收盤",
+      "summary": "SpaceX 今天收 139.75 美元，下跌 2.33%，與大盤上漲方向相反。Elon Musk 預估 2027 年 12 月前年度經常性營收可達 5,000 億美元以上，高於分析師平均預估的 1,800 億美元。來源未說明今天下跌的原因，只提到德州資料中心法規與政治曝險是風險。",
+      "risks": "政治曝險；估值預期很高",
+      "plain": "大盤今天大漲，SpaceX 反而小跌；來源沒有說明原因。",
+      "sources": [
+       {
+        "title": "Stock Market Today, November 11, 2026: Nasdaq Leads Veterans Day Rally as AI Shares Rebound（Vista PGlobal）",
+        "url": "https://vistapglobal.com/stock-market-today-november-11-2026-nasdaq-leads-veterans-day-rally-as-ai-shares-rebound-ant-be-cost-crwv-eprx-googl-modd-nvda-ser-spcx/"
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "macro": [
+  {
+   "text": "TSX 收 36,411.72（+0.67%）",
+   "detail": "來源只說明漲勢「廣泛、非集中於單一族群」，未提供類股與個股明細。"
+  },
+  {
+   "text": "美債休市，12 月升息幾乎已定價",
+   "detail": "週二偏熱的 CPI 讓 12 月升息 25 個基點幾乎全部反映在價格上；今天現金債市休市，殖利率顯示不代表新的債市走勢。"
+  },
+  {
+   "text": "WTI 約 86–87 美元；Apple 創歷史新高",
+   "detail": "12 月原油期貨收約 86.37 美元（+0.4%）。Apple 突破 355 美元、市值約 5.16 兆美元；Costco 宣布每股 30 美元特別股息與 40 億美元庫藏股，來源未提供股價反應。"
+  }
+ ],
+ "next_label": "明天重點",
+ "next": "Cisco、Applied Materials、Nebius 週四盤後公布財報；Nvidia 財報 11/17；加拿大個股財報本期未查到",
+ "sources": "TheStreet、TipRanks、Vista PGlobal、Business Upturn"
+}
