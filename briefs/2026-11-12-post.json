@@ -1,0 +1,165 @@
+{
+ "id": "2026-11-12-post",
+ "edition": "盤後快訊",
+ "date": "11/12（四）",
+ "time": "多倫多 16:53",
+ "updated": "11/12 17:20",
+ "indices": [
+  {
+   "name": "TSX",
+   "change": "-0.8%"
+  },
+  {
+   "name": "S&P 500",
+   "change": "-0.4%"
+  },
+  {
+   "name": "Nasdaq",
+   "change": "-0.6%"
+  },
+  {
+   "name": "道瓊",
+   "change": "-0.4%"
+  }
+ ],
+ "lead": {
+  "tag": "頭條",
+  "headline": "黃仁勳辭去 Nvidia 執行長 大盤小跌 TSX 跌 0.75%",
+  "headline_en": "Huang resigns as Nvidia CEO; stocks slip, TSX down 0.75%",
+  "body": "Nvidia 宣布黃仁勳辭職，財務長 Kress 暫代。S&P 500 收 7,586.64（-0.43%）、Nasdaq -0.61%、道瓊 -0.35%；10 年期殖利率升破 5%。TSX 收 36,137.19（-0.75%），午間由基本金屬拖累。Broadcom 與 AMD 各漲約 5%。"
+ },
+ "points": [
+  {
+   "zh": "黃仁勳辭職，財務長 Kress 暫代執行長",
+   "en": "Huang resigns; CFO Kress named interim CEO"
+  },
+  {
+   "zh": "應用材料營收創高，財測高於預期",
+   "en": "Applied Materials posts record revenue, guides above consensus"
+  }
+ ],
+ "sections": [
+  {
+   "title": "美國",
+   "items": [
+    {
+     "ticker": "NVDA",
+     "name": "Nvidia 輝達",
+     "note": "黃仁勳辭職，執行長由財務長暫代，收跌約 4%",
+     "verdict": "",
+     "change": "約 -4%",
+     "detail": {
+      "headline": "黃仁勳辭去 Nvidia 總裁、執行長與董事，財務長 Kress 暫代",
+      "name_en": "NVIDIA Corporation",
+      "exchange": "Nasdaq",
+      "change_note": "收盤（約數）",
+      "summary": "Nvidia 董事會週四 8:48（ET）宣布，黃仁勳即日起辭去總裁、執行長與董事職務，8-K 於 8:52 提交，未說明原因。財務長 Colette Kress 兼任臨時執行長，Harvey C. Jones 出任董事會首位主席；董事會將評估內部與外部的長期人選。\n股價前一晚盤後已跌約 8.6%，今天盤中低點 148.80 美元，收盤跌約 4%（來源之一給的收盤價有衝突，未採用）。財報仍預定 11/17 盤後，電話會議 5:00 p.m. ET。",
+      "risks": "領導層交接；財報在 11/17",
+      "plain": "Nvidia 創辦人兼執行長辭職，由財務長暫代；股價先大跌、收盤跌幅縮小。財報還是照原訂時間公布。",
+      "sources": [
+       {
+        "title": "Stocks Closed Slightly Lower in the Stock Market Today, November 12, 2026, and Nvidia Said CEO Jensen Huang Resigned（StockTitan）",
+        "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-12-2026"
+       },
+       {
+        "title": "Stock Market Recap — November 12, 2026（Alain Guillot）",
+        "url": "https://alainguillot.com/stock-market-recap-november-12-2026"
+       }
+      ]
+     }
+    },
+    {
+     "ticker": "AMAT",
+     "name": "應用材料 Applied Materials",
+     "note": "財報與財測優於預期",
+     "verdict": "beat",
+     "change": "",
+     "detail": {
+      "headline": "應用材料營收創高 104.1 億美元，上調下季財測",
+      "name_en": "Applied Materials, Inc.",
+      "exchange": "Nasdaq",
+      "change_note": "盤後（各來源方向不一，幅度未查到）",
+      "revenue": {
+       "actual": "US$10.41B",
+       "yoy": "+53%",
+       "vs_est": "預期約 US$10.3B"
+      },
+      "eps": {
+       "actual": "US$4.16（調整後）",
+       "yoy": "+92%",
+       "vs_est": "預期 US$4.06"
+      },
+      "summary": "應用材料第 4 財季營收 104.1 億美元，年增約 53%，半導體系統 79.96 億美元（+64%）、全球服務 18.96 億美元（+26%）。調整後毛利率 50.6%，調整後營業利益創高 36.8 億美元，自由現金流 26.2 億美元。",
+      "guidance": "下季營收 US$11.1B（±0.5B），預期 US$10.84B；調整後 EPS US$4.35（±0.20），預期 US$4.25",
+      "risks": "財報後股價反應各來源說法不一",
+      "plain": "AI 晶片需求帶動應用材料這季營收與獲利都比預期好，下季財測也高於市場預期。",
+      "sources": [
+       {
+        "title": "Applied Materials Stock (AMAT) Slips Despite Topping Estimates（TipRanks）",
+        "url": "https://www.tipranks.com/news/applied-materials-stock-amat-slips-despite-topping-estimates"
+       }
+      ]
+     }
+    },
+    {
+     "ticker": "CSCO",
+     "name": "思科 Cisco",
+     "note": "財報優於預期，盤後約漲 5%",
+     "verdict": "beat",
+     "change": "約 +5%（盤後）",
+     "detail": {
+      "headline": "思科財報優於華爾街預期，盤後約漲 5%",
+      "name_en": "Cisco Systems",
+      "exchange": "Nasdaq",
+      "change_note": "盤後（標題層級資訊）",
+      "summary": "依 TipRanks 新聞標題，思科財報優於華爾街預期，股價盤後上漲約 5%。本期未取得營收、EPS 與財測的具體數字。",
+      "risks": "本期資訊有限",
+      "plain": "思科公布財報，結果比市場預期好，盤後股價上漲；詳細數字這期沒有查到。",
+      "sources": [
+       {
+        "title": "Applied Materials Stock (AMAT) Slips Despite Topping Estimates（TipRanks）",
+        "url": "https://www.tipranks.com/news/applied-materials-stock-amat-slips-despite-topping-estimates"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "觀察清單",
+   "items": [
+    {
+     "ticker": "RY",
+     "name": "皇家銀行",
+     "note": "今日無重大消息",
+     "verdict": "",
+     "change": ""
+    },
+    {
+     "ticker": "SPCX",
+     "name": "SpaceX",
+     "note": "今日未查到個別消息",
+     "verdict": "",
+     "change": ""
+    }
+   ]
+  }
+ ],
+ "macro": [
+  {
+   "text": "TSX 收 36,137.19（-0.75%）",
+   "detail": "午間報導指基本金屬走弱；金價（12 月合約）盤中跌約 3% 至 3,880 美元左右，加幣約 70.15 美分，較週二走弱約 0.5%。本期未取得收盤類股明細。"
+  },
+  {
+   "text": "10 年期殖利率升破 5%，升息預期升溫",
+   "detail": "10 月 CPI 月增 0.4%（預期 0.3%）；部分分析師預期聯準會還會進一步升息。"
+  },
+  {
+   "text": "Broadcom +5.5%、AMD +5.3%，Intel、Micron 下跌",
+   "detail": "晶片股走勢分歧。另外，Strategy（MSTR）因 MSCI 將於 11/30 收盤把它自 MSCI USA 指數剔除而下跌；比特幣跌破 72,000 美元。"
+  }
+ ],
+ "next_label": "下週重點",
+ "next": "Nvidia 財報 11/17（週二）盤後；Anthropic IPO 傳最快下週登場；本期未查到明天（週五）盤前的重要財報",
+ "sources": "StockTitan、Alain Guillot、24/7 Wall St.、TipRanks、Business Upturn、CP24"
+}
