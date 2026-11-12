@@ -1,0 +1,137 @@
+{
+ "id": "2026-11-12-pre",
+ "edition": "盤前快訊",
+ "date": "11/12（四）",
+ "time": "多倫多 08:23",
+ "updated": "11/12 08:50",
+ "indices": [
+  {
+   "name": "TSX 60 期指",
+   "change": "-0.1%"
+  },
+  {
+   "name": "S&P 期指",
+   "change": "-0.4%"
+  },
+  {
+   "name": "Nasdaq 期指",
+   "change": "-0.8%"
+  },
+  {
+   "name": "WTI 原油",
+   "change": "-0.8%"
+  }
+ ],
+ "lead": {
+  "tag": "頭條",
+  "headline": "傳 Nvidia 董事會討論撤換執行長 科技期貨轉跌",
+  "headline_en": "Nasdaq futures slip on report Nvidia board weighs CEO ouster",
+  "body": "華爾街日報報導 Nvidia 董事會開會討論是否撤換黃仁勳，Nvidia 盤前跌約 6%–8%，Nasdaq-100 期貨約 -0.8%、S&P 500 期貨約 -0.4%、道瓊期貨持平。TSX 60 期貨約 -0.1%。昨天 TSX 收漲 0.67%。"
+ },
+ "points": [
+  {
+   "zh": "WSJ：Nvidia 董事會討論是否撤換執行長",
+   "en": "WSJ: Nvidia board weighs ousting CEO Huang"
+  },
+  {
+   "zh": "今晚盤後 Cisco、應用材料公布財報",
+   "en": "Cisco and Applied Materials report after the close"
+  }
+ ],
+ "sections": [
+  {
+   "title": "加拿大",
+   "items": [
+    {
+     "ticker": "BYD",
+     "name": "Boyd Group",
+     "note": "第三季調整後獲利較弱，股價下跌",
+     "verdict": "miss",
+     "change": "",
+     "detail": {
+      "headline": "Boyd Group 第三季調整後獲利轉弱，早盤走低",
+      "name_en": "Boyd Group Services",
+      "exchange": "TSX",
+      "change_note": "盤前／早盤，幅度未查到",
+      "summary": "Boyd Group 公布第三季業績，調整後獲利較弱，股價下跌。本期來源未提供營收、EPS、預期數字與跌幅，因此無法逐項比較。",
+      "risks": "本期來源資訊有限",
+      "plain": "Boyd 這季調整後的獲利比較弱，股價下跌；詳細數字這期沒查到。",
+      "sources": [
+       {
+        "title": "TSX futures subdued amid reports Nvidia board preparing ouster of CEO Jensen Huang（Yahoo Finance）",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/tsx-futures-subdued-amid-reports-121009808.html"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "美國",
+   "items": [
+    {
+     "ticker": "NVDA",
+     "name": "Nvidia 輝達",
+     "note": "傳董事會討論是否撤換執行長，盤前跌約 6–8%",
+     "verdict": "",
+     "change": "-5.6%（盤前）",
+     "detail": {
+      "headline": "華爾街日報：Nvidia 董事會開會討論是否撤換黃仁勳，盤前重挫",
+      "name_en": "NVIDIA Corporation",
+      "exchange": "Nasdaq",
+      "change_note": "盤前（各來源 -5.6% 至 -7.9%）",
+      "summary": "華爾街日報報導，Nvidia 董事會正開會決定是否撤換執行長黃仁勳；紐約時報另報導他與公司一位主管的關係。股價盤後即走低，今早盤前下跌約 6% 至 8%，跌破約 164 美元的支撐區。\nEvercore 降評，並警告「不明顯有接班計畫」，可能讓領導層不確定性延長。CoreWeave、Iren、Coherent 等相關股同步走低，AMD、Broadcom 則因被視為可能受惠而上漲。Nvidia 財報預定 11/17。",
+      "risks": "領導層不確定；11/17 財報",
+      "plain": "有報導說 Nvidia 董事會正在討論要不要換掉執行長，股價盤前大跌；相關的 AI 股也跟著走低。這是媒體報導，公司尚未證實。",
+      "sources": [
+       {
+        "title": "Stock market today: S&P 500, Nasdaq futures sink as Nvidia CEO turmoil jolts confidence（Yahoo Finance）",
+        "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-12-sp-500-nasdaq-dow-nvidia-invest-110027430.html"
+       },
+       {
+        "title": "TSX futures subdued amid reports Nvidia board preparing ouster of CEO Jensen Huang（Yahoo Finance）",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/tsx-futures-subdued-amid-reports-121009808.html"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "觀察清單",
+   "items": [
+    {
+     "ticker": "RY",
+     "name": "皇家銀行",
+     "note": "近一日無重大消息",
+     "verdict": "",
+     "change": ""
+    },
+    {
+     "ticker": "SPCX",
+     "name": "SpaceX",
+     "note": "近一日無查到個別消息",
+     "verdict": "",
+     "change": ""
+    }
+   ]
+  }
+ ],
+ "macro": [
+  {
+   "text": "10 年期美債殖利率約 5.0%，升息預期居高",
+   "detail": "週二偏熱的 CPI 後，華爾街上調對更多、更大幅升息的預測。"
+  },
+  {
+   "text": "金價跌破 4,000 美元，油價震盪",
+   "detail": "金價因通膨疑慮與聯準會鷹派言論下跌；油價因美伊談判不確定性波動，12 月原油期貨約 85.9 美元，Brent 低於 93 美元。"
+  },
+  {
+   "text": "Lithium Americas 重挫逾 12%",
+   "detail": "因內華達州專案成本預估上調（來源：Yahoo Finance）。"
+  }
+ ],
+ "next_label": "今日財報",
+ "next": "盤前：Brookfield（BN）、Nebius、Intuitive Machines；盤後：Cisco（營收財測 180–182 億美元）、應用材料（預期營收約 102.5 億美元、調整後 EPS 4.02 美元）、Nu Holdings、Cerebras；Hudbay、Stantec 也於今日公布",
+ "sources": "Yahoo Finance、TipRanks"
+}
