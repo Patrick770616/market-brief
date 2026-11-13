@@ -1,0 +1,166 @@
+{
+ "id": "2026-11-13-pre",
+ "edition": "盤前快訊",
+ "date": "11/13（五）",
+ "time": "多倫多 08:23（延遲發出）",
+ "updated": "11/13 10:30",
+ "indices": [
+  {
+   "name": "道瓊期指",
+   "change": "+0.2%"
+  },
+  {
+   "name": "S&P 期指",
+   "change": "+0.1%"
+  },
+  {
+   "name": "Nasdaq 期指",
+   "change": "-0.1%"
+  },
+  {
+   "name": "WTI 原油",
+   "change": "-0.6%"
+  }
+ ],
+ "lead": {
+  "tag": "頭條",
+  "headline": "PPI 今早公布 Nvidia 盤前反彈 微軟全球當機",
+  "headline_en": "PPI due as Nvidia rebounds; Microsoft hit by global Outlook outage",
+  "body": "美國 10 月 PPI 今早公布，市場預期月增 0.4%（9 月為 1.3%），Quartz 報導結果低於預期（本期未取得實際數字）。期貨 5:42（ET）時道瓊約 +0.21%、S&P 約 +0.12%、Nasdaq-100 約 -0.13%。本期因排程延遲，約 10:20 才開始編寫，美股已開盤。"
+ },
+ "points": [
+  {
+   "zh": "PPI 今早公布，市場預期月增 0.4%",
+   "en": "October PPI due; consensus +0.4% m/m"
+  },
+  {
+   "zh": "思科營收創高 185 億美元，AI 需求強勁",
+   "en": "Cisco posts record $18.5B revenue on AI demand"
+  }
+ ],
+ "sections": [
+  {
+   "title": "美國",
+   "items": [
+    {
+     "ticker": "NVDA",
+     "name": "Nvidia 輝達",
+     "note": "執行長辭職後盤前反彈逾 2%",
+     "verdict": "",
+     "change": "+2%（盤前）",
+     "detail": {
+      "headline": "Nvidia 在黃仁勳辭職次日盤前反彈逾 2%",
+      "name_en": "NVIDIA Corporation",
+      "exchange": "Nasdaq",
+      "change_note": "盤前",
+      "summary": "黃仁勳週四辭去執行長後，Nvidia 週四收盤走低；今早盤前反彈逾 2%，帶動道瓊期貨一度上漲約 323 點。財務長 Kress 暫代執行長，Nvidia 財報預定 11/17 盤後。",
+      "risks": "領導層交接未明；財報在 11/17",
+      "plain": "Nvidia 昨天因執行長辭職下跌，今早先小幅反彈，但還需要看它下週二的財報。",
+      "sources": [
+       {
+        "title": "【US Pre-Market】Nvidia Rebounds Over 2%; Microsoft Falls Over 2% Amid Massive Global Outage; October PPI Due（TradingKey）",
+        "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262304609-nvda-nvidia-msft-us-ppi-tradingkey"
+       },
+       {
+        "title": "Dow futures rise 323 points as Nvidia rebounds, PPI comes in light（Quartz）",
+        "url": "https://qz.com/dow-futures-nvidia-rebound-wholesale-inflation-111326"
+       }
+      ]
+     }
+    },
+    {
+     "ticker": "CSCO",
+     "name": "思科 Cisco",
+     "note": "營收創高 185 億美元，財報優於預期",
+     "verdict": "beat",
+     "change": "",
+     "detail": {
+      "headline": "思科營收年增 24% 至創紀錄 185 億美元，預期今年 AI 基礎建設營收翻倍",
+      "name_en": "Cisco Systems",
+      "exchange": "Nasdaq",
+      "change_note": "本期未取得盤前漲跌幅",
+      "revenue": {
+       "actual": "約 US$18.5B",
+       "yoy": "+24%"
+      },
+      "summary": "思科公布財年第一季業績，營收約 185 億美元、年增 24% 創紀錄，財報優於預期；公司表示本財年 AI 基礎建設營收將翻倍。本期未取得 EPS、預期數字與財測細節，也沒有取得今早股價反應。",
+      "risks": "本期資訊有限",
+      "plain": "思科因 AI 網路設備需求強勁，營收創新高、結果好於預期；詳細數字這期沒有查全。",
+      "sources": [
+       {
+        "title": "Cisco revenue jumps 24% to record $18.5B on AI networking demand（Crypto Briefing）",
+        "url": "https://cryptobriefing.com/cisco-systems-earnings-q1-fy27-2026-11/"
+       },
+       {
+        "title": "Cisco beats on earnings, says AI infrastructure revenue will double this fiscal year（CNBC）",
+        "url": "https://www.cnbc.com/2026/11/12/cisco-csco-q1-2027-earnings.html"
+       }
+      ]
+     }
+    },
+    {
+     "ticker": "MSFT",
+     "name": "微軟 Microsoft",
+     "note": "全球 Outlook 當機，盤前跌逾 2%",
+     "verdict": "",
+     "change": "-2%（盤前）",
+     "detail": {
+      "headline": "微軟因全球 Outlook 當機盤前下跌逾 2%",
+      "name_en": "Microsoft Corporation",
+      "exchange": "Nasdaq",
+      "change_note": "盤前",
+      "summary": "微軟工程師正修復造成全球 Outlook 當機的伺服器問題，股價盤前下跌逾 2%。本期來源未說明影響範圍與預計修復時間。",
+      "risks": "修復時間與影響範圍未明",
+      "plain": "微軟的電子郵件服務 Outlook 在全球出狀況，股價盤前下跌。",
+      "sources": [
+       {
+        "title": "Stock Market Today, Nov. 13: U.S. Stocks Wobble Ahead of PPI Data（TipRanks）",
+        "url": "https://www.tipranks.com/news/stock-market-today-nov-13-u-s-stocks-wobble-ahead-of-ppi-data"
+       },
+       {
+        "title": "【US Pre-Market】Nvidia Rebounds Over 2%; Microsoft Falls Over 2% Amid Massive Global Outage; October PPI Due（TradingKey）",
+        "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262304609-nvda-nvidia-msft-us-ppi-tradingkey"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "觀察清單",
+   "items": [
+    {
+     "ticker": "RY",
+     "name": "皇家銀行",
+     "note": "今日無重大消息",
+     "verdict": "",
+     "change": ""
+    },
+    {
+     "ticker": "SPCX",
+     "name": "SpaceX",
+     "note": "今日未查到個別消息",
+     "verdict": "",
+     "change": ""
+    }
+   ]
+  }
+ ],
+ "macro": [
+  {
+   "text": "Brent 約 95.6 美元、WTI 約 88.2 美元，有望連兩週下跌",
+   "detail": "Brent -0.21%、WTI -0.59%。"
+  },
+  {
+   "text": "TSX 週四收 36,137.19（-0.75%）",
+   "detail": "受金價、基本金屬與銀行股拖累；本期未查到今天 TSX 開盤後的數據。"
+  },
+  {
+   "text": "全球市場：恆生 -1.55%、日經 +0.53%，歐股走低",
+   "detail": "10 年期美債殖利率週四升破 5%。"
+  }
+ ],
+ "next_label": "下週重點",
+ "next": "Nvidia 財報 11/17（週二）盤後；Walmart 下週公布第三季財報；本期未查到今天加拿大個股財報",
+ "sources": "TipRanks、TradingKey、Quartz、Crypto Briefing、CNBC"
+}
