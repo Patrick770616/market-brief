@@ -1,0 +1,166 @@
+{
+ "id": "2026-11-13-post",
+ "edition": "盤後快訊",
+ "date": "11/13（五）",
+ "time": "多倫多 16:53",
+ "updated": "11/13 17:25",
+ "indices": [
+  {
+   "name": "TSX",
+   "change": "-0.1%"
+  },
+  {
+   "name": "S&P 500",
+   "change": "-0.4%"
+  },
+  {
+   "name": "Nasdaq 100",
+   "change": "-1.2%"
+  },
+  {
+   "name": "道瓊",
+   "change": "+0.1%"
+  }
+ ],
+ "lead": {
+  "tag": "頭條",
+  "headline": "晶片股重挫 AMD 大跌 9% Nasdaq 100 跌 1.2%",
+  "headline_en": "Chip selloff hits AMD, Nasdaq 100 slips 1.2% as yields stay above 5%",
+  "body": "儘管 PPI 低於預期，晶片股仍遭拋售：AMD 收跌約 8.75%、Broadcom 約 4.8%、思科約 6.2%、Nvidia 約 2%。以 ETF 收盤計，S&P 500 約 -0.38%、Nasdaq 100 約 -1.20%、道瓊約 +0.14%；10 年期美債殖利率盤中觸及約 5.17%。TSX 收 36,105.90（-0.09%）。"
+ },
+ "points": [
+  {
+   "zh": "PPI 月增 0.3%，低於預期 0.4%，但年增 6.5% 為 2022 年來最高",
+   "en": "PPI +0.3% vs +0.4% expected; 6.5% y/y is the highest since 2022"
+  },
+  {
+   "zh": "Nvidia 下週二（11/17）盤後公布財報",
+   "en": "Nvidia reports after the close Tuesday, Nov 17"
+  }
+ ],
+ "sections": [
+  {
+   "title": "美國",
+   "items": [
+    {
+     "ticker": "AMD",
+     "name": "超微 AMD",
+     "note": "晶片股重挫，收跌約 8.8%",
+     "verdict": "",
+     "change": "-8.8%",
+     "detail": {
+      "headline": "AMD 收跌約 8.75%，為晶片股賣壓中跌幅最大者之一",
+      "name_en": "Advanced Micro Devices",
+      "exchange": "Nasdaq",
+      "change_note": "收盤",
+      "summary": "AMD 今天收跌約 8.75%，盤中一度跌逾 10%，是晶片賣壓中最重的個股之一；同日 Broadcom 跌約 4.8%，Intel、Micron 盤中各跌約 5%。\n來源把原因歸於 Nvidia 領導層動盪與 10 年期殖利率升至 5.1% 以上；本期來源沒有給出 AMD 專屬的消息。",
+      "risks": "利率與 AI 估值壓力",
+      "plain": "AMD 昨天還上漲，今天因整個晶片股被賣、利率升高而大跌；來源沒有提到 AMD 自己的壞消息。",
+      "sources": [
+       {
+        "title": "Stocks Turn Lower in the Stock Market Today Live, November 13, 2026（StockTitan）",
+        "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-13-2026"
+       },
+       {
+        "title": "Stock market today: Dow rises, S&P 500 and Nasdaq slip to cap volatile week, Nvidia stock plunge deepens（Yahoo Finance）",
+        "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-13-dow-sp-500-nasdaq-nvidia-ppi-141451558.html"
+       }
+      ]
+     }
+    },
+    {
+     "ticker": "NVDA",
+     "name": "Nvidia 輝達",
+     "note": "收跌約 2%，約 162.85 美元",
+     "verdict": "",
+     "change": "-2.0%",
+     "detail": {
+      "headline": "Nvidia 收跌約 2%，較 11/6 收盤低約 13%",
+      "name_en": "NVIDIA Corporation",
+      "exchange": "Nasdaq",
+      "change_note": "收盤",
+      "summary": "Nvidia 盤前一度反彈逾 2%，但收盤仍下跌約 2.01%，約 162.85 美元（此價為來源自行推算），較 11/6 的收盤 186.64 美元低約 13%；盤中市值一度跌破 4 兆美元。\n財務長 Kress 暫代執行長，財報預定 11/17（週二）盤後。",
+      "risks": "領導層交接；11/17 財報",
+      "plain": "Nvidia 盤前先反彈，收盤還是下跌；這週累計跌了不少，下週二要公布財報。",
+      "sources": [
+       {
+        "title": "Stocks Turn Lower in the Stock Market Today Live, November 13, 2026（StockTitan）",
+        "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-13-2026"
+       },
+       {
+        "title": "Stock market today: Dow rises, S&P 500 and Nasdaq slip to cap volatile week, Nvidia stock plunge deepens（Yahoo Finance）",
+        "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-13-dow-sp-500-nasdaq-nvidia-ppi-141451558.html"
+       }
+      ]
+     }
+    },
+    {
+     "ticker": "CSCO",
+     "name": "思科 Cisco",
+     "note": "財報優於預期，但收跌約 6.2%",
+     "verdict": "beat",
+     "change": "-6.2%",
+     "detail": {
+      "headline": "思科財報優於預期、營收創高，股價收跌約 6.24%",
+      "name_en": "Cisco Systems",
+      "exchange": "Nasdaq",
+      "change_note": "收盤",
+      "revenue": {
+       "actual": "約 US$18.5B",
+       "yoy": "+24%"
+      },
+      "summary": "思科財年第一季營收約 185 億美元、年增 24% 創紀錄，財報優於預期；公司表示本財年 AI 基礎建設營收將翻倍。然而在晶片與 AI 相關股全面走弱的一天，思科收跌約 6.24%。本期未取得 EPS、預期數字與財測細節。",
+      "risks": "AI 概念股估值與利率壓力",
+      "plain": "思科財報很好，但今天整個 AI 相關股都被賣，所以股價反而大跌。",
+      "sources": [
+       {
+        "title": "Cisco revenue jumps 24% to record $18.5B on AI networking demand（Crypto Briefing）",
+        "url": "https://cryptobriefing.com/cisco-systems-earnings-q1-fy27-2026-11/"
+       },
+       {
+        "title": "Stocks Turn Lower in the Stock Market Today Live, November 13, 2026（StockTitan）",
+        "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-13-2026"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "觀察清單",
+   "items": [
+    {
+     "ticker": "RY",
+     "name": "皇家銀行",
+     "note": "今日無重大消息",
+     "verdict": "",
+     "change": ""
+    },
+    {
+     "ticker": "SPCX",
+     "name": "SpaceX",
+     "note": "今日未查到個別消息",
+     "verdict": "",
+     "change": ""
+    }
+   ]
+  }
+ ],
+ "macro": [
+  {
+   "text": "美國 10 月 PPI：月增 0.3%（預期 0.4%）、年增 6.5%",
+   "detail": "核心 PPI 月增 0.3%（符合預期）、年增 5.0%；扣除食品、能源與貿易服務的核心月增 0.5%（預期 0.3%）。年增 6.5% 為 2022 年 11 月以來最高，市場仍預期 12 月升息。"
+  },
+  {
+   "text": "TSX 收 36,105.90（-0.09%）",
+   "detail": "來源只描述為平靜、方向不明的一天，未提供類股與個股明細。"
+  },
+  {
+   "text": "10 年期殖利率約 5.1–5.17%；比特幣跌破 70,000 美元",
+   "detail": "WTI 原油 12 月合約約 88.45 美元、金價約 3,889 美元（均為盤中數字）。Modine 因三星相關報導盤中大漲約 28%。"
+  }
+ ],
+ "next_label": "下週重點",
+ "next": "Nvidia 財報 11/17 盤後；Walmart 下週公布第三季財報；本期未查到下週一的重要財報",
+ "sources": "StockTitan、Yahoo Finance、24/7 Wall St.、Business Upturn、Crypto Briefing"
+}
