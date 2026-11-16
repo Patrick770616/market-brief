@@ -1,0 +1,174 @@
+{
+ "id": "2026-11-16-post",
+ "edition": "盤後快訊",
+ "date": "11/16（一）",
+ "time": "多倫多 16:53",
+ "updated": "11/16 17:25",
+ "indices": [
+  {
+   "name": "TSX",
+   "change": "-1.1%"
+  },
+  {
+   "name": "S&P 500",
+   "change": "-1.9%"
+  },
+  {
+   "name": "Nasdaq",
+   "change": "-2.5%"
+  },
+  {
+   "name": "道瓊",
+   "change": "-1.4%"
+  }
+ ],
+ "lead": {
+  "tag": "頭條",
+  "headline": "AI 股拖累 Nasdaq 重挫 2.5% VIX 飆升 22%",
+  "headline_en": "Nasdaq sinks 2.5% as AI worries mount ahead of Nvidia earnings",
+  "body": "S&P 500 收 7,416.59（-1.92%）、道瓊 51,608.17（-1.41%）、Nasdaq 24,509.76（-2.49%）；VIX 升至 23.56（+22%）。TSX 收 35,722.13（-1.06%），跌破 36,000。12 月原油期貨 -3.4% 至 85.53 美元，金價創逾一年新低。"
+ },
+ "points": [
+  {
+   "zh": "Nvidia 明天盤後公布財報，首度沒有黃仁勳",
+   "en": "Nvidia reports after the close Tuesday, its first call without Huang"
+  },
+  {
+   "zh": "加拿大 10 月 CPI 年增 3.1%，低於預期 3.2%",
+   "en": "Canada October CPI 3.1% y/y vs 3.2% expected"
+  }
+ ],
+ "sections": [
+  {
+   "title": "加拿大",
+   "items": [
+    {
+     "ticker": "T",
+     "name": "Telus",
+     "note": "成為最活躍股中漲幅最大，漲約 12.9%",
+     "verdict": "",
+     "change": "+12.9%",
+     "detail": {
+      "headline": "Telus 逆勢大漲約 12.85%，來源未說明原因",
+      "name_en": "TELUS Corporation",
+      "exchange": "TSX",
+      "change_note": "收盤",
+      "summary": "在 TSX 收跌 1.06% 的一天，Telus 上漲約 12.85%，是最活躍股中的最大漲幅者。來源沒有說明原因，本期也未查到公司公告。",
+      "risks": "原因未明",
+      "plain": "Telus 今天大漲，但這期沒查到原因，所以不做推測。",
+      "sources": [
+       {
+        "title": "TSX falls below 36,000 as investors weigh inflation data, Nvidia earnings ahead（Investing.com）",
+        "url": "https://ca.investing.com/news/stock-market-news/tsx-futures-drop-as-nvidia-results-anthropic-ipo-loom-large-canadian-cpi-ahead-4960549"
+       }
+      ]
+     }
+    },
+    {
+     "ticker": "CNQ",
+     "name": "加拿大自然資源 Canadian Natural",
+     "note": "油價大跌，收跌約 2.8%",
+     "verdict": "",
+     "change": "-2.75%",
+     "detail": {
+      "headline": "加拿大自然資源收跌 2.75%，Suncor 跌 2.41%",
+      "name_en": "Canadian Natural Resources",
+      "exchange": "TSX",
+      "change_note": "收盤",
+      "summary": "WTI 原油與 Brent 今天下跌約 3.8%–4%，加拿大能源股承壓：加拿大自然資源（CNQ）跌 2.75%，Suncor（SU）跌 2.41%，同為 TSX 最活躍的下跌股。",
+      "risks": "油價走弱",
+      "plain": "油價今天大跌，加拿大兩家大型能源股也跟著下跌。",
+      "sources": [
+       {
+        "title": "TSX falls below 36,000 as investors weigh inflation data, Nvidia earnings ahead（Investing.com）",
+        "url": "https://ca.investing.com/news/stock-market-news/tsx-futures-drop-as-nvidia-results-anthropic-ipo-loom-large-canadian-cpi-ahead-4960549"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "美國",
+   "items": [
+    {
+     "ticker": "NVDA",
+     "name": "Nvidia 輝達",
+     "note": "財報前夕再跌約 2.5%，AI 股拖累 Nasdaq 跌 2.5%",
+     "verdict": "",
+     "change": "約 -2.5%",
+     "detail": {
+      "headline": "Nvidia 財報前再跌約 2.5%，明天盤後公布第三季業績",
+      "name_en": "NVIDIA Corporation",
+      "exchange": "Nasdaq",
+      "change_note": "收盤（約數）",
+      "summary": "Nvidia 受領導層不確定拖累，今天再跌約 2.5%；上午 10:01 報 159.61 美元，較 11/11 收盤 173.73 美元低約 8%。來源指董事會據報並未考慮讓黃仁勳復職，但 Nvidia 未證實。\n其他晶片股同樣重挫：上午 Micron 約 -6.4%、Intel 約 -6.0%。Nvidia 預定明天（11/17）約 4:20 p.m. ET 公布第三季業績。",
+      "risks": "領導層交接；財報與指引",
+      "plain": "Nvidia 連續幾天下跌，今天又跌；明天公布財報，市場很關注。",
+      "sources": [
+       {
+        "title": "TSX falls below 36,000 as investors weigh inflation data, Nvidia earnings ahead（Investing.com）",
+        "url": "https://ca.investing.com/news/stock-market-news/tsx-futures-drop-as-nvidia-results-anthropic-ipo-loom-large-canadian-cpi-ahead-4960549"
+       },
+       {
+        "title": "Stock Market Today Live, November 16, 2026（StockTitan）",
+        "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-16-2026"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "觀察清單",
+   "items": [
+    {
+     "ticker": "RY",
+     "name": "皇家銀行",
+     "note": "今日無重大消息；BMO 跌 1.64%",
+     "verdict": "",
+     "change": ""
+    },
+    {
+     "ticker": "SPCX",
+     "name": "SpaceX",
+     "note": "收 137.36 美元，跌 1.26%",
+     "verdict": "",
+     "change": "-1.26%",
+     "detail": {
+      "headline": "SpaceX 收跌 1.26% 至 137.36 美元",
+      "name_en": "Space Exploration Technologies",
+      "exchange": "Nasdaq",
+      "change_note": "收盤",
+      "summary": "SpaceX 今天收 137.36 美元、下跌 1.26%；來源未說明原因。11/14 Starship 上面級成功回收，任務部署 26 顆 Starlink 衛星，但助推器回收中止。市場預測平台上 Tesla 與 SpaceX 合併的機率升至約 62%，兩家公司未宣布任何合併。",
+      "risks": "合併傳聞屬市場預測，並非公司公告",
+      "plain": "SpaceX 今天小跌；來源沒有說明原因，也沒有任何合併宣布。",
+      "sources": [
+       {
+        "title": "Stock Market Today, November 16, 2026: Nasdaq Slides 2.49% as AI Uncertainty, Technology Outages and Slower Manufacturing Cloud Outlook（Vista PGlobal）",
+        "url": "https://vistapglobal.com/stock-market-today-november-16-2026-nasdaq-slides-2-49-as-ai-uncertainty-technology-outages-and-slower-manufacturing-cloud-outlook-amzn-eprx-jpm-lly-modd-nvda-ser-spcx-tsla/"
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "macro": [
+  {
+   "text": "加拿大 10 月 CPI：年增 3.1%（預期 3.2%），月增 0.2%（預期 0.3%）",
+   "detail": "年增率與 9 月持平。TSX 60 收 2,132.10（-0.93%）。"
+  },
+  {
+   "text": "油價大跌、金價創逾一年新低",
+   "detail": "荷莫茲海峽運輸恢復，WTI 約 84–85.5 美元（-3.4% 至 -3.8%）、Brent 約 92 美元；金價約 3,859 美元，因美元走強與升息預期而下跌。"
+  },
+  {
+   "text": "10 年期殖利率約 5.12%；Anthropic IPO 週三定價、週四開始交易",
+   "detail": "11 月紐約 Empire 製造業指數為 7.8，低於預期的 16.7–19。JPMorgan 稱技術問題造成部分交易延遲，並非資安事件。"
+  }
+ ],
+ "next_label": "明天重點",
+ "next": "Nvidia（盤後約 4:20 p.m. ET）、Disney、Home Depot、JD.com 財報；本期未查到明天盤前的加拿大財報",
+ "sources": "Vista PGlobal、Investing.com、Business Upturn、StockTitan"
+}
