@@ -1,0 +1,122 @@
+{
+ "id": "2026-11-17-post",
+ "edition": "盤後快訊",
+ "date": "11/17（二）",
+ "time": "多倫多 16:53",
+ "updated": "11/17 17:30",
+ "indices": [
+  {
+   "name": "TSX",
+   "change": "-1.1%"
+  },
+  {
+   "name": "S&P 500",
+   "change": "-1.1%"
+  },
+  {
+   "name": "Nasdaq",
+   "change": "-0.9%"
+  },
+  {
+   "name": "道瓊",
+   "change": "-1.9%"
+  }
+ ],
+ "lead": {
+  "tag": "頭條",
+  "headline": "Nvidia 財報強勁盤後漲 2% 但道瓊先崩跌 955 點",
+  "headline_en": "Nvidia beats and guides above consensus, but the Dow had already shed 955 points",
+  "body": "道瓊收跌 1.85%（955 點，約 50,653）、S&P 500 -1.05%、Nasdaq -0.91%，S&P 500 為 7 月以來最低收盤；TSX 收 35,315.30（-1.14%），連兩天大跌。收盤後 Nvidia 公布營收 1,158 億美元，優於預期，並預估下季營收 1,300 億美元，股價盤後漲約 2%。"
+ },
+ "points": [
+  {
+   "zh": "Nvidia 營收年增 103%，下季財測 1,300 億美元",
+   "en": "Nvidia revenue +103%; guides next quarter to $130B"
+  },
+  {
+   "zh": "道瓊重挫 955 點，TSX 連兩日大跌",
+   "en": "Dow sheds 955 points; TSX falls for a second day"
+  }
+ ],
+ "sections": [
+  {
+   "title": "美國",
+   "items": [
+    {
+     "ticker": "NVDA",
+     "name": "Nvidia 輝達",
+     "note": "財報與財測雙雙優於預期，盤後漲約 2%",
+     "verdict": "beat",
+     "change": "+2%（盤後）",
+     "detail": {
+      "headline": "Nvidia 營收 1,158 億美元優於預期，財測 1,300 億美元，盤後漲約 2%",
+      "name_en": "NVIDIA Corporation",
+      "exchange": "Nasdaq",
+      "change_note": "盤後（正規盤收 155.46 美元，-0.44%）",
+      "revenue": {
+       "actual": "US$115.8B",
+       "yoy": "+103%",
+       "vs_est": "預期約 US$109B"
+      },
+      "eps": {
+       "actual": "非 GAAP US$2.68；GAAP US$2.70",
+       "vs_est": "預期 US$2.47"
+      },
+      "summary": "Nvidia 第三財季（截至 10/25）營收 1,158 億美元，年增 103%、季增 20%，高於預期的約 1,090 億美元；資料中心營收 1,076 億美元（預期 1,019 億美元）；毛利率非 GAAP 74.9%。本季透過庫藏股與股息回饋股東 281 億美元。\n公司預估下季營收 1,300 億美元（±3%），高於分析師預期 1,252 億美元，且假設中國資料中心運算營收為零；下季毛利率預估降至 71%–72%，因 Vera Rubin 量產。\n黃仁勳表示若有機會願意回任，但須先出席國會聽證；Yahoo Finance 報導董事會並不希望他回來。財務長 Kress 暫代執行長，說 Vera Rubin「起步爆發」。",
+      "guidance": "下季營收 US$130B（±3%），含額外一週；毛利率 71%–72%",
+      "dividend": "每股 US$0.25，12/23 發放（12/2 登記）",
+      "management": "暫代執行長 Colette Kress：「我們的動能是真實的」",
+      "risks": "中國業務（UBS：最壞情況可能影響約 10% 營收）；下季毛利率下滑；領導層不確定",
+      "plain": "Nvidia 這季賺得比預期多，下季財測也高於預期，所以盤後股價上漲。不過中國的生意預期是零，而且還沒決定新的執行長。",
+      "sources": [
+       {
+        "title": "NVIDIA Announces Financial Results for Third Quarter Fiscal 2027（NVIDIA）",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027"
+       },
+       {
+        "title": "Nvidia Q3 Fiscal 2027 Earnings: $115.8 Billion Revenue, $65.3 Billion Profit and a Strong Outlook Without Jensen Huang（Trending Topics）",
+        "url": "https://www.trendingtopics.eu/nvidia-without-huang-115-8-billion-in-revenue-beats-all-expectations/"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "觀察清單",
+   "items": [
+    {
+     "ticker": "RY",
+     "name": "皇家銀行",
+     "note": "今日無重大消息",
+     "verdict": "",
+     "change": ""
+    },
+    {
+     "ticker": "SPCX",
+     "name": "SpaceX",
+     "note": "今日未查到收盤資料",
+     "verdict": "",
+     "change": ""
+    }
+   ]
+  }
+ ],
+ "macro": [
+  {
+   "text": "TSX 收 35,315.30（-1.14%）",
+   "detail": "來源只描述為「全面性」下跌，未提供類股與個股明細。午間報導指科技股拖累；加幣約 70.03 美分、12 月原油約 87.06 美元、金價約 3,874 美元（均為午間數字）。"
+  },
+  {
+   "text": "企業軟體股重挫、家得寶拖累道瓊",
+   "detail": "盤中 Salesforce 約 -9.6%、Intuit 約 -7.1%、ServiceNow 約 -6.8%；家得寶盤中拖累道瓊約 400 點，本期未取得其收盤價。美國股市各來源收盤數字略有出入，這裡採用 24/7 Wall St. 內文數字。"
+  },
+  {
+   "text": "Anthropic 預計明天定價、週四開始交易",
+   "detail": "本期未取得最新定價區間；零售銷售與其他美國數據本期未查到。"
+  }
+ ],
+ "next_label": "明天重點",
+ "next": "Anthropic IPO 預計 11/18 定價；Target、Lowe's、TJX、Palo Alto 財報；Walmart 週四；Nvidia 財報後的股價反應待明日開盤確認",
+ "sources": "NVIDIA、Trending Topics、24/7 Wall St.、Business Upturn、CP24"
+}
