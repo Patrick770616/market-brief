@@ -1,0 +1,180 @@
+{
+ "id": "2026-11-18-post",
+ "edition": "盤後快訊",
+ "date": "11/18（三）",
+ "time": "多倫多 16:53",
+ "updated": "11/18 17:30",
+ "indices": [
+  {
+   "name": "TSX",
+   "change": "-2.1%"
+  },
+  {
+   "name": "道瓊",
+   "change": "-1.1%"
+  },
+  {
+   "name": "S&P 500",
+   "change": "-0.2%"
+  },
+  {
+   "name": "Nasdaq",
+   "change": "+0.4%"
+  }
+ ],
+ "lead": {
+  "tag": "頭條",
+  "headline": "金油齊跌 TSX 重挫逾 700 點 創五個月低",
+  "headline_en": "TSX plunges 737 points on gold and oil rout, hitting a five-month low",
+  "body": "TSX 收跌約 2.09%（約 737 點，約 34,578），金價與油價大跌，礦業、能源與金融股拖累，為五個月新低。美股方面，道瓊收跌 561 點（-1.11%）、S&P 500 約 -0.23%、Nasdaq 約 +0.42%。聯準會會議紀要顯示幾乎所有官員認為未來還需要再升息，Palo Alto 盤後則大漲。"
+ },
+ "points": [
+  {
+   "zh": "Fed 紀要：幾乎所有官員認為還需升息，12 月不排除升 2 碼",
+   "en": "Fed minutes: nearly all officials see further hikes; bigger December hike possible"
+  },
+  {
+   "zh": "金價跌破 3,750 美元、WTI 跌至約 82 美元",
+   "en": "Gold below $3,750; WTI falls to about $82"
+  }
+ ],
+ "sections": [
+  {
+   "title": "美國",
+   "items": [
+    {
+     "ticker": "PANW",
+     "name": "派拓網路 Palo Alto Networks",
+     "note": "營收與財測優於預期，盤後漲約 6.5–7.9%",
+     "verdict": "beat",
+     "change": "約 +7%（盤後）",
+     "detail": {
+      "headline": "Palo Alto 營收 34.4 億美元、財測高於預期，同意以 45 億美元收購 Applied Compute",
+      "name_en": "Palo Alto Networks, Inc.",
+      "exchange": "Nasdaq",
+      "change_note": "盤後（兩個來源分別為 +6.5%、+7.9%）",
+      "revenue": {
+       "actual": "US$3.44B",
+       "vs_est": "預期 US$3.31B"
+      },
+      "eps": {
+       "actual": "調整後 US$1.05",
+       "vs_est": "本期未取得預期值"
+      },
+      "summary": "Palo Alto 財年第一季營收 34.4 億美元，高於 FactSet 預期的 33.1 億美元；調整後 EPS 1.05 美元。2027 財年營收預估 145.2 億至 145.7 億美元（預期 141.7 億），調整後 EPS 預估 4.26–4.30 美元（預期 4.18）；第二季營收預估 35.3–35.5 億美元。\n公司同意以 45 億美元收購 AI 新創 Applied Compute。股價常規盤收 339.92 美元（來源稱漲 9.90%），盤後約 366.76 美元。",
+      "guidance": "FY2027 營收 US$14.52–14.57B；調整後 EPS US$4.26–4.30",
+      "risks": "收購整合；股價已大漲",
+      "plain": "Palo Alto 營收和財測都優於預期，另外要花 45 億美元買下一家 AI 新創，盤後股價上漲。",
+      "sources": [
+       {
+        "title": "Earnings Flash (PANW) Reports Q1 Revenue $3.44B vs FactSet Est of $3.31B（MarketScreener）",
+        "url": "https://www.marketscreener.com/news/earnings-flash-panw-palo-alto-networks-inc-reports-q1-revenue-3-44b-vs-factset-est-of-3-31b-ce785edddc8ff323"
+       },
+       {
+        "title": "Stock Market Today Live, November 18, 2026: The Dow Closes Lower（StockTitan）",
+        "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-18-2026"
+       }
+      ]
+     }
+    },
+    {
+     "ticker": "TGT",
+     "name": "Target",
+     "note": "財報優於預期，收漲約 4%",
+     "verdict": "beat",
+     "change": "+4.0%",
+     "detail": {
+      "headline": "Target 財報優於預期，收盤上漲約 3.99%",
+      "name_en": "Target Corporation",
+      "exchange": "NYSE",
+      "change_note": "收盤",
+      "revenue": {
+       "actual": "US$27.07B",
+       "vs_est": "預期 US$26.52B"
+      },
+      "eps": {
+       "actual": "調整後 US$2.65（含 US$0.50 關稅退款）",
+       "vs_est": "預期 US$2.07"
+      },
+      "summary": "Target 今天收漲約 3.99%。第三季調整後 EPS 2.65 美元（含一次性 0.50 美元關稅退款，扣除後約 2.15 美元，仍高於預期 2.07 美元），營收 270.7 億美元，可比銷售 +5.6%；全年銷售成長預估上調至約 6%。詳細數字見今早盤前快訊。",
+      "guidance": "2026 年銷售成長約 6%；EPS US$10.65–11.40",
+      "risks": "關稅退款屬一次性",
+      "plain": "Target 的財報比預期好，今天股價上漲；其中有一筆一次性退款，但就算扣掉仍略優於預期。",
+      "sources": [
+       {
+        "title": "Target Q3 2026: A Big EPS Beat With a $0.50 Tariff Refund Asterisk（24/7 Wall St.）",
+        "url": "https://247wallst.com/cards/target-q3-2026-earnings-tgt-01m7q706qe9608fmbvbnts5v0k"
+       },
+       {
+        "title": "Stock Market Today Live, November 18, 2026: The Dow Closes Lower（StockTitan）",
+        "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-18-2026"
+       }
+      ]
+     }
+    },
+    {
+     "ticker": "NVDA",
+     "name": "Nvidia 輝達",
+     "note": "財報後漲勢消退，收跌 2.89%",
+     "verdict": "",
+     "change": "-2.9%",
+     "detail": {
+      "headline": "Nvidia 盤前上漲後反轉，收跌 2.89%",
+      "name_en": "NVIDIA Corporation",
+      "exchange": "Nasdaq",
+      "change_note": "收盤",
+      "summary": "Nvidia 昨晚財報優於預期，盤前一度漲近 3%，但正規盤收跌 2.89%；來源未提供收盤價與原因，只指「漲勢消退」並將重點放在聯準會會議紀要的升息訊號。同日 AMD 約 +5%，Nasdaq 小幅上漲。",
+      "risks": "升息預期壓抑科技估值",
+      "plain": "Nvidia 財報很好，但今天股價反而下跌，市場更在意利率會不會再升。",
+      "sources": [
+       {
+        "title": "Stock Market Today Live, November 18, 2026: The Dow Closes Lower（StockTitan）",
+        "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-18-2026"
+       },
+       {
+        "title": "U.S. Stock Market Today, November 18, 2026: Dow Falls 561 Points, Nasdaq Rises Ahead of Anthropic IPO（Vista PGlobal）",
+        "url": "https://vistapglobal.com/u-s-stock-market-today-november-18-2026-dow-falls-561-points-nasdaq-rises-ahead-of-anthropic-ipo-ant-eprx-googl-modd-nvda-ser-tgt/"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "觀察清單",
+   "items": [
+    {
+     "ticker": "RY",
+     "name": "皇家銀行",
+     "note": "金融股拖累 TSX；未查到個別消息",
+     "verdict": "",
+     "change": ""
+    },
+    {
+     "ticker": "SPCX",
+     "name": "SpaceX",
+     "note": "今日未查到收盤資料",
+     "verdict": "",
+     "change": ""
+    }
+   ]
+  }
+ ],
+ "macro": [
+  {
+   "text": "TSX 收跌約 2.09%（約 737 點），五個月新低",
+   "detail": "午間數據：礦業、能源與金融股拖累；加幣約 69.77 美分（昨日 69.97）。收盤精確點位與個股明細本期未取得。"
+  },
+  {
+   "text": "金價、油價大跌",
+   "detail": "12 月黃金期貨午間跌 114 美元至約 3,750 美元，現貨金價跌至逾一年新低；WTI 午間跌逾 4% 至約 82.19 美元。"
+  },
+  {
+   "text": "Fed 10 月會議紀要偏鷹，TJX 收漲約 8%",
+   "detail": "紀要指出少數官員表示若通膨數據不佳，12 月可考慮升息超過 25 個基點；Cook 與 Hammack 當時偏好升 25 個基點。TJX 常規盤上漲約 8.04%，本期未取得財報數字。"
+  }
+ ],
+ "next_label": "明天重點",
+ "next": "Anthropic IPO 預計 11/19 開始交易；Walmart 財報；本期未查到明天盤前的加拿大財報",
+ "sources": "StockTitan、Vista PGlobal、CP24、Investing.com、MarketScreener、24/7 Wall St."
+}
