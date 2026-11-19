@@ -1,0 +1,204 @@
+{
+ "id": "2026-11-19-post",
+ "edition": "盤後快訊",
+ "date": "11/19（四）",
+ "time": "多倫多 16:53",
+ "updated": "11/19 17:30",
+ "indices": [
+  {
+   "name": "TSX",
+   "change": "-1.6%"
+  },
+  {
+   "name": "S&P 500",
+   "change": "-2.0%"
+  },
+  {
+   "name": "Nasdaq",
+   "change": "-2.3%"
+  },
+  {
+   "name": "道瓊",
+   "change": "-2.2%"
+  }
+ ],
+ "lead": {
+  "tag": "頭條",
+  "headline": "Anthropic 上市首日收高 17% 但美股重挫 道瓊失守 49,100",
+  "headline_en": "Anthropic closes first day up 17%, but Dow drops 1,101 points",
+  "body": "S&P 500 收 7,175.83（-2.02%）、道瓊 49,097.06（-1.101 點、-2.19%）、Nasdaq 23,879.20（-2.25%），VIX 升至 28.56（+16%）。Anthropic 開盤 111.50 美元、收 97.17 美元。TSX 跌 1.59%，創六個月低點；金價跌約 2.2–2.9%。"
+ },
+ "points": [
+  {
+   "zh": "Anthropic 首日收 97.17 美元，較發行價高 17%",
+   "en": "Anthropic closes at $97.17, 17% above its $83 IPO price"
+  },
+  {
+   "zh": "TSX 創六個月新低，金礦股重挫",
+   "en": "TSX hits a six-month low as gold miners plunge"
+  }
+ ],
+ "sections": [
+  {
+   "title": "加拿大",
+   "items": [
+    {
+     "ticker": "T",
+     "name": "Telus",
+     "note": "逆勢大漲約 13.7%，原因本期未查到",
+     "verdict": "",
+     "change": "+13.7%",
+     "detail": {
+      "headline": "Telus 收漲約 13.72% 至 15.50 加元，為 TSX 最大漲幅者之一",
+      "name_en": "TELUS Corporation",
+      "exchange": "TSX",
+      "change_note": "收盤",
+      "summary": "在 TSX 大跌 1.59% 的一天，Telus 上漲約 13.72%（+1.87 加元至 15.50 加元），Quebecor B 股也上漲約 7.5%。來源未說明原因，本期也未查到公司公告。",
+      "risks": "原因未明",
+      "plain": "Telus 今天大漲，但這期沒查到原因，所以不做推測。",
+      "sources": [
+       {
+        "title": "Canada stocks lower at close of trade; S&P/TSX Composite down 1.59%（Investing.com）",
+        "url": "https://www.investing.com/news/stock-market-news/canada-stocks-lower-at-close-of-trade-sptsx-composite-down-159-5040068"
+       }
+      ]
+     }
+    },
+    {
+     "ticker": "SEA",
+     "name": "Seabridge Gold",
+     "note": "金價暴跌，股價重挫約 29%",
+     "verdict": "",
+     "change": "-29.3%",
+     "detail": {
+      "headline": "Seabridge Gold 收跌約 29.26%，為 TSX 最大跌幅者",
+      "name_en": "Seabridge Gold Inc.",
+      "exchange": "TSX",
+      "change_note": "收盤",
+      "summary": "Seabridge Gold 下跌約 29.26%（-10.72 加元至 25.92 加元）；NovaGold 約 -9.2%、Perpetua Resources 約 -7.9%。同日 12 月黃金期貨下跌約 2.9%（約 3,634 美元），材料類股領跌。來源未說明 Seabridge 專屬原因。",
+      "risks": "金價下跌；個股原因未查到",
+      "plain": "金價今天大跌，金礦股跟著下跌，Seabridge 跌最多；來源沒有說明它為什麼跌得這麼重。",
+      "sources": [
+       {
+        "title": "Canada stocks lower at close of trade; S&P/TSX Composite down 1.59%（Investing.com）",
+        "url": "https://www.investing.com/news/stock-market-news/canada-stocks-lower-at-close-of-trade-sptsx-composite-down-159-5040068"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "美國",
+   "items": [
+    {
+     "ticker": "ANT",
+     "name": "Anthropic",
+     "note": "首日收 97.17 美元，較 IPO 價高 17%",
+     "verdict": "",
+     "change": "+17.1%（較 IPO 價）",
+     "detail": {
+      "headline": "Anthropic 掛牌首日收 97.17 美元，較每股 83 美元發行價高 17.07%",
+      "name_en": "Anthropic PBC",
+      "exchange": "Nasdaq",
+      "change_note": "收盤，相對 IPO 價",
+      "summary": "Anthropic（ANT）今天以 111.50 美元開盤，較 83 美元發行價高約 34%，盤中最高約 114.99 美元，收盤 97.17 美元（較發行價 +17.07%），較開盤價下跌約 13%。以開盤價計，完全稀釋估值約 2 兆美元；收盤估值本期未取得可靠數字。\n分析師認為部分投資人可能賣出其他 AI 股票來買入 Anthropic，但來源指出這只是推測，沒有資金流向證據。",
+      "risks": "首日回落；估值與 AI 情緒脆弱",
+      "plain": "Anthropic 今天上市，一開盤漲很多，之後回落，收盤還是比發行價高約 17%；但整體大盤今天大跌。",
+      "sources": [
+       {
+        "title": "Stock Market Today, November 19, 2026: Anthropic IPO Pops, Wall Street Loses Its Appetite（Vista PGlobal）",
+        "url": "https://vistapglobal.com/stock-market-today-november-19-2026-anthropic-ipo-pops-wall-street-loses-its-appetite-amd-ant-eprx-insm-jpm-ma-modd-panw-ser-sls-v-wmt/"
+       },
+       {
+        "title": "Stock Market Today Live, November 19, 2026: Stocks Slide on the Day Anthropic Begins Trading（StockTitan）",
+        "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-19-2026"
+       },
+       {
+        "title": "Dow Sinks 1,084 Points, Nasdaq Drops 2.2% After Anthropic Debut（Eurasia Business News）",
+        "url": "https://eurasiabusinessnews.com/2026/11/19/stock-market-today-november-19-2026-dow-sinks-1084-points-nasdaq-drops-2-2-after-anthropic-debut/"
+       }
+      ]
+     }
+    },
+    {
+     "ticker": "AMD",
+     "name": "超微 AMD",
+     "note": "空頭報告衝擊，盤中最多跌約 9%",
+     "verdict": "",
+     "change": "約 -8.5%（盤中）",
+     "detail": {
+      "headline": "AMD 因空頭機構報告盤中最多跌約 9%",
+      "name_en": "Advanced Micro Devices",
+      "exchange": "Nasdaq",
+      "change_note": "盤中（未取得收盤價）",
+      "summary": "AMD 受一份空頭機構報告影響，盤中最多下跌約 9%（下午約 -8.48%）；本期來源未取得收盤跌幅與報告內容。",
+      "risks": "空頭報告細節未取得",
+      "plain": "AMD 今天因為一份看空報告股價大跌，詳細內容這期沒有查到。",
+      "sources": [
+       {
+        "title": "Stock Market Today, November 19, 2026: Anthropic IPO Pops, Wall Street Loses Its Appetite（Vista PGlobal）",
+        "url": "https://vistapglobal.com/stock-market-today-november-19-2026-anthropic-ipo-pops-wall-street-loses-its-appetite-amd-ant-eprx-insm-jpm-ma-modd-panw-ser-sls-v-wmt/"
+       },
+       {
+        "title": "Stock Market Today Live, November 19, 2026: Stocks Slide on the Day Anthropic Begins Trading（StockTitan）",
+        "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-19-2026"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "觀察清單",
+   "items": [
+    {
+     "ticker": "RY",
+     "name": "皇家銀行",
+     "note": "今日無個別消息",
+     "verdict": "",
+     "change": ""
+    },
+    {
+     "ticker": "SPCX",
+     "name": "SpaceX",
+     "note": "收 138.43 美元，跌 3.53%",
+     "verdict": "",
+     "change": "-3.5%",
+     "detail": {
+      "headline": "SpaceX 收跌 3.53% 至 138.43 美元",
+      "name_en": "Space Exploration Technologies",
+      "exchange": "Nasdaq",
+      "change_note": "收盤",
+      "summary": "SpaceX 今天收 138.43 美元，下跌 3.53%，與大盤同步下跌；來源未說明個股專屬原因。",
+      "risks": "大盤風險情緒",
+      "plain": "今天大盤大跌，SpaceX 跟著下跌。",
+      "sources": [
+       {
+        "title": "Stock Market Today, November 19, 2026: Anthropic IPO Pops, Wall Street Loses Its Appetite（Vista PGlobal）",
+        "url": "https://vistapglobal.com/stock-market-today-november-19-2026-anthropic-ipo-pops-wall-street-loses-its-appetite-amd-ant-eprx-insm-jpm-ma-modd-panw-ser-sls-v-wmt/"
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "macro": [
+  {
+   "text": "TSX 跌 1.59%，創六個月低點；昨天為 -2.09%",
+   "detail": "下跌家數 852、上漲 144；資訊科技、材料與非必需消費領跌；TSX 60 VIX 升至 19.51。今早 Investing.com 寫昨天 -1.64% 有誤，收盤報導確認為 -2.09%。依此推算今天收盤約 34,028（本期未取得精確點位）。"
+  },
+  {
+   "text": "10 年期殖利率約 5.05–5.07%，原油小漲、黃金大跌",
+   "detail": "12 月 WTI 約 83.13 美元（+1.0%）、Brent 約 92.76 美元；12 月黃金期貨 3,634 美元（-2.9%）、現貨約 3,660 美元。初請失業金 20.3 萬人（預期 19.8 萬）。"
+  },
+  {
+   "text": "Insmed +20.6%、Williams-Sonoma 大跌",
+   "detail": "Insmed 因傳 Sanofi 可能收購而大漲，雙方均未證實；Williams-Sonoma 盤中約 -13.4%。沃爾瑪財報後下午約 -1.2%，Alphabet、Amazon 下午分別約 -2.5%、-4.1%，收盤價本期未取得。"
+  }
+ ],
+ "next_label": "下週重點",
+ "next": "下週一至週五：美國感恩節假期週（週四休市）；本期未查到明天（週五）盤前的重要財報",
+ "sources": "Vista PGlobal、StockTitan、Eurasia Business News、Investing.com"
+}
