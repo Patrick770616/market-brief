@@ -1,0 +1,171 @@
+{
+ "id": "2026-11-19-pre",
+ "edition": "盤前快訊",
+ "date": "11/19（四）",
+ "time": "多倫多 08:23",
+ "updated": "11/19 09:00",
+ "indices": [
+  {
+   "name": "Nasdaq 期指",
+   "change": "+2.1%"
+  },
+  {
+   "name": "S&P 期指",
+   "change": "+1.2%"
+  },
+  {
+   "name": "道瓊期指",
+   "change": "+0.6%"
+  },
+  {
+   "name": "TSX 60 期指",
+   "change": "+0.4%"
+  }
+ ],
+ "lead": {
+  "tag": "頭條",
+  "headline": "Anthropic 史上最大 IPO 定價 83 美元 Nasdaq 期貨漲逾 2%",
+  "headline_en": "Nasdaq futures jump over 2% as Anthropic prices record IPO at $83",
+  "body": "Anthropic 以每股 83 美元定價（高於 70–78 美元區間），發行 9.8 億股、募資約 813 億美元，是史上最大 IPO，估值約 1.5 兆美元，今天在 Nasdaq 以 ANT 掛牌。Nasdaq-100 期貨約 +2.1%、S&P 500 約 +1.2%、道瓊約 +0.6%；TSX 60 期貨約 +0.4%。S&P 500 昨天已連跌五天。"
+ },
+ "points": [
+  {
+   "zh": "Anthropic（ANT）今天掛牌，灰市預示最高開高 27%",
+   "en": "Anthropic debuts as ANT; gray market points to up to 27% open"
+  },
+  {
+   "zh": "沃爾瑪營收 1,888 億美元，上調全年展望",
+   "en": "Walmart revenue $188.8B; raises FY outlook"
+  }
+ ],
+ "sections": [
+  {
+   "title": "美國",
+   "items": [
+    {
+     "ticker": "WMT",
+     "name": "沃爾瑪 Walmart",
+     "note": "營收 1,888 億美元（+5.2%），調整後 EPS 0.65 美元，上調全年展望",
+     "verdict": "",
+     "change": "",
+     "detail": {
+      "headline": "沃爾瑪第三季營收 1,888 億美元，電商成長 17%，上調全年展望",
+      "name_en": "Walmart Inc.",
+      "exchange": "NYSE",
+      "change_note": "本期未取得盤前漲跌幅",
+      "revenue": {
+       "actual": "US$188.8B",
+       "yoy": "+5.2%（固定匯率 +4.5%）"
+      },
+      "eps": {
+       "actual": "調整後 US$0.65；GAAP US$0.62"
+      },
+      "summary": "沃爾瑪第三季營收 1,888 億美元、年增 5.2%；營業利益增加 11 億美元（+16.0%）；調整後 EPS 0.65 美元，GAAP EPS 0.62 美元（含 0.03 美元投資虧損）。\n全球電商銷售 +17%（美國 +23%），全球廣告 +25%（美國 +37%），會員費收入 +17%；毛利率提高 28 個基點。公司上調 2027 財年展望，新聞稿標題已寫明，但本期未取得具體數字。",
+      "guidance": "上調 FY27 展望（具體數字未取得）",
+      "risks": "庫存成長 8.1%；本期未取得預期值",
+      "plain": "沃爾瑪這季營收成長、網購和廣告都成長，還調高全年展望；但這期沒查到市場預期，所以不標優於或不及預期。",
+      "sources": [
+       {
+        "title": "Walmart reports revenue growth of 5.2%, up 4.5% in constant currency（Business Wire）",
+        "url": "https://www.businesswire.com/news/home/20261118447417/en/Walmart-reports-revenue-growth-of-5.2-up-4.5-in-constant-currency-cc"
+       },
+       {
+        "title": "Stock Market Today, Nov. 19: Anthropic's $81 Billion IPO Takes Center Stage（TipRanks）",
+        "url": "https://www.tipranks.com/news/stock-market-today-nov-19-anthropics-81-billion-ipo-takes-center-stage"
+       }
+      ]
+     }
+    },
+    {
+     "ticker": "PANW",
+     "name": "派拓網路 Palo Alto Networks",
+     "note": "財報優於預期，盤前漲約 9.6%",
+     "verdict": "beat",
+     "change": "+9.6%（盤前）",
+     "detail": {
+      "headline": "Palo Alto 營收年增 39% 至 34.4 億美元，上調全年預估，盤前漲約 9.6%",
+      "name_en": "Palo Alto Networks, Inc.",
+      "exchange": "Nasdaq",
+      "change_note": "盤前",
+      "revenue": {
+       "actual": "US$3.44B",
+       "yoy": "+39%",
+       "vs_est": "預期 US$3.31B"
+      },
+      "summary": "Palo Alto 財年第一季營收 34.4 億美元、年增 39%，高於預期的 33.1 億美元，並上調全年營收預估（詳見昨天盤後快訊）。CrowdStrike、Okta、Cloudflare、Zscaler 等資安股同步走高。",
+      "risks": "股價已大漲；收購整合",
+      "plain": "Palo Alto 的財報好於預期，今早股價大漲，也帶動其他資安股。",
+      "sources": [
+       {
+        "title": "Today's Market Movers: Anthropic, Google, Palo Alto, Walmart and More（CoinCentral）",
+        "url": "https://coincentral.com/todays-market-movers-anthropic-google-palo-alto-walmart-and-more"
+       }
+      ]
+     }
+    },
+    {
+     "ticker": "GOOGL",
+     "name": "Alphabet 谷歌",
+     "note": "Anthropic 股東，盤前漲約 4.1%",
+     "verdict": "",
+     "change": "+4.1%（盤前）",
+     "detail": {
+      "headline": "Anthropic 上市在即，持股的 Alphabet 盤前漲約 4.1%",
+      "name_en": "Alphabet Inc.",
+      "exchange": "Nasdaq",
+      "change_note": "盤前",
+      "summary": "Anthropic 以每股 83 美元定價（原區間 70–78 美元），Alphabet 持有約 18 億股 Anthropic 股份，盤前上漲約 4.1%；Amazon（持股約 19 億股加可轉債）盤前上漲約 2.6%。",
+      "risks": "Anthropic 首日表現與估值",
+      "plain": "Anthropic 今天上市，兩家持股的大公司股價盤前上漲。",
+      "sources": [
+       {
+        "title": "Today's Market Movers: Anthropic, Google, Palo Alto, Walmart and More（CoinCentral）",
+        "url": "https://coincentral.com/todays-market-movers-anthropic-google-palo-alto-walmart-and-more"
+       },
+       {
+        "title": "Stock Market Today, Nov. 19: Anthropic's $81 Billion IPO Takes Center Stage（TipRanks）",
+        "url": "https://www.tipranks.com/news/stock-market-today-nov-19-anthropics-81-billion-ipo-takes-center-stage"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "觀察清單",
+   "items": [
+    {
+     "ticker": "RY",
+     "name": "皇家銀行",
+     "note": "金融股拖累 TSX；未查到個別消息",
+     "verdict": "",
+     "change": ""
+    },
+    {
+     "ticker": "SPCX",
+     "name": "SpaceX",
+     "note": "近一日無查到個別消息",
+     "verdict": "",
+     "change": ""
+    }
+   ]
+  }
+ ],
+ "macro": [
+  {
+   "text": "昨天 TSX 跌至逾四個月低點",
+   "detail": "前一期盤後快訊依 Investing.com 標題寫收跌約 2.09%（約 737 點）；今早另一篇 Investing.com 報導寫為 -1.64%，兩者不一致，精確收盤值待確認。礦業股因金屬價格下跌受創。"
+  },
+  {
+   "text": "黃金近 14 個月低點，油價回升",
+   "detail": "Brent 約 92.4–92.7 美元（+0.5–0.8%），WTI 約 83.8 美元；川普據報考慮對伊朗新一輪攻擊，但 Brent 本月仍累計下跌逾兩成。Fed 紀要顯示官員普遍支持升息，市場預期 12 月至少升 25 個基點。"
+  },
+  {
+   "text": "AI 概念股走高，Alibaba 微跌",
+   "detail": "盤前 Micron +5.1%、Bloom Energy +5.6%、Sandisk +4.8%；Alibaba 因財報獲利低於預期、AI 雲端營收 +53%，盤前約 -1.1%。Dell、HPE 因 Lenovo 業績走高。"
+  }
+ ],
+ "next_label": "今日財報",
+ "next": "沃爾瑪、Alibaba、Gap 已／將公布；今天沒有查到加拿大大型股財報",
+ "sources": "TipRanks、CoinCentral、Investing.com、Business Wire"
+}
