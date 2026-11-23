@@ -1,0 +1,158 @@
+{
+ "id": "2026-11-23-pre",
+ "edition": "盤前快訊",
+ "date": "11/23（一）",
+ "time": "多倫多 08:23",
+ "updated": "11/23 09:00",
+ "indices": [
+  {
+   "name": "Nasdaq 100 期指",
+   "change": "+3.5%"
+  },
+  {
+   "name": "S&P 期指",
+   "change": "+2.1–2.8%"
+  },
+  {
+   "name": "道瓊期指",
+   "change": "+1.9%"
+  },
+  {
+   "name": "TSX 60 期指",
+   "change": "+1.8%"
+  }
+ ],
+ "lead": {
+  "tag": "頭條",
+  "headline": "AI 股止跌反彈 Nasdaq 期貨漲 3.5% 終止七連跌",
+  "headline_en": "AI stocks bounce: Nasdaq futures +3.5%, ending seven-day slide",
+  "body": "上週五美股三大指數收盤：S&P 500 -3.7% 至 6,910.39、Nasdaq -5.3% 至 22,617.73、道瓊 -1.9% 至 48,147.33，全數進入修正區。整週道瓊約 -8%、S&P 500 -8.6%、Nasdaq -10%。TSX 上週五 -2.5%、整週 -8.1%，連七跌並較 8 月高點低逾 10%。今早期貨大幅反彈，但分析師認為屬技術性反彈，未必持續。"
+ },
+ "points": [
+  {
+   "zh": "更正：上週五盤後快訊的美股漲跌幅是盤中數字，正確收盤見頭條",
+   "en": "Correction: Friday post-close US index moves were intraday; see lead for final closes"
+  },
+  {
+   "zh": "金價回升至 3,600 美元以上，礦業股可望支撐 TSX",
+   "en": "Gold rebounds above $3,600, supporting TSX miners"
+  }
+ ],
+ "sections": [
+  {
+   "title": "美國",
+   "items": [
+    {
+     "ticker": "NVDA",
+     "name": "輝達 Nvidia",
+     "note": "盤前反彈近 9%，上週累計跌約 23%",
+     "verdict": "",
+     "change": "+9%（盤前）",
+     "detail": {
+      "headline": "Nvidia 盤前反彈近 9%，收復部分上週跌幅",
+      "name_en": "NVIDIA Corp.",
+      "exchange": "Nasdaq",
+      "change_note": "盤前",
+      "summary": "Nvidia 盤前上漲近 9%，上週累計下跌約 23%。同類股 Micron 約 +7.7%、AMD 約 +6.7%、CoreWeave 約 +9.7%。分析師提醒這可能只是技術性反彈；Nvidia 仍面臨執行長 Jensen Huang 離任後的領導層不確定性，以及可能的政府調查與集體訴訟。",
+      "risks": "領導層不確定性；反彈能否持續",
+      "plain": "輝達上週大跌後，今早先反彈約 9%，但分析師說不一定持續。",
+      "sources": [
+       {
+        "title": "US stock futures rebound as tech stocks recover from AI sell-off（TradingView/Moneycontrol）",
+        "url": "https://www.tradingview.com/news/moneycontrol:8b1a18d38094b:0-us-stock-futures-rebound-as-tech-stocks-recover-from-ai-sell-off-nasdaq-100-jumps-3-5-s-p-500-climbs-2-8/"
+       },
+       {
+        "title": "Wall Street Futures Rebound Sharply After AI Sell-Off Pushes Major US Indices Into Correction（Yahoo Finance）",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/wall-street-futures-rebound-sharply-111000961.html"
+       }
+      ]
+     }
+    },
+    {
+     "ticker": "ANT",
+     "name": "Anthropic",
+     "note": "盤前約 +5%，上週五首日後第二天跌約 8.5%",
+     "verdict": "",
+     "change": "+5%（盤前）",
+     "detail": {
+      "headline": "Anthropic 盤前反彈約 5%",
+      "name_en": "Anthropic PBC",
+      "exchange": "Nasdaq",
+      "change_note": "盤前",
+      "summary": "Anthropic 盤前約上漲 5.1%。據 TradingView 引述報導，週五股價下跌約 8.5%；週五不同來源對跌幅說法不一（有報導為近 13%），本期未取得官方收盤價。股價仍高於 83 美元發行價。",
+      "risks": "各來源跌幅不一致；估值與 AI 情緒",
+      "plain": "Anthropic 上週五大跌後，今早盤前小幅反彈，仍在發行價之上。",
+      "sources": [
+       {
+        "title": "US stock futures rebound as tech stocks recover from AI sell-off（TradingView/Moneycontrol）",
+        "url": "https://www.tradingview.com/news/moneycontrol:8b1a18d38094b:0-us-stock-futures-rebound-as-tech-stocks-recover-from-ai-sell-off-nasdaq-100-jumps-3-5-s-p-500-climbs-2-8/"
+       },
+       {
+        "title": "Wall Street Futures Rebound Sharply After AI Sell-Off Pushes Major US Indices Into Correction（Yahoo Finance）",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/wall-street-futures-rebound-sharply-111000961.html"
+       }
+      ]
+     }
+    },
+    {
+     "ticker": "AMD",
+     "name": "超微 AMD",
+     "note": "盤前約 +6.7%",
+     "verdict": "",
+     "change": "+6.7%（盤前）",
+     "detail": {
+      "headline": "AMD 盤前反彈約 6.7%",
+      "name_en": "Advanced Micro Devices",
+      "exchange": "Nasdaq",
+      "change_note": "盤前",
+      "summary": "AMD 盤前約上漲 6.7%，隨晶片股一同反彈。上週曾遭 Hunterbrook 揭露空單，本期未見 AMD 對該報告的回應。",
+      "risks": "空頭報告疑慮未解",
+      "plain": "AMD 跟著科技股反彈。",
+      "sources": [
+       {
+        "title": "US stock futures rebound as tech stocks recover from AI sell-off（TradingView/Moneycontrol）",
+        "url": "https://www.tradingview.com/news/moneycontrol:8b1a18d38094b:0-us-stock-futures-rebound-as-tech-stocks-recover-from-ai-sell-off-nasdaq-100-jumps-3-5-s-p-500-climbs-2-8/"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "觀察清單",
+   "items": [
+    {
+     "ticker": "RY",
+     "name": "皇家銀行",
+     "note": "本期未查到個別消息",
+     "verdict": "",
+     "change": ""
+    },
+    {
+     "ticker": "SPCX",
+     "name": "SpaceX",
+     "note": "本期未查到個別消息",
+     "verdict": "",
+     "change": ""
+    }
+   ]
+  }
+ ],
+ "macro": [
+  {
+   "text": "金價回升約 2–3% 至 3,600 美元以上，油價續弱",
+   "detail": "金價自上週 14 個月低點反彈；Brent 低於 92 美元，WTI 1 月合約約 82 美元，油價連三週下跌。"
+  },
+  {
+   "text": "10 年期美債殖利率約 4.9–5.0%",
+   "detail": "各來源數字略有差異（4.91%–4.96%）；美元指數約 103.6。市場降低對激進升息的押注。"
+  },
+  {
+   "text": "本週：週三 PCE、週四美股休市、週五提早 1 點收盤",
+   "detail": "10 月 PCE 物價指數週三公布；Dell、HPE 本週財報；感恩節週四休市，週五縮短交易，成交量薄時波動可能放大。"
+  }
+ ],
+ "next_label": "今日留意",
+ "next": "本期未查到今天加拿大大型股財報；週三 PCE 為本週重點",
+ "sources": "TradingView/Moneycontrol、Yahoo Finance、Investing.com"
+}
