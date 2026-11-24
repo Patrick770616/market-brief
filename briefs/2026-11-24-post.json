@@ -1,0 +1,177 @@
+{
+ "id": "2026-11-24-post",
+ "edition": "盤後快訊",
+ "date": "11/24（二）",
+ "time": "多倫多 16:53",
+ "updated": "11/24 16:53",
+ "indices": [
+  {
+   "name": "S&P/TSX",
+   "change": "-0.35%"
+  },
+  {
+   "name": "Nasdaq",
+   "change": "-1.5%"
+  },
+  {
+   "name": "S&P 500",
+   "change": "-0.5%"
+  },
+  {
+   "name": "道瓊",
+   "change": "+0.86%"
+  }
+ ],
+ "lead": {
+  "tag": "頭條",
+  "headline": "道瓊首度收上 50,000 點 晶片股回吐 Nasdaq 跌 1.5%",
+  "headline_en": "Dow closes above 50,000 for the first time as chip stocks slide; Nasdaq -1.5%",
+  "body": "道瓊收 50,019.77（+0.86%），首度收在 50,000 點之上；S&P 500 收 7,201.10（-0.5%）、Nasdaq 收 23,733.54（-1.48%）。Nvidia 繼昨天大漲後收跌近 6%，晶片類股重挫；HPE 約 -17%，零售股走強。TSX 收 33,962.25（-0.35%），為昨天大漲 2.69% 後小幅回落。"
+ },
+ "points": [
+  {
+   "zh": "晶片股回吐：Analog Devices 約 -17%、Micron 逾 -11%、AMD 逾 -9%",
+   "en": "Chips give back gains: ADI ~-17%, Micron >-11%, AMD >-9%"
+  },
+  {
+   "zh": "零售股走強：Dollar Tree 逾 +10%、Dick's 逾 +15%",
+   "en": "Retailers rally: Dollar Tree >+10%, Dick's >+15%"
+  }
+ ],
+ "sections": [
+  {
+   "title": "美國",
+   "items": [
+    {
+     "ticker": "NVDA",
+     "name": "輝達 Nvidia",
+     "note": "昨天暴漲後收跌近 6%",
+     "verdict": "",
+     "change": "約 -6%",
+     "detail": {
+      "headline": "Nvidia 繼昨天暴漲 31% 後收跌近 6%，拖累晶片股",
+      "name_en": "NVIDIA Corp.",
+      "exchange": "Nasdaq",
+      "change_note": "約 -5.9%（未取得收盤價）",
+      "summary": "Nvidia 週一收 165.05 美元（+31.5%），週二收跌近 6%（約 -5.9%），未取得確切收盤價。晶片與硬體股同步下挫：Analog Devices 約 -17%、Micron 逾 -11%、AMD 逾 -9%、Intel 約 -8%、Broadcom 近 -4%。",
+      "risks": "反彈持續性；AI 與晶片股波動大",
+      "plain": "輝達昨天大漲後今天回跌近六%，晶片股跟著下挫。",
+      "sources": [
+       {
+        "title": "Dow Tops 50,000 as Chip Stocks Slide After Nvidia Rally（HNGN）",
+        "url": "https://www.hngn.com/articles/273950/20261124/dow-tops-50000-chip-stocks-slide-after-nvidia-rally.htm"
+       },
+       {
+        "title": "Stock market today: Dow rises, S&P 500 and Nasdaq decline as chip sector tumbles, Nvidia stock falls 6%（Yahoo Finance）",
+        "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-24-dow-sp-500-nasdaq-chip-stocks-nvidia-140629923.html"
+       }
+      ]
+     }
+    },
+    {
+     "ticker": "ANT",
+     "name": "Anthropic",
+     "note": "收盤低於 83 美元發行價（單一來源標題）",
+     "verdict": "",
+     "change": "",
+     "detail": {
+      "headline": "Anthropic 收盤低於 83 美元發行價",
+      "name_en": "Anthropic PBC",
+      "exchange": "Nasdaq",
+      "change_note": "跌幅與收盤價未取得",
+      "summary": "MLQ.ai 標題指 Anthropic 收盤低於 IPO 價（83 美元），盤前已一度跌破；為單一來源（僅能讀到標題），本期未取得收盤價與跌幅。",
+      "risks": "僅單一來源標題；數字未取得",
+      "plain": "Anthropic 今天收盤比發行價還低。",
+      "sources": [
+       {
+        "title": "Nasdaq falls 1.5% as Nvidia drops 5.9% … Anthropic closes below its IPO price（MLQ.ai，標題）",
+        "url": "https://mlq.ai/news/nasdaq-falls-15-as-nvidia-drops-59-and-chip-stocks-slide-dow-rises-09-and-anthropic-closes-below-its-ipo-price/"
+       }
+      ]
+     }
+    },
+    {
+     "ticker": "HPE",
+     "name": "慧與 HPE",
+     "note": "毛利展望令人失望，尾盤約 -17%",
+     "verdict": "",
+     "change": "約 -17%",
+     "detail": {
+      "headline": "HPE 因毛利展望不如預期，尾盤約跌 17%",
+      "name_en": "Hewlett Packard Enterprise",
+      "exchange": "NYSE",
+      "change_note": "尾盤約 -17%（非官方收盤）",
+      "summary": "HPE 公布第四季財報後，因毛利展望令市場失望，尾盤下跌約 17%（開盤約 -14.8%，報 41.16 美元）。來源未提供營收、EPS 與分析師預期，本期不判斷超預期或不及預期。Dell 開盤約 -10.5%（300.59 美元），未取得收盤。",
+      "risks": "毛利展望；財報數字未取得",
+      "plain": "HPE 對利潤率的預測讓市場失望，股價大跌。",
+      "sources": [
+       {
+        "title": "Dow Tops 50,000 as Chip Stocks Slide After Nvidia Rally（HNGN）",
+        "url": "https://www.hngn.com/articles/273950/20261124/dow-tops-50000-chip-stocks-slide-after-nvidia-rally.htm"
+       }
+      ]
+     }
+    },
+    {
+     "ticker": "DLTR",
+     "name": "Dollar Tree",
+     "note": "調高全年獲利預測，收漲逾 10%",
+     "verdict": "",
+     "change": "逾 +10%",
+     "detail": {
+      "headline": "Dollar Tree 調高全年獲利預測，收盤上漲逾 10%",
+      "name_en": "Dollar Tree, Inc.",
+      "exchange": "Nasdaq",
+      "change_note": "逾 +10%（尾盤）",
+      "summary": "Dollar Tree 調高年度獲利預測，股價上漲逾 10%。零售股普遍走強：Dick's Sporting Goods 逾 +15%、Kohl's 約 +15%、Burlington 逾 +7%。來源未提供本季營收、EPS 數字，不判斷超預期。",
+      "guidance": "調高全年獲利預測（區間未取得）",
+      "risks": "財報細節未取得",
+      "plain": "Dollar Tree 調高獲利目標，零售股今天表現亮眼。",
+      "sources": [
+       {
+        "title": "Dow Tops 50,000 as Chip Stocks Slide After Nvidia Rally（HNGN）",
+        "url": "https://www.hngn.com/articles/273950/20261124/dow-tops-50000-chip-stocks-slide-after-nvidia-rally.htm"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "觀察清單",
+   "items": [
+    {
+     "ticker": "RY",
+     "name": "皇家銀行",
+     "note": "本期未查到個別消息",
+     "verdict": "",
+     "change": ""
+    },
+    {
+     "ticker": "SPCX",
+     "name": "SpaceX",
+     "note": "本期未查到個別消息",
+     "verdict": "",
+     "change": ""
+    }
+   ]
+  }
+ ],
+ "macro": [
+  {
+   "text": "金價逾 -2%，比特幣約 -3% 至 59,400 美元",
+   "detail": "盤後數字取自尾盤報導，非官方收盤；油價漲跌不一。"
+  },
+  {
+   "text": "Sanofi 同意收購 Insmed，Insmed 逾 +14%",
+   "detail": "標題報導交易金額約 410 億美元；本期未取得交易條款細節。"
+  },
+  {
+   "text": "明天 PCE 為重點",
+   "detail": "10 月 PCE 物價指數週三公布，為 12 月 FOMC 前最後一份重要數據；週四美股休市，週五 1 點提早收盤。"
+  }
+ ],
+ "next_label": "下一期",
+ "next": "週三 11/25 盤前 08:23；週三 PCE；週四美股休市",
+ "sources": "HNGN、Yahoo Finance、Business Upturn、MLQ.ai"
+}
