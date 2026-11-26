@@ -1,0 +1,106 @@
+{
+ "id": "2026-11-26-pre",
+ "edition": "盤前快訊",
+ "date": "11/26（四）",
+ "time": "多倫多 08:23",
+ "updated": "11/26 09:00",
+ "indices": [
+  {
+   "name": "TSX 期指",
+   "change": "+0.2%"
+  },
+  {
+   "name": "美股",
+   "change": "休市"
+  },
+  {
+   "name": "歐股",
+   "change": "走高"
+  },
+  {
+   "name": "亞股",
+   "change": "走高"
+  }
+ ],
+ "lead": {
+  "tag": "頭條",
+  "headline": "美股感恩節休市 TSX 期貨小漲 0.2% 銅銀回升帶動資源股",
+  "headline_en": "US closed for Thanksgiving; TSX futures +0.2% as copper, silver rebound",
+  "body": "今天美股感恩節休市，TSX 期貨在低成交量下約 +0.2%（6:06 ET）；銅、銀、鉑回升支撐原物料類股，油價因中東局勢消息下跌。昨天 TSX 由早盤約 -700 點翻升，收漲約 0.64%，為一週高點。歐亞股市今早普遍走高。"
+ },
+ "points": [
+  {
+   "zh": "美國提議對 14 個貿易夥伴加徵關稅，加拿大不在名單內",
+   "en": "US proposes tariffs on 14 partners; Canada not included"
+  },
+  {
+   "zh": "美國 10 月通膨高於預期、GDP 強勁，市場預期至少升息一次 25 個基點",
+   "en": "Hot US inflation and strong GDP reinforce Fed hike expectations"
+  }
+ ],
+ "sections": [
+  {
+   "title": "加拿大",
+   "items": [
+    {
+     "ticker": "ENB",
+     "name": "Enbridge",
+     "note": "傳洽談以約 15 億加元出售 Line 3 管線 6% 股權",
+     "verdict": "",
+     "change": "",
+     "detail": {
+      "headline": "報導稱 Enbridge 洽談向原住民社群聯盟出售 Line 3 約 6% 股權",
+      "name_en": "Enbridge Inc.",
+      "exchange": "TSX/NYSE",
+      "change_note": "本期未取得盤前漲跌幅",
+      "summary": "有報導稱 Enbridge 正與原住民社群聯盟洽談，出售 Line 3 原油管線約 6% 股權，金額約 15 億加元（約 10.6 億美元）。這是媒體報導，雙方尚未正式公告，條件與時程均未取得。",
+      "risks": "媒體報導，未經公司證實",
+      "plain": "有報導說 Enbridge 想把一條管線的一小部分股權賣給原住民社群，價錢約 15 億加幣，還沒有正式宣布。",
+      "sources": [
+       {
+        "title": "TSX futures flat as copper, silver rebound offset oil slip（Reuters via Kitco）",
+        "url": "https://www.kitco.com/news/off-the-wire/2026-11-26/tsx-futures-flat-copper-silver-rebound-offset-oil-slip"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "觀察清單",
+   "items": [
+    {
+     "ticker": "RY",
+     "name": "皇家銀行",
+     "note": "本期未查到個別消息",
+     "verdict": "",
+     "change": ""
+    },
+    {
+     "ticker": "SPCX",
+     "name": "SpaceX",
+     "note": "美股今天休市",
+     "verdict": "",
+     "change": ""
+    }
+   ]
+  }
+ ],
+ "macro": [
+  {
+   "text": "銅、銀、鉑上漲，金價微降，油價下跌",
+   "detail": "因胡塞武裝稱襲擊沙烏地最大煉油廠、伊朗稱荷莫茲海峽有船隻遭襲，油價仍下跌；來源未提供價位。"
+  },
+  {
+   "text": "美國關稅提案：加拿大不在內，生效時間各來源不一",
+   "detail": "提案不會疊加在 7 月已實施的關稅上；Marketupdate 稱預計 2、3 月前不太會生效，另一來源稱 1 月前不會生效。JPMorgan 分析師認為總體影響可能有限。"
+  },
+  {
+   "text": "今天加拿大無大型股財報",
+   "detail": "TipRanks 列出的 17 家加拿大公司皆為小型股（如 Rogers Sugar 預估 EPS 0.14 加元），本期未製作個股頁。"
+  }
+ ],
+ "next_label": "今日留意",
+ "next": "美股休市，成交量偏薄；明天 11/27 美股 13:00 ET 提早收盤",
+ "sources": "Reuters（Kitco）、Marketupdate、TipRanks"
+}
