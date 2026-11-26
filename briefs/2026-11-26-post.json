@@ -1,0 +1,79 @@
+{
+ "id": "2026-11-26-post",
+ "edition": "盤後快訊",
+ "date": "11/26（四）",
+ "time": "多倫多 16:53",
+ "updated": "11/26 16:53",
+ "indices": [
+  {
+   "name": "S&P/TSX",
+   "change": "+0.72%"
+  },
+  {
+   "name": "美股",
+   "change": "休市"
+  },
+  {
+   "name": "黃金",
+   "change": "+36.50 美元"
+  },
+  {
+   "name": "WTI 原油",
+   "change": "+1.18 美元"
+  }
+ ],
+ "lead": {
+  "tag": "頭條",
+  "headline": "美股休市 TSX 收漲 0.72% 能源與資源股領漲",
+  "headline_en": "US closed; TSX gains 0.72% led by energy and materials",
+  "body": "美股感恩節休市，TSX 收漲 0.72%，漲跌家數 681 對 230，能源、原物料與潔淨科技類股領漲。TSX 收盤點位來源未提供：依昨日收盤約 34,180 與 +0.72% 推算約 34,426，非官方數字。午間 1 月 WTI 原油 84.86 美元（+1.18 美元）、2 月黃金 3,601.10 美元（+36.50 美元）。"
+ },
+ "points": [
+  {
+   "zh": "漲幅居前：Americas Gold and Silver +6.72%、Aya Gold & Silver +4.40%、Bombardier B +4.20%",
+   "en": "Top gainers: Americas Gold and Silver +6.72%, Aya +4.40%, Bombardier B +4.20%"
+  },
+  {
+   "zh": "加幣報 70.18 美分，低於昨天的 70.33 美分",
+   "en": "Canadian dollar at 70.18 US cents vs 70.33 on Wednesday"
+  }
+ ],
+ "sections": [
+  {
+   "title": "觀察清單",
+   "items": [
+    {
+     "ticker": "RY",
+     "name": "皇家銀行",
+     "note": "本期未查到個別消息",
+     "verdict": "",
+     "change": ""
+    },
+    {
+     "ticker": "SPCX",
+     "name": "SpaceX",
+     "note": "美股今天休市",
+     "verdict": "",
+     "change": ""
+    }
+   ]
+  }
+ ],
+ "macro": [
+  {
+   "text": "油價與金價上漲",
+   "detail": "1 月原油 84.86 美元（+1.18）、2 月黃金 3,601.10 美元（+36.50）；為午間報價，非官方收盤。"
+  },
+  {
+   "text": "今天沒有美股交易",
+   "detail": "感恩節休市；明天 11/27 美股 13:00 ET 提早收盤，成交量可能偏薄。"
+  },
+  {
+   "text": "本期無個股詳情",
+   "detail": "來源只列漲跌幅榜與類股，沒有各股原因，也沒有加拿大大型股財報，因此本期未製作個股頁。"
+  }
+ ],
+ "next_label": "下一期",
+ "next": "週五 11/27 盤前 08:23 與盤後 16:53（美股半日交易）",
+ "sources": "Investing.com、CP24"
+}
