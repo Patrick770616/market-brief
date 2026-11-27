@@ -1,0 +1,165 @@
+{
+ "id": "2026-11-27-pre",
+ "edition": "盤前快訊",
+ "date": "11/27（五）",
+ "time": "多倫多 08:23",
+ "updated": "11/27 09:00",
+ "indices": [
+  {
+   "name": "Nasdaq 100 期指",
+   "change": "+2.2%至+2.4%"
+  },
+  {
+   "name": "S&P 期指",
+   "change": "+1.7%"
+  },
+  {
+   "name": "道瓊期指",
+   "change": "+1.3%"
+  },
+  {
+   "name": "TSX 期指",
+   "change": "+0.85%"
+  }
+ ],
+ "lead": {
+  "tag": "頭條",
+  "headline": "AI 股與金屬齊漲 Nasdaq 期貨 +2.4% 美股今天半日交易",
+  "headline_en": "AI stocks and metals rally: Nasdaq futures +2.4% ahead of half-day session",
+  "body": "亞股先行走高後，Nasdaq 100 期貨約 +2.2% 至 +2.4%（報 26,714.50）、S&P 500 +1.7%、道瓊 +1.3%；TSX 期貨約 +0.85%。黃金約 +3%、銅 +4% 以上（為 1 月以來最大單日漲幅）。美股今天 13:00 ET 提早收盤；Nasdaq 100 11 月至週三仍約 -8%，有望成為 2022 年 12 月以來最差月份。"
+ },
+ "points": [
+  {
+   "zh": "市場計價 12 月聯準會升息 25 個基點機率約 98.9%，加拿大央行約 81%",
+   "en": "Fed Dec hike odds ~98.9%; BoC ~81%"
+  },
+  {
+   "zh": "加拿大第三季 GDP 週一早上公布",
+   "en": "Canada Q3 GDP due Monday morning"
+  }
+ ],
+ "sections": [
+  {
+   "title": "美國",
+   "items": [
+    {
+     "ticker": "NVDA",
+     "name": "輝達 Nvidia",
+     "note": "盤前 +4.2% 至 155.20 美元",
+     "verdict": "",
+     "change": "+4.2%（盤前）",
+     "detail": {
+      "headline": "Nvidia 盤前反彈 4.2%，AI 股隨亞股走高",
+      "name_en": "NVIDIA Corp.",
+      "exchange": "Nasdaq",
+      "change_note": "盤前，報約 US$155.20",
+      "summary": "Nvidia 盤前上漲 4.2%，報約 155.20 美元。AI 類股在數週賣壓後反彈：Sandisk +10.8%、Micron +6.4%、AMD +5%、Oracle +4.6%。亞股先行走高，日經、KOSPI 與上證均上漲。",
+      "risks": "反彈持續性；半日交易成交量偏薄",
+      "plain": "AI 股連跌後，今早先反彈。",
+      "sources": [
+       {
+        "title": "U.S. Stock Futures Surge As Nvidia, Anthropic And Other AI Shares Rally In Premarket Trading（Forbes）",
+        "url": "https://www.forbes.com/sites/siladityaray/2026/11/27/stock-futures-surge-as-battered-ai-shares-rebound-ahead-of-shorterned-friday-trading/"
+       }
+      ]
+     }
+    },
+    {
+     "ticker": "ANT",
+     "name": "Anthropic",
+     "note": "盤前 +3.6% 至 85.73 美元，回到發行價之上",
+     "verdict": "",
+     "change": "+3.6%（盤前）",
+     "detail": {
+      "headline": "Anthropic 盤前回升至 83 美元發行價之上",
+      "name_en": "Anthropic PBC",
+      "exchange": "Nasdaq",
+      "change_note": "盤前，報約 US$85.73",
+      "summary": "Anthropic 盤前上漲 3.6%，報約 85.73 美元，重新站上 83 美元發行價；這是上市一週以來股價在發行價附近大幅震盪後的反彈。",
+      "risks": "波動大；盤前價格非收盤價",
+      "plain": "Anthropic 上市一週，今早又回到比發行價高。",
+      "sources": [
+       {
+        "title": "U.S. Stock Futures Surge As Nvidia, Anthropic And Other AI Shares Rally In Premarket Trading（Forbes）",
+        "url": "https://www.forbes.com/sites/siladityaray/2026/11/27/stock-futures-surge-as-battered-ai-shares-rebound-ahead-of-shorterned-friday-trading/"
+       }
+      ]
+     }
+    },
+    {
+     "ticker": "MU",
+     "name": "美光 Micron",
+     "note": "盤前 +6.4% 至 640 美元",
+     "verdict": "",
+     "change": "+6.4%（盤前）",
+     "detail": {
+      "headline": "Micron 盤前反彈 6.4%",
+      "name_en": "Micron Technology",
+      "exchange": "Nasdaq",
+      "change_note": "盤前，報約 US$640.00",
+      "summary": "Micron 盤前上漲 6.4%，報約 640 美元，隨記憶體與 AI 概念股反彈；Sandisk 盤前 +10.8% 至 81.56 美元。",
+      "risks": "11 月以來大幅震盪",
+      "plain": "美光跟著 AI 股反彈。",
+      "sources": [
+       {
+        "title": "U.S. Stock Futures Surge As Nvidia, Anthropic And Other AI Shares Rally In Premarket Trading（Forbes）",
+        "url": "https://www.forbes.com/sites/siladityaray/2026/11/27/stock-futures-surge-as-battered-ai-shares-rebound-ahead-of-shorterned-friday-trading/"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "觀察清單",
+   "items": [
+    {
+     "ticker": "RY",
+     "name": "皇家銀行",
+     "note": "本期未查到個別消息",
+     "verdict": "",
+     "change": ""
+    },
+    {
+     "ticker": "SPCX",
+     "name": "SpaceX",
+     "note": "盤前 +4% 至 132.50 美元",
+     "verdict": "",
+     "change": "+4%（盤前）",
+     "detail": {
+      "headline": "SpaceX 盤前上漲 4% 至 132.50 美元",
+      "name_en": "Space Exploration Technologies",
+      "exchange": "Nasdaq",
+      "change_note": "盤前，報約 US$132.50",
+      "summary": "SpaceX 隨 AI 與科技股反彈，盤前上漲 4%，報約 132.50 美元；來源未提供個別原因。",
+      "risks": "盤前價格；未見個別消息",
+      "plain": "SpaceX 跟著大盤反彈。",
+      "sources": [
+       {
+        "title": "U.S. Stock Futures Surge As Nvidia, Anthropic And Other AI Shares Rally In Premarket Trading（Forbes）",
+        "url": "https://www.forbes.com/sites/siladityaray/2026/11/27/stock-futures-surge-as-battered-ai-shares-rebound-ahead-of-shorterned-friday-trading/"
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "macro": [
+  {
+   "text": "金價約 +3%、銅 +4% 以上",
+   "detail": "貴金屬與工業金屬普遍上漲，帶動礦業股；中國工業利潤較強支撐基本金屬；Brent 約 +0.5%，中東油輪遇襲推升航運風險。"
+  },
+  {
+   "text": "成交量偏薄",
+   "detail": "美股半日交易（13:00 ET 收盤），加拿大交易員剛從感恩節回來，期貨波動可能被放大。"
+  },
+  {
+   "text": "本期未查到加拿大大型股財報",
+   "detail": "來源均未提到個別加拿大公司消息；加拿大區塊留空。"
+  }
+ ],
+ "next_label": "今日留意",
+ "next": "美股半日交易；週一 11/30 加拿大 Q3 GDP",
+ "sources": "Forbes、IUX24"
+}
