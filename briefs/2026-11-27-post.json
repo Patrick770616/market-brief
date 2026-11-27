@@ -1,0 +1,165 @@
+{
+ "id": "2026-11-27-post",
+ "edition": "盤後快訊",
+ "date": "11/27（五）",
+ "time": "多倫多 16:53",
+ "updated": "11/27 16:53",
+ "indices": [
+  {
+   "name": "S&P/TSX",
+   "change": "+1.20%"
+  },
+  {
+   "name": "Nasdaq",
+   "change": "+2.30%"
+  },
+  {
+   "name": "S&P 500",
+   "change": "+1.60%"
+  },
+  {
+   "name": "道瓊",
+   "change": "+1.18%"
+  }
+ ],
+ "lead": {
+  "tag": "頭條",
+  "headline": "美股半日大漲 本週為逾一年最佳 TSX 收漲 1.2%",
+  "headline_en": "US stocks rally in half-day, best week in over a year; TSX +1.2%",
+  "body": "美股半日交易收盤：S&P 500 7,297.49（+1.60%）、Dow 50,774.94（+1.18%）、Nasdaq 24,129.50（+2.30%）。本週 S&P 500 +5.6%（為 2025 年 4 月以來最大）、Nasdaq +6.7%、Dow +5.5%。TSX 收漲 1.20%，約 34,839（由前收約 34,426 推算，非官方）。11 月仍為負：S&P 500 約 -3.7%、Nasdaq 約 -5.1%。"
+ },
+ "points": [
+  {
+   "zh": "VIX 降至 24.01（週三 28.29、11/20 為 35.89）",
+   "en": "VIX falls to 24.01 from 28.29 Wednesday and 35.89 on Nov 20"
+  },
+  {
+   "zh": "S&P 500 仍較 10/6 高點低 6.7%，Nasdaq 低 12.6%",
+   "en": "S&P 500 still 6.7% below Oct 6 peak; Nasdaq 12.6% below record"
+  }
+ ],
+ "sections": [
+  {
+   "title": "美國",
+   "items": [
+    {
+     "ticker": "NVDA",
+     "name": "輝達 Nvidia",
+     "note": "收 150.49 美元（+0.8%），盤前漲幅收窄",
+     "verdict": "",
+     "change": "+0.8%",
+     "detail": {
+      "headline": "Nvidia 收 150.49 美元（+0.8%），漲幅遠小於盤前",
+      "name_en": "NVIDIA Corp.",
+      "exchange": "Nasdaq",
+      "change_note": "+0.8%，收 US$150.49",
+      "summary": "Nvidia 半日交易收 150.49 美元、上漲 0.8%，低於盤前 +4.2%。AI 類股整體反彈，Nasdaq 收漲 2.3%，但 Nvidia 本身漲幅有限。",
+      "risks": "11 月累計仍弱；半日交易量薄",
+      "plain": "輝達今天只小漲，沒有盤前那麼多。",
+      "sources": [
+       {
+        "title": "Stocks close: S&P 500 gains 1.6% and Nasdaq 2.3% in a half-day, but November is still down（The Company Chronicle）",
+        "url": "https://thecompanychronicle.com/story/stocks-close-sp500-up-1-6-percent-nasdaq-up-2-3-percent-vix-24-half-day-november-27-2026"
+       }
+      ]
+     }
+    },
+    {
+     "ticker": "TSLA",
+     "name": "特斯拉 Tesla",
+     "note": "收 400.00 美元（+5.2%）",
+     "verdict": "",
+     "change": "+5.2%",
+     "detail": {
+      "headline": "Tesla 收漲 5.2% 至 400 美元",
+      "name_en": "Tesla, Inc.",
+      "exchange": "Nasdaq",
+      "change_note": "+5.2%，收 US$400.00",
+      "summary": "Tesla 在半日交易收 400.00 美元、上漲 5.2%，為當日大型股漲幅居前者之一。來源未說明個別原因。",
+      "risks": "原因未取得",
+      "plain": "特斯拉今天漲了五個百分點，跟著科技股反彈。",
+      "sources": [
+       {
+        "title": "Stocks close: S&P 500 gains 1.6% and Nasdaq 2.3% in a half-day, but November is still down（The Company Chronicle）",
+        "url": "https://thecompanychronicle.com/story/stocks-close-sp500-up-1-6-percent-nasdaq-up-2-3-percent-vix-24-half-day-november-27-2026"
+       }
+      ]
+     }
+    },
+    {
+     "ticker": "AMZN",
+     "name": "亞馬遜 Amazon",
+     "note": "收 254.12 美元（+4.0%）",
+     "verdict": "",
+     "change": "+4.0%",
+     "detail": {
+      "headline": "Amazon 收漲 4.0% 至 254.12 美元",
+      "name_en": "Amazon.com, Inc.",
+      "exchange": "Nasdaq",
+      "change_note": "+4.0%，收 US$254.12",
+      "summary": "Amazon 半日交易收 254.12 美元、上漲 4.0%。來源未說明個別原因；HP 同日 +3.3% 至 32.17 美元。",
+      "risks": "原因未取得",
+      "plain": "亞馬遜今天漲了約 4%。",
+      "sources": [
+       {
+        "title": "Stocks close: S&P 500 gains 1.6% and Nasdaq 2.3% in a half-day, but November is still down（The Company Chronicle）",
+        "url": "https://thecompanychronicle.com/story/stocks-close-sp500-up-1-6-percent-nasdaq-up-2-3-percent-vix-24-half-day-november-27-2026"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "觀察清單",
+   "items": [
+    {
+     "ticker": "RY",
+     "name": "皇家銀行",
+     "note": "本期未查到個別消息",
+     "verdict": "",
+     "change": ""
+    },
+    {
+     "ticker": "SPCX",
+     "name": "SpaceX",
+     "note": "收 133.59 美元（+4.8%）",
+     "verdict": "",
+     "change": "+4.8%",
+     "detail": {
+      "headline": "SpaceX 收漲 4.8% 至 133.59 美元",
+      "name_en": "Space Exploration Technologies",
+      "exchange": "Nasdaq",
+      "change_note": "+4.8%，收 US$133.59",
+      "summary": "SpaceX 半日交易收 133.59 美元、上漲 4.8%，隨科技股反彈；來源未說明個別原因。",
+      "risks": "原因未取得",
+      "plain": "SpaceX 今天跟著大盤反彈。",
+      "sources": [
+       {
+        "title": "Stocks close: S&P 500 gains 1.6% and Nasdaq 2.3% in a half-day, but November is still down（The Company Chronicle）",
+        "url": "https://thecompanychronicle.com/story/stocks-close-sp500-up-1-6-percent-nasdaq-up-2-3-percent-vix-24-half-day-november-27-2026"
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "macro": [
+  {
+   "text": "午間金價 3,650.30 美元（+85.70），原油 83.55 美元（-0.13）",
+   "detail": "來自午間報價，非收盤；加幣 70.16 美分（週四 70.21）。"
+  },
+  {
+   "text": "市場仍預期 12 月升息",
+   "detail": "美聯儲 12 月升息 25 個基點機率約 98.9%（今早報價）；加拿大央行約 81%。10 年期殖利率週三為 4.85%，週五數字未取得。"
+  },
+  {
+   "text": "Anthropic 與 TSX 個股本期無收盤資料",
+   "detail": "Anthropic 週五收盤價本期未取得（盤前為 85.73 美元）；TSX 來源只有指數漲幅，沒有個股，因此加拿大區塊留空。"
+  }
+ ],
+ "next_label": "下一期",
+ "next": "週一 11/30 盤前 08:23 與盤後 16:53；加拿大第三季 GDP 週一早上公布",
+ "sources": "The Company Chronicle、Yahoo Finance（AP）、Investing.com"
+}
